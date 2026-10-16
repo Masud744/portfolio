@@ -9,6 +9,7 @@ import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 import ProjectModal from "./components/ProjectModal";
 import TerminalModal from "./components/TerminalModal";
+import InteractiveAssistant from "./components/InteractiveAssistant";
 
 export default function App() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -54,6 +55,9 @@ export default function App() {
         isOpen={isTerminalOpen}
         onClose={() => setIsTerminalOpen(false)}
       />
+
+      {/* Interactive AI Cyber Mascot (Bible Strong Avatar + Groq) */}
+      <InteractiveAssistant onOpenTerminal={() => setIsTerminalOpen(true)} />
     </div>
   );
 }
