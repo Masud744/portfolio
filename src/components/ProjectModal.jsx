@@ -21,26 +21,26 @@ export default function ProjectModal({ project, onClose }) {
 
   return (
     <div
-      className="terminal-modal-backdrop"
+      className="spec-modal-backdrop"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-project-title"
     >
       <div
-        className="terminal-window"
-        style={{ maxWidth: "720px", maxHeight: "90vh" }}
+        className="spec-modal-window"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Title bar */}
-        <div className="terminal-titlebar">
-          <div className="titlebar-left">
+        <div className="spec-modal-header">
+          <div className="spec-modal-titlebar-left">
             <span className="titlebar-dot" />
-            <span className="titlebar-text">Architecture Spec // {project.title}</span>
+            <span className="spec-modal-slug">architecture://spec/{project.slug || project.id || 'system'}</span>
           </div>
 
           <button
-            className="terminal-close-btn"
+            type="button"
+            className="spec-modal-close"
             onClick={onClose}
             aria-label="Close dialog"
           >
@@ -49,34 +49,34 @@ export default function ProjectModal({ project, onClose }) {
         </div>
 
         {/* Modal Content */}
-        <div style={{ padding: "24px", overflowY: "auto", display: "flex", flexDirection: "column", gap: "20px" }}>
+        <div className="spec-modal-body">
           <div>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "6px" }}>
-              <h2 id="modal-project-title" style={{ fontSize: "1.375rem", fontWeight: 600, color: "var(--text-primary)" }}>
+            <div className="spec-modal-title-row">
+              <h2 id="modal-project-title" className="spec-modal-title">
                 {project.title}
               </h2>
               <span className="badge-tag highlight">{project.featuredBadge}</span>
             </div>
-            <p style={{ fontSize: "0.875rem", color: "var(--accent-blue)" }}>
+            <p className="spec-modal-subtitle">
               {project.subtitle}
             </p>
           </div>
 
           <div>
-            <h4 style={{ fontSize: "0.8125rem", textTransform: "uppercase", letterSpacing: "0.05em", color: "var(--text-muted)", marginBottom: "8px" }}>
+            <h4 className="spec-modal-section-heading">
               System Overview &amp; Problem Solved
             </h4>
-            <p style={{ fontSize: "0.9375rem", color: "var(--text-secondary)", lineHeight: 1.65 }}>
+            <p className="spec-modal-desc">
               {project.longDescription || project.description}
             </p>
           </div>
 
           {/* Metrics */}
           <div>
-            <h4 style={{ fontSize: "0.8125rem", textTransform: "uppercase", letterSpacing: "0.05em", color: "var(--text-muted)", marginBottom: "8px" }}>
+            <h4 className="spec-modal-section-heading">
               Verified Performance &amp; Hardware Telemetry
             </h4>
-            <div className="project-metrics-row" style={{ margin: 0 }}>
+            <div className="project-metrics-row">
               {project.metrics.map((m, idx) => (
                 <div key={idx} className="project-metric">
                   <span className="metric-value">{m.value}</span>
@@ -89,10 +89,10 @@ export default function ProjectModal({ project, onClose }) {
           {/* Key Engineering Details */}
           {project.highlights && (
             <div>
-              <h4 style={{ fontSize: "0.8125rem", textTransform: "uppercase", letterSpacing: "0.05em", color: "var(--text-muted)", marginBottom: "8px" }}>
+              <h4 className="spec-modal-section-heading">
                 Architecture &amp; Safety Mechanisms
               </h4>
-              <ul className="project-bullet-points" style={{ margin: 0 }}>
+              <ul className="project-bullet-points">
                 {project.highlights.map((h, idx) => (
                   <li key={idx} className="project-bullet-item">
                     <CheckCircle2 size={14} color="var(--status-green)" style={{ flexShrink: 0, marginTop: "4px" }} />
@@ -105,12 +105,12 @@ export default function ProjectModal({ project, onClose }) {
 
           {/* Technologies */}
           <div>
-            <h4 style={{ fontSize: "0.8125rem", textTransform: "uppercase", letterSpacing: "0.05em", color: "var(--text-muted)", marginBottom: "8px" }}>
+            <h4 className="spec-modal-section-heading">
               Hardware &amp; Software Toolchain
             </h4>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
+            <div className="project-tech-chips">
               {project.techStack.map((t, idx) => (
-                <span key={idx} className="tech-tag" style={{ fontSize: "0.75rem", padding: "3px 8px" }}>
+                <span key={idx} className="tech-tag">
                   {t.name}
                 </span>
               ))}
@@ -118,13 +118,12 @@ export default function ProjectModal({ project, onClose }) {
           </div>
 
           {/* Action Links */}
-          <div style={{ display: "flex", gap: "10px", paddingTop: "12px", borderTop: "1px solid var(--border-subtle)" }}>
+          <div className="spec-modal-footer">
             <a
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
-              style={{ fontSize: "0.8125rem" }}
             >
               <Github size={14} />
               <span>Inspect Source Repository</span>
@@ -136,7 +135,6 @@ export default function ProjectModal({ project, onClose }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary"
-                style={{ fontSize: "0.8125rem" }}
               >
                 <ExternalLink size={14} />
                 <span>Open Documentation / Live</span>

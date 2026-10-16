@@ -1,63 +1,67 @@
 import React from "react";
-import { Cpu, ShieldCheck, Eye, Terminal } from "lucide-react";
+import { Cpu, ShieldCheck, Eye, Terminal, Radio, Wrench, Layers } from "lucide-react";
 
 export default function SkillsWorkbench() {
-  const capabilityGroups = [
+  const capabilityBenches = [
     {
+      benchId: "BENCH-01",
       title: "Microcontrollers & Hardware Interfacing",
       icon: Cpu,
-      description: "Low-level peripheral interfacing, sensor bus communication, and power management.",
+      focus: "Peripheral Buses • Sensor Telemetry • Power Stages",
       skills: [
-        { name: "ESP32 (Xtensa Dual-Core)", desc: "Wi-Fi, BLE, FreeRTOS" },
-        { name: "ESP8266 & Arduino", desc: "Bare-metal & framework" },
-        { name: "Raspberry Pi", desc: "Linux edge computing" },
-        { name: "LoRa SX1278", desc: "Sub-GHz long-range telemetry" },
-        { name: "Bus Protocols", desc: "UART, SPI, I2C, 1-Wire" },
-        { name: "Logic-Level Shifting", desc: "5V to 3.3V safe translation" },
-        { name: "Precision Sensing", desc: "PMS5003 laser, MQ-135, DHT22" },
-        { name: "Relay & Motor Actuation", desc: "Interlocked relay drivers" }
+        { name: "ESP32 (Xtensa Dual-Core)", desc: "240MHz, FreeRTOS, BLE/Wi-Fi" },
+        { name: "ESP8266 & Arduino AVR", desc: "Bare-metal & HAL frameworks" },
+        { name: "Raspberry Pi & SBCs", desc: "Linux edge computing & daemons" },
+        { name: "LoRa SX1278 (Sub-GHz)", desc: "Long-range point-to-point & mesh" },
+        { name: "Serial Protocols", desc: "UART, SPI, I2C, 1-Wire, RS-485" },
+        { name: "Logic-Level Translation", desc: "5V/3.3V bidirectional MOSFET shifters" },
+        { name: "Precision Sensing", desc: "PMS5003 laser, MQ-135, DHT22, Hall" },
+        { name: "Actuation Drivers", desc: "Optoisolated relay arrays & PWM servos" }
       ]
     },
     {
+      benchId: "BENCH-02",
       title: "Firmware Architecture & RTOS",
       icon: ShieldCheck,
-      description: "Deterministic task scheduling, fail-safe updates, and non-volatile memory handling.",
+      focus: "Deterministic Multi-threading • Fail-Safe OTA • Flash NVS",
       skills: [
-        { name: "FreeRTOS Multitasking", desc: "Queues, semaphores, timers" },
-        { name: "Dual-Partition OTA", desc: "SHA-256 validation & rollback" },
-        { name: "NVS Flash & EEPROM", desc: "Encrypted credential storage" },
-        { name: "Captive Portal Setup", desc: "SmartProv author (v2.1.3)" },
-        { name: "Hardware Timers & ISR", desc: "Low-latency interrupt handling" },
-        { name: "Watchdog Recovery", desc: "Automated brownout & lockup reset" }
+        { name: "FreeRTOS Dual-Core", desc: "Preemptive multitasking, semaphores, queues" },
+        { name: "Dual-Partition OTA", desc: "SHA-256 validation & automatic rollback" },
+        { name: "NVS Flash & EEPROM", desc: "Encrypted credential persistence (AES)" },
+        { name: "Captive Portal Setup", desc: "Author of SmartProv v2.1.3 (Official Registry)" },
+        { name: "Interrupt Service Routines", desc: "Hardware timers, edge triggers & debouncing" },
+        { name: "Watchdog Reliability", desc: "Hardware WDT, brownout reset, safe boot" }
       ]
     },
     {
-      title: "Edge AI & Computer Vision",
+      benchId: "BENCH-03",
+      title: "Edge AI & Real-Time Computer Vision",
       icon: Eye,
-      description: "Real-time edge model deployment, feature landmarking, and interpretability.",
+      focus: "High-FPS Inference • Landmark Mesh • Explainable AI",
       skills: [
-        { name: "YOLOv8 Inference", desc: "Edge object & phone detection" },
-        { name: "MediaPipe Face Mesh", desc: "468 landmark facial tracking" },
-        { name: "OpenCV Pipelines", desc: "Low-latency video processing" },
-        { name: "ONNX Runtime", desc: "Model quantization & ~4x speedup" },
-        { name: "TreeSHAP & Grad-CAM", desc: "Local feature attribution" },
-        { name: "Spatial Math (solvePnP)", desc: "3D head pose estimation" },
-        { name: "EAR & MAR Algorithms", desc: "Gaze, fatigue & blink analysis" }
+        { name: "YOLOv8 Inference", desc: "Sub-50ms edge object & device detection" },
+        { name: "MediaPipe Face Mesh", desc: "468 3D facial landmark tracking" },
+        { name: "OpenCV Pipelines", desc: "Real-time frame manipulation & filtering" },
+        { name: "ONNX Runtime", desc: "CPU/GPU model quantization & ~4x speedup" },
+        { name: "TreeSHAP & Grad-CAM", desc: "Local feature attribution & clinical heatmaps" },
+        { name: "solvePnP Pose Estimation", desc: "3D head orientation (pitch, yaw, roll)" },
+        { name: "EAR & MAR Algorithms", desc: "Real-time gaze, fatigue, and blink metrics" }
       ]
     },
     {
-      title: "Languages, Cloud & Tooling",
+      benchId: "BENCH-04",
+      title: "Core Languages, Tooling & Cloud Stack",
       icon: Terminal,
-      description: "Core languages, automated test and release pipelines, and telemetry storage.",
+      focus: "C++17 • Async Backends • Time-Series Telemetry",
       skills: [
-        { name: "C & Modern C++", desc: "C++17 firmware core" },
-        { name: "Python 3", desc: "ML pipelines & REST APIs" },
-        { name: "TypeScript & JavaScript", desc: "React 19 & web interfaces" },
-        { name: "FastAPI", desc: "High-throughput async APIs" },
-        { name: "PlatformIO & Arduino IDE", desc: "Embedded build systems" },
-        { name: "Docker & Linux", desc: "Containerized edge services" },
-        { name: "GitHub Actions CI/CD", desc: "Automated builds & releases" },
-        { name: "InfluxDB & Supabase", desc: "Time-series & PostgreSQL" }
+        { name: "C & Modern C++", desc: "Memory-safe embedded C++17 standards" },
+        { name: "Python 3", desc: "NumPy, PyTorch, SciPy, FastAPI" },
+        { name: "PlatformIO Toolchain", desc: "Deterministic builds, board configs, debugging" },
+        { name: "TypeScript & React 19", desc: "High-performance web consoles & telemetry UIs" },
+        { name: "FastAPI & Supabase", desc: "High-throughput async REST endpoints" },
+        { name: "InfluxDB Cloud & MQTT", desc: "High-frequency time-series logging & Mosquitto" },
+        { name: "Docker & Linux", desc: "Containerized edge microservices & systemd" },
+        { name: "GitHub Actions CI/CD", desc: "Automated firmware binary builds & releases" }
       ]
     }
   ];
@@ -65,31 +69,38 @@ export default function SkillsWorkbench() {
   return (
     <section id="capabilities" className="section">
       <div className="container">
+        {/* Section Header */}
         <header className="section-header">
-          <span className="section-label">Capabilities</span>
-          <h2 className="section-title">Technical Capabilities &amp; Tooling</h2>
+          <div className="section-label-group">
+            <span className="section-pill">SYSTEM CAPABILITIES</span>
+            <span className="section-counter">4 Engineering Benches</span>
+          </div>
+          <h2 className="section-title">Hardware &amp; Software Engineering Workbench</h2>
           <p className="section-description">
-            A comprehensive overview of hardware platforms, firmware frameworks, and machine learning toolchains deployed across verified systems.
+            Validated technical competency across embedded bare-metal firmware, deterministic RTOS kernels, accelerated edge machine learning, and sensor telemetry.
           </p>
         </header>
 
+        {/* Workbench Grid */}
         <div className="capabilities-grid">
-          {capabilityGroups.map((group, idx) => {
-            const IconComponent = group.icon;
+          {capabilityBenches.map((bench, idx) => {
+            const IconComponent = bench.icon;
             return (
               <div key={idx} className="capability-card">
-                <h3 className="capability-card-title">
-                  <IconComponent size={16} color="var(--accent-blue)" />
-                  <span>{group.title}</span>
-                </h3>
-                <p style={{ fontSize: "0.8125rem", color: "var(--text-muted)", marginBottom: "16px" }}>
-                  {group.description}
-                </p>
+                <div className="workbench-card-top">
+                  <div className="bench-title-row">
+                    <span className="bench-id-badge">{bench.benchId}</span>
+                    <IconComponent size={17} className="text-cyan" />
+                    <h3 className="capability-card-title">{bench.title}</h3>
+                  </div>
+                  <span className="bench-focus-label">{bench.focus}</span>
+                </div>
 
+                {/* Individual Verified Skills */}
                 <div className="capability-tags-container">
-                  {group.skills.map((skill, sIdx) => (
+                  {bench.skills.map((skill, sIdx) => (
                     <div key={sIdx} className="cap-tag">
-                      <span>{skill.name}</span>
+                      <span className="cap-tag-name">{skill.name}</span>
                       <span className="cap-tag-desc">&bull; {skill.desc}</span>
                     </div>
                   ))}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { flagshipProjects } from "../data/portfolioData";
-import { ExternalLink, ArrowUpRight, Search, Code2 } from "lucide-react";
+import { ExternalLink, Search, Code2, Cpu, CheckCircle2 } from "lucide-react";
 import Github from "./GithubIcon";
 
 export default function ProjectsGrid({ onSelectProject }) {
@@ -22,55 +22,42 @@ export default function ProjectsGrid({ onSelectProject }) {
   return (
     <section id="projects" className="section">
       <div className="container">
+        {/* Section Header */}
         <header className="section-header">
-          <span className="section-label">Selected Work</span>
+          <div className="section-label-group">
+            <span className="section-pill">SYSTEMS CONSOLE</span>
+            <span className="section-counter">{filtered.length} Production Systems</span>
+          </div>
           <h2 className="section-title">Engineering Systems &amp; Case Studies</h2>
           <p className="section-description">
-            Production-tested microcontroller firmware, official open-source packages, and low-latency edge vision platforms engineered for reliability.
+            Production-tested microcontroller firmware, official open-source registry packages, and real-time edge vision architectures verified on physical hardware.
           </p>
         </header>
 
-        {/* Clean Filter Controls */}
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px", marginBottom: "24px" }}>
-          <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
+        {/* Industrial Filter & Search Toolbar */}
+        <div className="projects-toolbar">
+          <div className="category-chips-row">
             {categories.map((cat) => (
               <button
                 key={cat}
+                type="button"
                 onClick={() => setFilter(cat)}
-                style={{
-                  padding: "5px 12px",
-                  fontSize: "0.8125rem",
-                  fontWeight: 500,
-                  borderRadius: "6px",
-                  border: "1px solid",
-                  borderColor: filter === cat ? "var(--border-strong)" : "var(--border-subtle)",
-                  backgroundColor: filter === cat ? "var(--bg-surface-raised)" : "transparent",
-                  color: filter === cat ? "var(--text-primary)" : "var(--text-secondary)",
-                  cursor: "pointer",
-                  transition: "all 150ms ease"
-                }}
+                className={`filter-category-btn ${filter === cat ? "active" : ""}`}
               >
                 {cat}
               </button>
             ))}
           </div>
 
-          <div style={{ display: "flex", alignItems: "center", gap: "8px", background: "var(--bg-surface)", border: "1px solid var(--border-default)", borderRadius: "6px", padding: "5px 10px", width: "100%", maxWidth: "300px" }}>
-            <Search size={14} color="var(--text-muted)" />
+          <div className="search-input-wrapper">
+            <Search size={14} className="search-icon" />
             <input
               type="text"
-              placeholder="Search tech, target MCU, or system..."
+              placeholder="Search MCU, protocol, or system..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              style={{
-                background: "transparent",
-                border: "none",
-                outline: "none",
-                color: "var(--text-primary)",
-                fontSize: "0.8125rem",
-                width: "100%",
-                fontFamily: "var(--font-sans)"
-              }}
+              className="projects-search-field"
+              aria-label="Search systems and technologies"
             />
           </div>
         </div>
@@ -79,23 +66,30 @@ export default function ProjectsGrid({ onSelectProject }) {
         <div className="projects-list">
           {filtered.map((proj) => (
             <article key={proj.id} className="project-case-card">
+              {/* Card Header with Technical Slug */}
               <div className="project-card-header">
                 <div className="project-title-group">
+                  <div className="project-slug-row">
+                    <span className="project-browser-slug">{proj.browserSlug || `system://${proj.id}`}</span>
+                    <span className={`badge-tag ${proj.id === "smartprov" ? "highlight" : ""}`}>
+                      {proj.featuredBadge}
+                    </span>
+                  </div>
                   <h3 className="project-title">{proj.title}</h3>
-                  <span className={`badge-tag ${proj.id === "smartprov" ? "highlight" : ""}`}>
-                    {proj.featuredBadge}
-                  </span>
+                  <p className="project-subtitle">{proj.subtitle}</p>
                 </div>
 
+                {/* Primary Action Buttons */}
                 <div className="project-meta-right">
                   <div className="project-links">
                     <button
-                      className="project-link-action"
+                      type="button"
+                      className="project-link-action action-inspect"
                       onClick={() => onSelectProject(proj)}
                       title="Inspect full system architecture & hardware specifications"
                     >
                       <Code2 size={13} />
-                      <span>Architecture Details</span>
+                      <span>Architecture Spec</span>
                     </button>
 
                     <a
@@ -114,20 +108,21 @@ export default function ProjectsGrid({ onSelectProject }) {
                         href={proj.liveDemo || proj.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="project-link-action"
-                        title="Live Deployment / Documentation"
+                        className="project-link-action action-live"
+                        title="Live Deployment / Official Registry"
                       >
                         <ExternalLink size={13} />
-                        <span>Live</span>
+                        <span>Registry / Live</span>
                       </a>
                     )}
                   </div>
                 </div>
               </div>
 
+              {/* Engineering Abstract */}
               <p className="project-summary">{proj.description}</p>
 
-              {/* Verified Metrics Row */}
+              {/* Verified Engineering Metrics */}
               <div className="project-metrics-row">
                 {proj.metrics.map((m, idx) => (
                   <div key={idx} className="project-metric">
@@ -142,7 +137,7 @@ export default function ProjectsGrid({ onSelectProject }) {
                 <ul className="project-bullet-points">
                   {proj.highlights.map((h, hIdx) => (
                     <li key={hIdx} className="project-bullet-item">
-                      <span className="bullet-icon">&bull;</span>
+                      <span className="bullet-dash">&bull;</span>
                       <span>{h}</span>
                     </li>
                   ))}
