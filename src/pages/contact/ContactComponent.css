@@ -45,6 +45,15 @@
 
 .contact-heading-text-div {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-heading-text-div .social-media-div {
+  justify-content: center;
+  margin: 20px auto 10px auto;
 }
 
 .blog-heading-text-div {
@@ -112,6 +121,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 15px;
 }
 
 .blogsite-btn-div {

@@ -26,27 +26,28 @@ class ExperienceCard extends Component {
         <div className="experience-card-stepper">
           <div
             style={{
-              width: 20,
-              height: 20,
+              width: 18,
+              height: 18,
               backgroundColor: `${theme.headerColor}`,
-              borderRadius: 50,
-              zIndex: 100,
+              borderRadius: "50%",
+              zIndex: 10,
+              boxShadow: `0 0 0 3px #ffffff, 0 0 0 5px ${theme.headerColor}`,
             }}
           />
           {index !== totalCards - 1 && (
             <div
               style={{
-                height: 190,
+                height: 180,
                 width: 2,
                 backgroundColor: `${theme.headerColor}`,
                 position: "absolute",
-                marginTop: 20,
+                top: 22,
               }}
             />
           )}
         </div>
         <Fade right duration={2000} distance="40px">
-          <div style={{ display: "flex", flexDirection: "row" }}>
+          <div style={{ display: "flex", flexDirection: "row", alignItems: "center", width: "100%" }}>
             <div
               className="arrow-left"
               style={{ borderRight: `10px solid ${theme.body}` }}

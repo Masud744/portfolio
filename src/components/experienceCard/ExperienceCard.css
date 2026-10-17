@@ -89,41 +89,53 @@
 
 .experience-card {
   min-width: 275px;
-  /* height: 170px; */
-  margin-bottom: 20px;
-  border-radius:10px;
+  border-radius: 10px;
   display: flex;
-  flex-direction:column;
-  padding: 10px;
-  margin-left: 10px;
-  -webkit-box-shadow: 4px 3px 20px -2px grey;
-  -moz-box-shadow: 4px 3px 20px -2px grey;
-  box-shadow: 4px 3px 20px -2px grey;
+  flex-direction: column;
+  padding: 16px 20px;
+  margin-left: 0px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  border: 1px solid #d9dbdf;
+  width: 100%;
 }
 
 .arrow-left {
   width: 0;
   height: 0;
-  margin-top: 40px;
-  margin-left: 10px;
-  margin-right: -10px;
+  margin: 0;
+  margin-right: -1px;
+  align-self: center;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  z-index: 100;
+  z-index: 10;
 }
 
 .experience-card-logo-div {
-  margin: 10px;
-  margin-top: -10px;
+  width: 90px;
+  height: 90px;
+  min-width: 90px;
+  min-height: 90px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #d9dbdf;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  margin: 0 15px 0 0;
 }
 
 .experience-card-stepper {
   display: flex;
-  flex-direction:row;
   position: relative;
-  align-items: center; 
-  flex-direction: column; 
-  margin-top: -40px
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 15px 0 0;
+  flex-shrink: 0;
 }
 
 .experience-card-body-div {
@@ -136,12 +148,13 @@
 }
 
 .experience-card-logo {
-  width: 100px;
-  height: 100px;
-  -webkit-box-shadow: 4px 3px 20px -2px grey;
-  -moz-box-shadow: 4px 3px 20px -2px grey;
-  box-shadow: 4px 3px 20px -2px grey;
-  border-radius: 50px;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .experience-card-title {
@@ -189,11 +202,12 @@
 }
 
 .experience-card-description {
-  margin-top: 5px;
-  margin-left: 10px;
-  text-align: justify;
-  margin-right: 20px;
+  margin-top: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: left;
   font-family: "Google Sans Regular";
+  line-height: 1.55;
 }
 
 
@@ -281,65 +295,68 @@ transition: all 0.3s ease-in-out 0s;
 }
 
 @media (max-width: 768px) {
-  .experience-card{
-      /* margin-bottom:10px; */
-      flex-direction:column;
-      text-align: center;
+  .experience-card {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
   }
 
   .arrow-left {
-      display: none;
+    display: none;
   }
 
   .experience-card-stepper {
-      display: none;
+    display: none;
   }
 
   .experience-list-item {
-      flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-card-logo-div {
+    margin: 0 auto 15px auto;
   }
 
   .experience-card-logo {
-      width: 100px;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .experience-card-heading-left {
-      float: center;
-      margin-left: auto;
-      margin-right: auto;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .experience-card-heading-right {
-      float: center;
-      margin-left: auto;
-      margin-right: auto;
+    margin: 10px auto 0 auto;
+    text-align: center;
   }
 
   .experience-card-title {
-      /* text-align: center; */
+    text-align: center;
   }
 
   .experience-card-company {
-      /* text-align: center; */
+    text-align: center;
   }
 
   .experience-card-duration {
-      /* margin-top: 2px; */
-      /* text-align: center; */
+    text-align: center;
+    margin-top: 5px;
   }
 
-  .experience-card-location{
-      /* text-align: left; */
-      /* text-align: center; */
+  .experience-card-location {
+    text-align: center;
   }
 
   .experience-card-header-div {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .experience-card-description {
-      margin-left: 14px;
-      margin-right: 14px;
-      text-align: justify;
+    margin: 15px 0 0 0;
+    text-align: center;
   }
 }

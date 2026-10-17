@@ -5,7 +5,7 @@
       "name": "SmartProv (v2.1.3)",
       "createdAt": "2024-01-10T12:00:00Z",
       "url": "https://github.com/Masud744/SmartProv",
-      "description": "📦 Official Arduino Library Manager Package: Asynchronous captive-portal Wi-Fi provisioning framework for ESP32/ESP8266 with encrypted NVS flash persistence and zero-reflash deployment.",
+      "description": "Official Arduino Library Manager Package: Asynchronous captive-portal Wi-Fi provisioning framework for ESP32/ESP8266 with encrypted NVS flash persistence and zero-reflash deployment.",
       "isFork": false,
       "languages": [
         { "name": "C++", "iconifyClass": "logos-c-plusplus" },
@@ -18,13 +18,13 @@
       "name": "ProctorAI",
       "createdAt": "2024-03-15T10:00:00Z",
       "url": "https://github.com/Masud744/ProctorAI",
-      "description": "👁️ Real-time 30–60 FPS computer vision proctoring engine with solvePnP 3D head-pose, eye gaze (EAR), mouth ratio (MAR), unauthorized phone detection, and live teacher analytics.",
+      "description": "Real-time 30–60 FPS computer vision proctoring engine with solvePnP 3D head-pose, eye gaze (EAR), mouth ratio (MAR), unauthorized phone detection, and live teacher analytics.",
       "isFork": false,
       "languages": [
         { "name": "Python", "iconifyClass": "logos-python" },
         { "name": "OpenCV", "iconifyClass": "logos-opencv" },
         { "name": "YOLOv8", "iconifyClass": "simple-icons:yolo" },
-        { "name": "FastAPI", "iconifyClass": "logos-fastapi" }
+        { "name": "FastAPI", "iconifyClass": "simple-icons:fastapi" }
       ]
     },
     {
@@ -32,13 +32,13 @@
       "name": "RespiGuard",
       "createdAt": "2024-05-20T14:00:00Z",
       "url": "https://github.com/Masud744/RespiGuard",
-      "description": "🫁 Investigational edge healthcare platform fusing ESP32 particulate sensing (PMS5003, MQ135) running FreeRTOS with TreeSHAP local explainability and Groq LLaMA clinical copilot.",
+      "description": "Investigational edge healthcare platform fusing ESP32 particulate sensing (PMS5003, MQ135) running FreeRTOS with TreeSHAP local explainability and Groq LLaMA clinical copilot.",
       "isFork": false,
       "languages": [
         { "name": "C++", "iconifyClass": "logos-c-plusplus" },
         { "name": "FreeRTOS", "iconifyClass": "simple-icons:freertos" },
         { "name": "Python", "iconifyClass": "logos-python" },
-        { "name": "FastAPI", "iconifyClass": "logos-fastapi" }
+        { "name": "FastAPI", "iconifyClass": "simple-icons:fastapi" }
       ]
     },
     {
@@ -46,12 +46,12 @@
       "name": "solar-aware-hems",
       "createdAt": "2024-07-08T09:00:00Z",
       "url": "https://github.com/Masud744/solar-aware-hems",
-      "description": "☀️ Risk-aware smart home energy management with solar forecasting, empirical uncertainty k-sigma bounds, and ESP32 8-channel relay control with 300ms break-before-make safety delay.",
+      "description": "Risk-aware smart home energy management with solar forecasting, empirical uncertainty k-sigma bounds, and ESP32 8-channel relay control with 300ms break-before-make safety delay.",
       "isFork": false,
       "languages": [
         { "name": "Python", "iconifyClass": "logos-python" },
         { "name": "ESP32", "iconifyClass": "simple-icons:espressif" },
-        { "name": "FastAPI", "iconifyClass": "logos-fastapi" },
+        { "name": "FastAPI", "iconifyClass": "simple-icons:fastapi" },
         { "name": "SHAP", "iconifyClass": "simple-icons:plotly" }
       ]
     },
@@ -60,12 +60,12 @@
       "name": "smart-pond-xai",
       "createdAt": "2024-09-12T16:00:00Z",
       "url": "https://github.com/Masud744/smart-pond-xai",
-      "description": "🚤 Autonomous IoT catamaran & precision aquaculture platform with SX1278 LoRa telemetry, InfluxDB Cloud time-series logging, and 85.26% species suitability ensemble model.",
+      "description": "Autonomous IoT catamaran & precision aquaculture platform with SX1278 LoRa telemetry, InfluxDB Cloud time-series logging, and 85.26% species suitability ensemble model.",
       "isFork": false,
       "languages": [
         { "name": "C++", "iconifyClass": "logos-c-plusplus" },
         { "name": "LoRa", "iconifyClass": "simple-icons:semtech" },
-        { "name": "InfluxDB", "iconifyClass": "logos-influxdb" },
+        { "name": "InfluxDB", "iconifyClass": "simple-icons:influxdb" },
         { "name": "Python", "iconifyClass": "logos-python" }
       ]
     },
@@ -74,7 +74,7 @@
       "name": "ESP32-GitHub-OTA",
       "createdAt": "2024-10-01T11:00:00Z",
       "url": "https://github.com/Masud744/ESP32-GitHub-OTA",
-      "description": "🛡️ Zero-bricking dual-partition OTA firmware engine with HTTPS SHA-256 binary validation, automated rollback watchdog recovery, and encrypted NVS state persistence.",
+      "description": "Zero-bricking dual-partition OTA firmware engine with HTTPS SHA-256 binary validation, automated rollback watchdog recovery, and encrypted NVS state persistence.",
       "isFork": false,
       "languages": [
         { "name": "C++", "iconifyClass": "logos-c-plusplus" },

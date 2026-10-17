@@ -56,20 +56,23 @@ class DegreeCard extends Component {
                 );
               })}
               {degree.website_link && (
-                <a
-                  href={degree.website_link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div
-                    className="visit-btn"
-                    style={{ backgroundColor: theme.headerColor }}
+                <div className="card-footer-btn-div">
+                  <a
+                    href={degree.website_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="visit-btn-link"
                   >
-                    <p className="btn" style={{ color: theme.text }}>
-                      Visit Website
-                    </p>
-                  </div>
-                </a>
+                    <div
+                      className="visit-btn"
+                      style={{ backgroundColor: theme.headerColor }}
+                    >
+                      <p className="btn" style={{ color: theme.text }}>
+                        Visit Website
+                      </p>
+                    </div>
+                  </a>
+                </div>
               )}
             </div>
           </div>
