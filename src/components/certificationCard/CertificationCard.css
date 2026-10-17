@@ -14,12 +14,20 @@
 .cert-header {
   margin: 0px;
   border-radius: 5px 5px 0px 0px;
+  padding: 16px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
 }
 
 .logo_img {
-  margin: 3px;
+  margin: 0 auto;
+  max-width: 85%;
+  max-height: 110px;
   width: auto;
-  height: 100px;
+  height: auto;
+  object-fit: contain;
 }
 
 .cert-body {

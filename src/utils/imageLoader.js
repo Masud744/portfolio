@@ -19,24 +19,6 @@ export function getImage(filename) {
     return images[directPath];
   }
 
-  // Graceful fallbacks for specialized logos
-  if (cleanName.includes("arduino")) {
-    return images["/src/assets/images/codeInLogo.png"] || "";
-  }
-  if (
-    cleanName.includes("university") ||
-    cleanName.includes("college") ||
-    cleanName.includes("school")
-  ) {
-    return (
-      images["/src/assets/images/iiitk_logo.png"] ||
-      images["/src/assets/images/stanford_logo.png"] ||
-      ""
-    );
-  }
-  if (cleanName.includes("ict") || cleanName.includes("most")) {
-    return images["/src/assets/images/deeplearning_ai_logo.png"] || "";
-  }
   return "";
 }
 

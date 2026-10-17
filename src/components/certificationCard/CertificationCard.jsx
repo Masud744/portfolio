@@ -8,8 +8,8 @@ class CertificationCard extends Component {
     const certificate = this.props.certificate;
     const theme = this.props.theme;
     return (
-      <Fade bottom duration={2000} distance="20px">
-        <div className="cert-card">
+      <div className="cert-card">
+        <Fade bottom duration={2000} distance="20px">
           <div className="content">
             <a
               href={certificate.certificate_link}
@@ -45,8 +45,8 @@ class CertificationCard extends Component {
               {certificate.subtitle}
             </h3>
           </div>
-        </div>
-      </Fade>
+        </Fade>
+      </div>
     );
   }
 }

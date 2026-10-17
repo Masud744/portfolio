@@ -280,7 +280,7 @@ export const certifications = {
       logo_path: "arduino_logo.png",
       certificate_link: "https://www.arduino.cc/reference/en/libraries/smartprov/",
       alt_name: "Arduino",
-      color_code: "#00979D",
+      color_code: "#ffffff",
     },
     {
       title: "Edge AI for Immersive Technology Trainee",
@@ -288,7 +288,7 @@ export const certifications = {
       logo_path: "ict_logo.png",
       certificate_link: "https://ictd.gov.bd/",
       alt_name: "ICT Division",
-      color_code: "#138808",
+      color_code: "#ffffff",
     },
     {
       title: "Champion — National Science & Technology Week",
@@ -296,7 +296,7 @@ export const certifications = {
       logo_path: "most_logo.png",
       certificate_link: "#",
       alt_name: "MoST",
-      color_code: "#FF9933",
+      color_code: "#ffffff",
     },
   ],
 };
