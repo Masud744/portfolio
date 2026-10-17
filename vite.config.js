@@ -1,11 +1,23 @@
 import react from '@vitejs/plugin-react'
 import { defineConfig, loadEnv } from 'vite'
+import path from 'path'
+import { fileURLToPath } from 'url'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
 
   return {
+    resolve: {
+      alias: {
+        'react-reveal': path.resolve(__dirname, 'src/components/react-reveal-shim.jsx'),
+        'react-helmet': path.resolve(__dirname, 'src/components/react-helmet-shim.jsx'),
+        'react-bootstrap': path.resolve(__dirname, 'src/components/react-bootstrap-shim.jsx'),
+      },
+    },
     plugins: [
       react(),
       {
