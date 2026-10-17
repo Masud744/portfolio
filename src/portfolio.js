@@ -388,7 +388,7 @@ export const contactPageData = {
     title: "Reach Out to Me! 📬",
     profile_image_path: "masud_vector_portrait.png",
     description:
-      "I am open to engineering roles, research collaborations, open-source contributions, and innovative hardware/AI projects. Let's connect!",
+      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
   },
   blogSection: {
     title: "Articles & Engineering Insights",
