@@ -1,63 +1,65 @@
-import React, { useState } from "react";
-import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import ProjectsGrid from "./components/ProjectsGrid";
-import JourneyTimeline from "./components/JourneyTimeline";
-import SkillsWorkbench from "./components/SkillsWorkbench";
-import HonorsSection from "./components/HonorsSection";
-import ContactSection from "./components/ContactSection";
-import Footer from "./components/Footer";
-import ProjectModal from "./components/ProjectModal";
-import TerminalModal from "./components/TerminalModal";
-import InteractiveAssistant from "./components/InteractiveAssistant";
+import React from 'react';
+import './App.css';
+
+// 3D Background
+import SceneBackground from './components/scene/SceneBackground';
+
+// Effects
+import ScanlineOverlay from './components/effects/ScanlineOverlay';
+
+// UI
+import HUDNavbar from './components/ui/HUDNavbar';
+import StatusBar from './components/ui/StatusBar';
+
+// Sections
+import HeroTerminal from './components/sections/HeroTerminal';
+import HardwareLab from './components/sections/HardwareLab';
+import ProjectGalaxy from './components/sections/ProjectGalaxy';
+import CircuitTimeline from './components/sections/CircuitTimeline';
+import SkillMatrix3D from './components/sections/SkillMatrix3D';
+import AchievementConsole from './components/sections/AchievementConsole';
+import TransmissionPanel from './components/sections/TransmissionPanel';
 
 export default function App() {
-  const [selectedProject, setSelectedProject] = useState(null);
-  const [isTerminalOpen, setIsTerminalOpen] = useState(false);
-
   return (
     <div className="portfolio-app-root">
-      {/* Primary Sticky Header */}
-      <Navbar onOpenTerminal={() => setIsTerminalOpen(true)} />
+      {/* Fixed 3D Background Scene */}
+      <SceneBackground />
 
-      {/* Main Semantic Page Content */}
-      <main id="main-content" tabIndex="-1">
-        {/* 1. Engineer Introduction, Real Status & Hardware Focus */}
-        <HeroSection onOpenTerminal={() => setIsTerminalOpen(true)} />
+      {/* CRT Scanline Overlay */}
+      <ScanlineOverlay />
 
-        {/* 2. Concrete Engineering Case Studies with Architecture Inspection */}
-        <ProjectsGrid onSelectProject={(proj) => setSelectedProject(proj)} />
+      {/* HUD Navigation */}
+      <HUDNavbar />
 
-        {/* 3. Chronological Career & Academic Milestones */}
-        <JourneyTimeline />
+      {/* Content Layer — sits above 3D canvas */}
+      <div className="content-layer">
+        <main id="main-content" tabIndex="-1">
+          {/* 1. Boot Sequence & Engineer Identity */}
+          <HeroTerminal />
 
-        {/* 4. Categorized Technical Capabilities (Hardware, RTOS, Edge AI, Cloud) */}
-        <SkillsWorkbench />
+          {/* 2. Interactive 3D Hardware Lab */}
+          <HardwareLab />
 
-        {/* 5. Verified Credentials, Honors & Hackathon Records */}
-        <HonorsSection />
+          {/* 3. Flagship Engineering Projects */}
+          <ProjectGalaxy />
 
-        {/* 6. Communication Hub, Availability & Message Dispatch */}
-        <ContactSection />
-      </main>
+          {/* 4. Career & Academic Circuit Trace */}
+          <CircuitTimeline />
 
-      {/* Semantic Colophon */}
-      <Footer />
+          {/* 5. Technical Proficiency Matrix */}
+          <SkillMatrix3D />
 
-      {/* Architectural Deep-Dive Spec Drawer/Modal */}
-      <ProjectModal
-        project={selectedProject}
-        onClose={() => setSelectedProject(null)}
-      />
+          {/* 6. Achievement Log */}
+          <AchievementConsole />
 
-      {/* PlatformIO Serial CLI Monitor */}
-      <TerminalModal
-        isOpen={isTerminalOpen}
-        onClose={() => setIsTerminalOpen(false)}
-      />
+          {/* 7. Communication Channel */}
+          <TransmissionPanel />
+        </main>
 
-      {/* Interactive AI Cyber Mascot (Bible Strong Avatar + Groq) */}
-      <InteractiveAssistant onOpenTerminal={() => setIsTerminalOpen(true)} />
+        {/* System Status Footer */}
+        <StatusBar />
+      </div>
     </div>
   );
 }
