@@ -1,4 +1,4 @@
-export default async (req, context) => {
+export default async (req, _context) => {
   if (req.method !== 'POST') {
     return new Response(JSON.stringify({ error: 'Method not allowed' }), {
       status: 405,
