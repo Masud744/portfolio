@@ -2,7 +2,7 @@
 
 // Website related settings
 export const settings = {
-  isSplash: false, // Set to true if splash screen animation is desired
+  isSplash: true, // Enable personalized SAM signature splash screen
 };
 
 // SEO Related settings

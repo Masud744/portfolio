@@ -2,12 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 
 /**
  * High-performance IntersectionObserver hook for scroll-triggered animations.
- * Replaces legacy react-reveal with hardware-accelerated CSS transitions.
+ * Accurately matches react-reveal's physics, distance, and cubic-bezier easing.
  */
-function useRevealObserver({
-  threshold = 0.08,
-  rootMargin = "0px 0px -30px 0px",
-} = {}) {
+function useRevealObserver() {
   const domRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -28,8 +25,8 @@ function useRevealObserver({
         }
       },
       {
-        threshold,
-        rootMargin,
+        threshold: 0.05,
+        rootMargin: "0px 0px -40px 0px",
       }
     );
 
@@ -38,7 +35,7 @@ function useRevealObserver({
     return () => {
       if (node) observer.unobserve(node);
     };
-  }, [threshold, rootMargin]);
+  }, []);
 
   return [domRef, isVisible];
 }
@@ -50,29 +47,29 @@ export function Fade({
   left,
   right,
   duration = 1000,
-  distance = "36px",
   delay = 0,
   style,
   className = "",
-  cascade,
-  collapse,
   ...rest
 }) {
   const [ref, isVisible] = useRevealObserver();
 
-  let initialTransform = `translate3d(0, ${distance}, 0)`;
-  if (bottom) initialTransform = `translate3d(0, ${distance}, 0)`;
-  else if (top) initialTransform = `translate3d(0, -${distance}, 0)`;
-  else if (left) initialTransform = `translate3d(-${distance}, 0, 0)`;
-  else if (right) initialTransform = `translate3d(${distance}, 0, 0)`;
+  let animName = "rRevealFadeInUp";
+  if (left) animName = "rRevealFadeInLeft";
+  else if (right) animName = "rRevealFadeInRight";
+  else if (top) animName = "rRevealFadeInDown";
+  else if (bottom) animName = "rRevealFadeInUp";
 
-  const animStyle = {
-    opacity: isVisible ? 1 : 0,
-    transform: isVisible ? "translate3d(0, 0, 0)" : initialTransform,
-    transition: `opacity ${duration}ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms, transform ${duration}ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms`,
-    willChange: "opacity, transform",
-    ...style,
-  };
+  const animStyle = isVisible
+    ? {
+        animation: `${animName} ${duration}ms cubic-bezier(0.25, 0.46, 0.45, 0.94) ${delay}ms both`,
+        willChange: "opacity, transform",
+        ...style,
+      }
+    : {
+        opacity: 0,
+        ...style,
+      };
 
   return (
     <div ref={ref} className={className} style={animStyle} {...rest}>
@@ -83,10 +80,6 @@ export function Fade({
 
 export function Flip({
   children,
-  left,
-  right,
-  top,
-  bottom,
   duration = 1000,
   delay = 0,
   style,
@@ -95,21 +88,16 @@ export function Flip({
 }) {
   const [ref, isVisible] = useRevealObserver();
 
-  let initialTransform = "perspective(800px) rotateY(-90deg)";
-  if (left) initialTransform = "perspective(800px) rotateY(-90deg)";
-  else if (right) initialTransform = "perspective(800px) rotateY(90deg)";
-  else if (top) initialTransform = "perspective(800px) rotateX(-90deg)";
-  else if (bottom) initialTransform = "perspective(800px) rotateX(90deg)";
-
-  const animStyle = {
-    opacity: isVisible ? 1 : 0,
-    transform: isVisible
-      ? "perspective(800px) rotateY(0deg) rotateX(0deg)"
-      : initialTransform,
-    transition: `opacity ${duration}ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms, transform ${duration}ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms`,
-    willChange: "opacity, transform",
-    ...style,
-  };
+  const animStyle = isVisible
+    ? {
+        animation: `rRevealFlipY ${duration}ms cubic-bezier(0.25, 0.46, 0.45, 0.94) ${delay}ms both`,
+        willChange: "opacity, transform",
+        ...style,
+      }
+    : {
+        opacity: 0,
+        ...style,
+      };
 
   return (
     <div ref={ref} className={className} style={animStyle} {...rest}>
@@ -128,13 +116,16 @@ export function Zoom({
 }) {
   const [ref, isVisible] = useRevealObserver();
 
-  const animStyle = {
-    opacity: isVisible ? 1 : 0,
-    transform: isVisible ? "scale(1)" : "scale(0.85)",
-    transition: `opacity ${duration}ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms, transform ${duration}ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms`,
-    willChange: "opacity, transform",
-    ...style,
-  };
+  const animStyle = isVisible
+    ? {
+        animation: `rRevealZoom ${duration}ms cubic-bezier(0.25, 0.46, 0.45, 0.94) ${delay}ms both`,
+        willChange: "opacity, transform",
+        ...style,
+      }
+    : {
+        opacity: 0,
+        ...style,
+      };
 
   return (
     <div ref={ref} className={className} style={animStyle} {...rest}>

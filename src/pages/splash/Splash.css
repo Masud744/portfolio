@@ -1,30 +1,24 @@
 .logo_wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 100vh;
   width: 100vw;
+  display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 999999;
 }
 
 .screen {
   height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.screen {
-  /* background-color: #55198b; */
   overflow: hidden;
   border-radius: 100%;
-  animation: grow 5.5s forwards;
+  animation: grow 4.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 @keyframes grow {
@@ -37,16 +31,17 @@ body {
     height: 100%;
     width: 100%;
   }
-  90% {
+  86% {
     transform: scale(1);
     border-radius: 0%;
     height: 100%;
     width: 100%;
+    opacity: 1;
   }
   100% {
-    transform: scale(0);
-    transform-origin: 50% 50%;
-    border-radius: 100%;
+    transform: scale(1.08);
+    border-radius: 0%;
+    opacity: 0;
   }
 }
 
