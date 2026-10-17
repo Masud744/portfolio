@@ -1,4 +1,7 @@
 .raw_logo {
-  height: 305;
-  width: 440;
+  width: 92vw;
+  max-width: 960px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
