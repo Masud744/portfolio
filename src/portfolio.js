@@ -386,7 +386,7 @@ export const publications = {
 export const contactPageData = {
   contactSection: {
     title: "Reach Out to Me! 📬",
-    profile_image_path: "avatar.png",
+    profile_image_path: "masud_vector_portrait.png",
     description:
       "I am open to engineering roles, research collaborations, open-source contributions, and innovative hardware/AI projects. Let's connect!",
   },

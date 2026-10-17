@@ -16,7 +16,11 @@ class Education extends Component {
     const theme = this.props.theme;
     return (
       <div className="education-main">
-        <Header theme={this.props.theme} />
+        <Header
+          theme={this.props.theme}
+          themeMode={this.props.themeMode}
+          onToggle={this.props.onToggle}
+        />
         <div className="basic-education">
           <Fade bottom duration={2000} distance="40px">
             <div className="heading-div">
