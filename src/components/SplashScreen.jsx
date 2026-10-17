@@ -13,7 +13,7 @@ export default function SplashScreen({ onFinish }) {
 
   return (
     <div className={`splash-screen ${hidden ? 'hidden' : ''}`}>
-      <div className="splash-logo">{'<SM />'}</div>
+      <div className="splash-logo">{'<Shahriar Alom Masud />'}</div>
     </div>
   );
 }

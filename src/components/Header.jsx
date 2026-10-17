@@ -20,7 +20,7 @@ export default function Header({ theme, toggleTheme }) {
       <div className="header-inner">
         <a href="#" className="header-logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           {'<'}
-          <span>Shahriar</span>
+          <span>Shahriar Alom Masud</span>
           {' />'}
         </a>
 

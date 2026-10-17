@@ -43,7 +43,7 @@ export default function Greeting() {
       <div className="greeting-inner section-inner">
         <div className={`greeting-text fade-up ${isVisible ? 'visible' : ''}`}>
           <h1>
-            Hi all, I'm Shahriar <span className="wave">👋</span>
+            Hi all, I'm Shahriar Alom Masud <span className="wave">👋</span>
           </h1>
           <p className="subtitle">
             {typedText}<span style={{ 
