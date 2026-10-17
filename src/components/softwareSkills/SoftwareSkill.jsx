@@ -27,14 +27,20 @@ class SoftwareSkill extends React.Component {
                   }
                 >
                   <li className="software-skill-inline" name={logo.skillName}>
-                    {logo.fontAwesomeClassname && (
-                      <span
-                        className="iconify"
-                        data-icon={logo.fontAwesomeClassname}
-                        style={logo.style}
-                        data-inline="false"
-                      ></span>
-                    )}
+                    {logo.fontAwesomeClassname &&
+                      (logo.fontAwesomeClassname.includes(":") ? (
+                        <span
+                          className="iconify"
+                          data-icon={logo.fontAwesomeClassname}
+                          style={logo.style}
+                          data-inline="false"
+                        ></span>
+                      ) : (
+                        <i
+                          className={logo.fontAwesomeClassname}
+                          style={logo.style}
+                        ></i>
+                      ))}
                     {!logo.fontAwesomeClassname && logo.imageSrc && (
                       <img
                         className="skill-image"
