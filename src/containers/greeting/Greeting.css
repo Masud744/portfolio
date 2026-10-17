@@ -38,14 +38,15 @@
 }
 
 .greeting-nickname {
-  font-size: 30px;
-  line-height: 0px;
+  font-size: 28px;
+  line-height: 1.3;
+  margin: 10px 0 16px 0;
   font-family: "Google Sans Bold Italic";
 }
 
 .greeting-text-p {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 30px;
+  line-height: 1.4;
   margin-right: 40px;
   font-family: "Google Sans Medium";
 }

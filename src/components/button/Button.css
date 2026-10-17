@@ -3,20 +3,22 @@
   border: solid 1px #55198b;
   color: white;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.2;
   width: max-content;
+  max-width: 100%;
+  box-sizing: border-box;
   padding: 13px 22px;
   margin-right: 0px;
-  /* text-transform: uppercase; */
   border-radius: 6px;
   text-align: center;
   text-decoration: none;
   font-family: "Google Sans Regular";
-  display: block;
-  margin-top: 20px;
-  font-size: 18px;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 17px;
   cursor: pointer;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  word-break: break-word;
 }
 .main-button:hover {
   /* background-color: #ffffff; */

@@ -43,6 +43,18 @@ export const socialMediaLinks = [
     backgroundColor: "#0077B5",
   },
   {
+    name: "X",
+    link: "https://x.com/MasudPlays74",
+    fontAwesomeIcon: "fa-twitter",
+    backgroundColor: "#000000",
+  },
+  {
+    name: "ORCID",
+    link: "https://orcid.org/0009-0002-5308-8272",
+    fontAwesomeIcon: "fa-orcid",
+    backgroundColor: "#A6CE39",
+  },
+  {
     name: "Gmail",
     link: "mailto:shahriar0002@std.uftb.ac.bd",
     fontAwesomeIcon: "fa-google",

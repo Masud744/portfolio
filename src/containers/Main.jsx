@@ -35,7 +35,7 @@ export default class Main extends Component {
   }
 
   render() {
-    const { theme, themeMode, onToggle } = this.props;
+    const { theme } = this.props;
 
     return (
       <HashRouter>
@@ -44,49 +44,49 @@ export default class Main extends Component {
             path="/"
             element={
               settings.isSplash ? (
-                <Splash theme={theme} themeMode={themeMode} onToggle={onToggle} />
+                <Splash theme={theme} />
               ) : (
-                <Home theme={theme} themeMode={themeMode} onToggle={onToggle} />
+                <Home theme={theme} />
               )
             }
           />
           <Route
             path="/home"
-            element={<Home theme={theme} themeMode={themeMode} onToggle={onToggle} />}
+            element={<Home theme={theme} />}
           />
           <Route
             path="/education"
-            element={<Education theme={theme} themeMode={themeMode} onToggle={onToggle} />}
+            element={<Education theme={theme} />}
           />
           <Route
             path="/experience"
-            element={<Experience theme={theme} themeMode={themeMode} onToggle={onToggle} />}
+            element={<Experience theme={theme} />}
           />
           <Route
             path="/opensource"
-            element={<Opensource theme={theme} themeMode={themeMode} onToggle={onToggle} />}
+            element={<Opensource theme={theme} />}
           />
           <Route
             path="/contact"
-            element={<Contact theme={theme} themeMode={themeMode} onToggle={onToggle} />}
+            element={<Contact theme={theme} />}
           />
           <Route
             path="/projects"
-            element={<Projects theme={theme} themeMode={themeMode} onToggle={onToggle} />}
+            element={<Projects theme={theme} />}
           />
           <Route
             path="/resume"
-            element={<ResumePage theme={theme} themeMode={themeMode} onToggle={onToggle} />}
+            element={<ResumePage theme={theme} />}
           />
           {settings.isSplash && (
             <Route
               path="/splash"
-              element={<Splash theme={theme} themeMode={themeMode} onToggle={onToggle} />}
+              element={<Splash theme={theme} />}
             />
           )}
           <Route
             path="*"
-            element={<Error404 theme={theme} themeMode={themeMode} onToggle={onToggle} />}
+            element={<Error404 theme={theme} />}
           />
         </Routes>
       </HashRouter>

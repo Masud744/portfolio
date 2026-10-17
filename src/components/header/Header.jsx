@@ -87,31 +87,6 @@ class Header extends Component {
                   Contact Me
                 </NavLink>
               </li>
-              <li>
-                <button
-                  onClick={onToggle}
-                  className="theme-switch-btn"
-                  style={{
-                    background: "transparent",
-                    border: `1.5px solid ${theme.headerColor || theme.text}`,
-                    borderRadius: "50%",
-                    width: "36px",
-                    height: "36px",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    cursor: "pointer",
-                    color: theme.text,
-                    fontSize: "1.1rem",
-                    marginLeft: "8px",
-                    transition: "all 0.3s ease",
-                  }}
-                  title="Toggle Dark/Light Mode"
-                  aria-label="Toggle theme"
-                >
-                  {themeMode === "dark" ? "☀️" : "🌙"}
-                </button>
-              </li>
             </ul>
           </header>
         </div>

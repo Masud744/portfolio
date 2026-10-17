@@ -25,3 +25,29 @@
 .skill-image {
   height: 48px;
 }
+
+@media (max-width: 768px) {
+  .dev-icons {
+    font-size: 2.3rem;
+  }
+  .software-skill-inline {
+    margin-right: 12px;
+    margin-bottom: 14px;
+  }
+  .skill-image {
+    height: 38px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dev-icons {
+    font-size: 1.85rem;
+  }
+  .software-skill-inline {
+    margin-right: 8px;
+    margin-bottom: 10px;
+  }
+  .skill-image {
+    height: 32px;
+  }
+}
