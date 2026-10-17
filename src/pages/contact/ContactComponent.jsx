@@ -52,7 +52,8 @@ class Contact extends Component {
                 <div className="resume-btn-div">
                   <Button
                     text="See My Resume"
-                    href="/resume"
+                    newTab={true}
+                    href={greeting.resumeLink}
                     theme={theme}
                   />
                 </div>

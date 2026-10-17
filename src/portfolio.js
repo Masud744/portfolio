@@ -24,7 +24,7 @@ export const greeting = {
   nickname: "Embedded & Edge AI",
   subTitle:
     "Bridging Low-Power Hardware Telemetry with Real-Time Intelligent Vision Systems. Undergraduate in IoT & Robotics Engineering at University of Frontier Technology, Bangladesh (UFTB).",
-  resumeLink: "/assets/Shahriar_Alom_Masud_CV.pdf",
+  resumeLink: "/assets/Shahriar_Alom_Masud_IoT_Resume.pdf",
   portfolio_repository: "https://github.com/Masud744/portfolio",
   githubProfile: "https://github.com/Masud744",
 };
@@ -399,14 +399,14 @@ export const contactPageData = {
   },
   addressSection: {
     title: "Address & Location",
-    subtitle: "Dhaka, Bangladesh",
-    locality: "Dhaka",
+    subtitle: "UFTB Boys Hostel, Kaliakair, Gazipur, Bangladesh",
+    locality: "Kaliakair",
     country: "Bangladesh",
-    region: "Dhaka Division",
-    postalCode: "1200",
-    streetAddress: "Dhaka, Bangladesh",
+    region: "Gazipur",
+    postalCode: "1750",
+    streetAddress: "UFTB Boys Hostel, Kaliakair, Gazipur",
     avatar_image_path: "address_image.svg",
-    location_map_link: "https://maps.google.com/?q=Dhaka,Bangladesh",
+    location_map_link: "https://www.google.com/maps/search/?api=1&query=UFTB+Boys+Hostel,+Kaliakair,+Gazipur",
   },
   phoneSection: {
     title: "Direct Telemetry Contact",
