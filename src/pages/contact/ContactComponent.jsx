@@ -4,8 +4,8 @@ import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import BlogsImg from "./BlogsImg";
-import AddressImg from "./AddressImg";
+import contactAvatar from "../../assets/images/masud_avatar_contact.jpg";
+import cloudAvatar from "../../assets/images/masud_avatar_cloud_iot.jpg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
 import { contactPageData } from "../../portfolio.js";
@@ -31,8 +31,15 @@ class Contact extends Component {
             <div className="contact-heading-div">
               <div className="contact-heading-img-div">
                 <img
-                  src={getImage(ContactData["profile_image_path"]) || getImage("animated_ashutosh.png")}
-                  alt=""
+                  src={contactAvatar}
+                  alt={ContactData["title"]}
+                  style={{
+                    maxWidth: "100%",
+                    maxHeight: "380px",
+                    borderRadius: "20px",
+                    objectFit: "contain",
+                    filter: "drop-shadow(0 15px 35px rgba(0, 28, 85, 0.12))",
+                  }}
                 />
               </div>
               <div className="contact-heading-text-div">
@@ -81,22 +88,34 @@ class Contact extends Component {
                 </div>
               </div>
               <div className="blog-heading-img-div">
-                {/* <img
-											src={require(`../../assets/images/${blogSection["avatar_image_path"]}`)}
-											alt=""
-										/> */}
-                <BlogsImg theme={theme} />
+                <img
+                  src={cloudAvatar}
+                  alt={blogSection["title"]}
+                  style={{
+                    maxWidth: "100%",
+                    maxHeight: "360px",
+                    borderRadius: "16px",
+                    objectFit: "contain",
+                    filter: "drop-shadow(0 12px 28px rgba(0, 28, 85, 0.12))",
+                  }}
+                />
               </div>
             </div>
           </Fade>
           <Fade bottom duration={1000} distance="40px">
             <div className="address-heading-div">
               <div className="contact-heading-img-div">
-                {/* <img
-											src={require(`../../assets/images/${addressSection["avatar_image_path"]}`)}
-											alt=""
-										/> */}
-                <AddressImg theme={theme} />
+                <img
+                  src={contactAvatar}
+                  alt={addressSection["title"]}
+                  style={{
+                    maxWidth: "100%",
+                    maxHeight: "360px",
+                    borderRadius: "16px",
+                    objectFit: "contain",
+                    filter: "drop-shadow(0 12px 28px rgba(0, 28, 85, 0.12))",
+                  }}
+                />
               </div>
               <div className="address-heading-text-div">
                 <h1

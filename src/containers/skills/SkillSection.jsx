@@ -2,19 +2,39 @@ import React, { useState } from "react";
 import "./Skills.css";
 import { skills } from "../../portfolio";
 import { Fade } from "react-reveal";
-import DataScienceImg from "./DataScienceImg";
-import FullStackImg from "./FullStackImg";
-import CloudInfraImg from "./CloudInfraImg";
-import DesignImg from "./DesignImg";
+import embeddedAvatar from "../../assets/images/masud_avatar_embedded.jpg";
+import edgeAiAvatar from "../../assets/images/masud_avatar_edge_ai.jpg";
+import cloudIotAvatar from "../../assets/images/masud_avatar_cloud_iot.jpg";
 
 function GetSkillSvg(props) {
-  if (props.fileName === "DataScienceImg")
-    return <DataScienceImg theme={props.theme} />;
-  else if (props.fileName === "FullStackImg")
-    return <FullStackImg theme={props.theme} />;
-  else if (props.fileName === "CloudInfraImg")
-    return <CloudInfraImg theme={props.theme} />;
-  return <DesignImg theme={props.theme} />;
+  const isEmbedded = props.fileName === "FullStackImg" || props.title?.includes("Embedded");
+  const isEdgeAi = props.fileName === "DataScienceImg" || props.title?.includes("Edge AI");
+
+  const avatarSrc = isEmbedded
+    ? embeddedAvatar
+    : isEdgeAi
+    ? edgeAiAvatar
+    : cloudIotAvatar;
+
+  const avatarAlt = isEmbedded
+    ? "Embedded Systems & Firmware Engineering"
+    : isEdgeAi
+    ? "Edge AI & Computer Vision"
+    : "Cloud IoT & Full-Stack Telemetry";
+
+  return (
+    <img
+      src={avatarSrc}
+      alt={avatarAlt}
+      style={{
+        width: "100%",
+        maxHeight: "340px",
+        objectFit: "contain",
+        borderRadius: "16px",
+        filter: "drop-shadow(0 12px 28px rgba(0, 28, 85, 0.12))",
+      }}
+    />
+  );
 }
 
 import {
@@ -150,7 +170,7 @@ export default function SkillSection({ theme }) {
       <Fade bottom duration={1000} distance="30px">
         <div className="skills-domain-card">
           <div className="skills-illustration-col">
-            <GetSkillSvg fileName={currentSkill.fileName} theme={theme} />
+            <GetSkillSvg fileName={currentSkill.fileName} title={currentSkill.title} theme={theme} />
           </div>
 
           <div className="skills-content-col">
