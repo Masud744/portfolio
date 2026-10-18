@@ -27,7 +27,8 @@
           "name": "ESP32",
           "iconifyClass": "simple-icons:espressif"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/SmartProv.jpeg"
     },
     {
       "id": "respiguard",
@@ -60,7 +61,8 @@
           "name": "FastAPI",
           "iconifyClass": "logos:fastapi"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/RespiGuard.jpeg"
     },
     {
       "id": "solar-aware-hems",
@@ -93,7 +95,8 @@
           "name": "Vercel",
           "iconifyClass": "logos:vercel-icon"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/solar-aware-hems.jpeg"
     },
     {
       "id": "smart-pond-xai",
@@ -126,7 +129,8 @@
           "name": "React",
           "iconifyClass": "logos:react"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/smart-pond-xai.jpeg"
     },
     {
       "id": "proctorai",
@@ -159,7 +163,8 @@
           "name": "Supabase",
           "iconifyClass": "logos:supabase-icon"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/ProctorAI.png"
     },
     {
       "id": "oncoscan-ai",
@@ -188,7 +193,8 @@
           "name": "ONNX",
           "iconifyClass": "logos:onnx"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/oncoscan-ai.png"
     },
     {
       "id": "sentinel-grid",
@@ -217,7 +223,8 @@
           "name": "Docker",
           "iconifyClass": "logos:docker-icon"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/sentinel-grid.png"
     },
     {
       "id": "department-routine",
@@ -246,7 +253,8 @@
           "name": "Tailwind",
           "iconifyClass": "logos:tailwindcss-icon"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/department-routine.jpeg"
     },
     {
       "id": "robofusion-soccer",
@@ -275,7 +283,8 @@
           "name": "Vite",
           "iconifyClass": "logos:vitejs"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/robofusion-robo-soccer-tournament-system.png"
     },
     {
       "id": "cashly",
@@ -304,7 +313,8 @@
           "name": "Chart.js",
           "iconifyClass": "simple-icons:chartdotjs"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/cashly.png"
     },
     {
       "id": "shomvob",
@@ -333,7 +343,8 @@
           "name": "Tailwind",
           "iconifyClass": "logos:tailwindcss-icon"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/Shomvob.png"
     },
     {
       "id": "esp32-ota",
@@ -362,7 +373,8 @@
           "name": "GitHub Actions",
           "iconifyClass": "logos:github-actions"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/esp32-smartprov-github-ota.png"
     },
     {
       "id": "rtos-scheduling",
@@ -391,7 +403,8 @@
           "name": "ESP32",
           "iconifyClass": "simple-icons:espressif"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/rtos-scheduling-experiment-esp32.png"
     },
     {
       "id": "human-robot",
@@ -420,7 +433,8 @@
           "name": "Robotics",
           "iconifyClass": "simple-icons:ros"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/human-following-robot-arduino.jpg"
     },
     {
       "id": "home-automation-fw",
@@ -449,7 +463,8 @@
           "name": "Firebase",
           "iconifyClass": "logos:firebase"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/IoT-Based-Home-Automation-and-Energy-Monitoring-System.jpg"
     },
     {
       "id": "home-automation-ui",
@@ -478,7 +493,8 @@
           "name": "Firebase",
           "iconifyClass": "logos:firebase"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/Home-Automation-and-Energy-Monitoring-Dashboard.png"
     },
     {
       "id": "pi-weather-ml",
@@ -507,7 +523,8 @@
           "name": "InfluxDB",
           "iconifyClass": "simple-icons:influxdb"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/raspberrypi-weather-ml.png"
     },
     {
       "id": "esp32-cam",
@@ -536,7 +553,8 @@
           "name": "Telegram",
           "iconifyClass": "logos:telegram"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/esp32-cam-telegram-motion-alert.png"
     },
     {
       "id": "pi-esp32-mqtt",
@@ -565,7 +583,8 @@
           "name": "MQTT",
           "iconifyClass": "simple-icons:mqtt"
         }
-      ]
+      ],
+      "imageUrl": null
     },
     {
       "id": "facemask-ar",
@@ -594,7 +613,8 @@
           "name": "NumPy",
           "iconifyClass": "logos:numpy"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/facemask-ar-filter.png"
     },
     {
       "id": "internradar",
@@ -623,7 +643,8 @@
           "name": "Supabase",
           "iconifyClass": "logos:supabase-icon"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/InternRader.png"
     },
     {
       "id": "fire-alarm",
@@ -648,7 +669,8 @@
           "name": "Python",
           "iconifyClass": "logos:python"
         }
-      ]
+      ],
+      "imageUrl": null
     },
     {
       "id": "airsafe",
@@ -673,7 +695,8 @@
           "name": "ESP32",
           "iconifyClass": "simple-icons:espressif"
         }
-      ]
+      ],
+      "imageUrl": null
     },
     {
       "id": "dry-handwash",
@@ -698,7 +721,8 @@
           "name": "C++",
           "iconifyClass": "logos:c-plusplus"
         }
-      ]
+      ],
+      "imageUrl": null
     },
     {
       "id": "uno-esp-serial",
@@ -723,7 +747,8 @@
           "name": "ESP8266",
           "iconifyClass": "simple-icons:espressif"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/arduino-uno-esp8266-dht22-serial.jpg"
     },
     {
       "id": "weather-sim",
@@ -748,7 +773,8 @@
           "name": "InfluxDB",
           "iconifyClass": "simple-icons:influxdb"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/iot-realtime-weather-sensor-simulation-influxdb-open-meteo.png"
     },
     {
       "id": "linkedin-n8n",
@@ -773,7 +799,8 @@
           "name": "AI / LLM",
           "iconifyClass": "logos:openai-icon"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/linkedin-content-automation-n8n.png"
     },
     {
       "id": "linkedin-scraper",
@@ -798,7 +825,8 @@
           "name": "Apify",
           "iconifyClass": "simple-icons:apify"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/linkedin-job-scraper-n8n.png"
     },
     {
       "id": "food-order-n8n",
@@ -823,7 +851,8 @@
           "name": "Telegram",
           "iconifyClass": "logos:telegram"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/food-order-automation-n8n.png"
     },
     {
       "id": "telegram-n8n",
@@ -848,7 +877,8 @@
           "name": "Telegram",
           "iconifyClass": "logos:telegram"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/telegram-automation-with-n8n.png"
     },
     {
       "id": "url-shortener-n8n",
@@ -873,7 +903,8 @@
           "name": "JavaScript",
           "iconifyClass": "logos:javascript"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/n8n-url-shortener.jpg"
     },
     {
       "id": "url-shortener-ui",
@@ -898,7 +929,8 @@
           "name": "CSS3",
           "iconifyClass": "logos:css-3"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/url-shortener-ui.jpg"
     },
     {
       "id": "todo-docker",
@@ -923,7 +955,8 @@
           "name": "Flask",
           "iconifyClass": "logos:flask"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/todo-app-docker-lab.png"
     },
     {
       "id": "docker-n8n",
@@ -948,7 +981,8 @@
           "name": "n8n",
           "iconifyClass": "logos:n8n"
         }
-      ]
+      ],
+      "imageUrl": null
     },
     {
       "id": "financial-network",
@@ -973,7 +1007,8 @@
           "name": "Network",
           "iconifyClass": "simple-icons:wireshark"
         }
-      ]
+      ],
+      "imageUrl": null
     },
     {
       "id": "firebase-led",
@@ -998,7 +1033,8 @@
           "name": "Firebase",
           "iconifyClass": "logos:firebase"
         }
-      ]
+      ],
+      "imageUrl": null
     },
     {
       "id": "ultrasonic-dist",
@@ -1023,7 +1059,8 @@
           "name": "C++",
           "iconifyClass": "logos:c-plusplus"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/Ultrasonic-Distance-Measurement.jpg"
     },
     {
       "id": "serial-csv",
@@ -1048,7 +1085,8 @@
           "name": "Serial",
           "iconifyClass": "logos:bash"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/serial-monitor-to-csv-guide.png"
     },
     {
       "id": "pi-os-guide",
@@ -1073,7 +1111,8 @@
           "name": "Raspberry Pi",
           "iconifyClass": "logos:raspberry-pi"
         }
-      ]
+      ],
+      "imageUrl": null
     },
     {
       "id": "library-reg",
@@ -1098,7 +1137,8 @@
           "name": "Git",
           "iconifyClass": "logos:git-icon"
         }
-      ]
+      ],
+      "imageUrl": null
     },
     {
       "id": "copilot-ai",
@@ -1123,7 +1163,8 @@
           "name": "AI / LLM",
           "iconifyClass": "logos:openai-icon"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/Shomvob.png"
     },
     {
       "id": "aiml-lab",
@@ -1148,7 +1189,8 @@
           "name": "NumPy",
           "iconifyClass": "logos:numpy"
         }
-      ]
+      ],
+      "imageUrl": null
     },
     {
       "id": "graphics-lab",
@@ -1173,7 +1215,8 @@
           "name": "OpenGL",
           "iconifyClass": "logos:opengl"
         }
-      ]
+      ],
+      "imageUrl": null
     },
     {
       "id": "fullstack-web",
@@ -1198,7 +1241,8 @@
           "name": "JavaScript",
           "iconifyClass": "logos:javascript"
         }
-      ]
+      ],
+      "imageUrl": null
     },
     {
       "id": "smart-pond-base",
@@ -1223,7 +1267,8 @@
           "name": "C++",
           "iconifyClass": "logos:c-plusplus"
         }
-      ]
+      ],
+      "imageUrl": "/project_images/smart-pond-xai.jpeg"
     }
   ]
 }

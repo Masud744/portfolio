@@ -3,6 +3,23 @@ import "./ProjectVisualMockup.css";
 import { FiWifi, FiActivity, FiSun, FiNavigation, FiEye, FiCheck, FiCpu, FiTerminal, FiDatabase, FiCalendar, FiDollarSign } from "react-icons/fi";
 
 export default function ProjectVisualMockup({ project }) {
+  // If project has real image from repository README/hardware, render it fitted nicely
+  if (project.imageUrl) {
+    return (
+      <div className="mockup-screen screen-real-image">
+        <img
+          src={project.imageUrl}
+          alt={project.name}
+          className="real-project-img"
+          loading="lazy"
+          onError={(e) => {
+            e.currentTarget.style.display = "none";
+          }}
+        />
+      </div>
+    );
+  }
+
   const id = project.id;
 
   if (id === "smartprov") {

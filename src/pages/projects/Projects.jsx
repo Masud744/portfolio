@@ -98,7 +98,7 @@ export default function Projects(props) {
                 </>
               ) : (
                 <>
-                  See More Projects <FiChevronDown />
+                  See More Projects ({filteredProjects.length >= 40 ? "40+" : `${filteredProjects.length - 6}+`}) <FiChevronDown />
                 </>
               )}
             </button>
