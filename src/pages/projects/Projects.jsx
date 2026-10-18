@@ -6,6 +6,7 @@ import TopButton from "../../components/topButton/TopButton";
 import ProjectsData from "../../shared/opensource/projects.json";
 import "./Projects.css";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+import { Fade } from "react-reveal";
 
 export default function Projects(props) {
   const theme = props.theme;
@@ -77,12 +78,14 @@ export default function Projects(props) {
           </div>
         </div>
 
-        {/* 3-Column Responsive Grid matching Screenshot 5 */}
-        <div className="projects-grid-container">
-          {displayedProjects.map((repo) => (
-            <GithubRepoCard key={repo.id} repo={repo} theme={theme} />
-          ))}
-        </div>
+        {/* 3-Column Responsive Grid matching Screenshot 5 with smooth entrance */}
+        <Fade bottom duration={1200} distance="30px">
+          <div className="projects-grid-container">
+            {displayedProjects.map((repo) => (
+              <GithubRepoCard key={repo.id} repo={repo} theme={theme} />
+            ))}
+          </div>
+        </Fade>
 
         {/* Show More / Show Less Button */}
         {filteredProjects.length > 6 && (
