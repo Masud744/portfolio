@@ -27,7 +27,7 @@ export default function Greeting(props) {
                 {greeting.title}
               </h1>
               {greeting.nickname && (
-                <h2 className="greeting-nickname" style={{ color: theme.text }}>
+                <h2 className="greeting-nickname" style={{ color: "#2563eb" }}>
                   ({" "}
                   <TypeAnimation
                     sequence={typeSequence}

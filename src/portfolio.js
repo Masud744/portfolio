@@ -23,7 +23,7 @@ export const greeting = {
   logo_name: "Shahriar Alom Masud",
   nickname: "Embedded & Edge AI",
   subTitle:
-    "Bridging Low-Power Hardware Telemetry with Real-Time Intelligent Vision Systems. Undergraduate in IoT & Robotics Engineering at University of Frontier Technology, Bangladesh (UFTB).",
+    "Developing low-latency firmware, on-device Edge AI vision, and scalable IoT-to-cloud telemetry pipelines. Passionate about building energy-efficient embedded systems that bridge physical hardware with cloud intelligence.",
   taglines: [
     "Embedded Systems Engineer",
     "Edge AI Researcher",
