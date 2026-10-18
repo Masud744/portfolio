@@ -4,19 +4,53 @@
   margin: 2.5rem auto 4rem auto;
 }
 
+.activities-heading-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.activities-heading-img-div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activities-hero-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 420px;
+}
+
+.activities-heading-text-div {
+  flex: 1;
+  text-align: left;
+}
+
 .activities-heading {
   font-size: 56px;
   font-weight: 800;
-  text-align: center;
+  text-align: left;
   margin-bottom: 10px;
   font-family: "Google Sans Bold", -apple-system, sans-serif;
 }
 
+.activities-subheading-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-family: "Google Sans Medium", -apple-system, sans-serif;
+}
+
 .activities-subheading {
-  font-size: 1.15rem;
-  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: left;
   color: #64748b;
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 
 .activities-grid {
@@ -79,8 +113,20 @@
   margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .activities-heading-div {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
+  }
+  .activities-heading-text-div {
+    text-align: center;
+  }
   .activities-heading {
-    font-size: 36px;
+    text-align: center;
+    font-size: 38px;
+  }
+  .activities-subheading {
+    text-align: center;
   }
 }
