@@ -13,7 +13,7 @@ class LogoLoader extends React.Component {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         style={{
-          filter: "drop-shadow(0 0 16px rgba(0, 229, 255, 0.45))",
+          filter: "drop-shadow(0 4px 14px rgba(37, 99, 235, 0.25))",
         }}
       >
         <defs>
@@ -21,7 +21,7 @@ class LogoLoader extends React.Component {
             {`
               .signature1 {
                 fill: transparent;
-                stroke: #00E5FF;
+                stroke: #2563eb;
                 stroke-width: 1.8;
                 stroke-linecap: round;
                 stroke-linejoin: round;
@@ -32,7 +32,7 @@ class LogoLoader extends React.Component {
               }
               .signature2 {
                 fill: transparent;
-                stroke: #00E5FF;
+                stroke: #2563eb;
                 stroke-width: 1.8;
                 stroke-linecap: round;
                 stroke-linejoin: round;
@@ -43,7 +43,7 @@ class LogoLoader extends React.Component {
               }
               .signature3 {
                 fill: transparent;
-                stroke: #00E5FF;
+                stroke: #2563eb;
                 stroke-width: 1.8;
                 stroke-linecap: round;
                 stroke-linejoin: round;
@@ -54,7 +54,7 @@ class LogoLoader extends React.Component {
               }
               .signature4 {
                 fill: transparent;
-                stroke: #00E5FF;
+                stroke: #2563eb;
                 stroke-width: 1.8;
                 stroke-linecap: round;
                 stroke-linejoin: round;
@@ -65,7 +65,7 @@ class LogoLoader extends React.Component {
               }
               .signature5 {
                 fill: transparent;
-                stroke: #00E5FF;
+                stroke: #2563eb;
                 stroke-width: 1.8;
                 stroke-linecap: round;
                 stroke-linejoin: round;
@@ -76,7 +76,7 @@ class LogoLoader extends React.Component {
               }
               .signature6 {
                 fill: transparent;
-                stroke: #00E5FF;
+                stroke: #2563eb;
                 stroke-width: 1.8;
                 stroke-linecap: round;
                 stroke-linejoin: round;
@@ -87,7 +87,7 @@ class LogoLoader extends React.Component {
               }
               .signature7 {
                 fill: transparent;
-                stroke: #00E5FF;
+                stroke: #2563eb;
                 stroke-width: 1.8;
                 stroke-linecap: round;
                 stroke-linejoin: round;
@@ -98,7 +98,7 @@ class LogoLoader extends React.Component {
               }
               .signature8 {
                 fill: transparent;
-                stroke: #00E5FF;
+                stroke: #2563eb;
                 stroke-width: 1.8;
                 stroke-linecap: round;
                 stroke-linejoin: round;
@@ -109,7 +109,7 @@ class LogoLoader extends React.Component {
               }
               .signature9 {
                 fill: transparent;
-                stroke: #00E5FF;
+                stroke: #2563eb;
                 stroke-width: 1.8;
                 stroke-linecap: round;
                 stroke-linejoin: round;
@@ -120,7 +120,7 @@ class LogoLoader extends React.Component {
               }
               .signature10 {
                 fill: transparent;
-                stroke: #00E5FF;
+                stroke: #2563eb;
                 stroke-width: 1.8;
                 stroke-linecap: round;
                 stroke-linejoin: round;
@@ -131,7 +131,7 @@ class LogoLoader extends React.Component {
               }
               .signature11 {
                 fill: transparent;
-                stroke: #00E5FF;
+                stroke: #2563eb;
                 stroke-width: 1.8;
                 stroke-linecap: round;
                 stroke-linejoin: round;
@@ -142,7 +142,7 @@ class LogoLoader extends React.Component {
               }
               .signature12 {
                 fill: transparent;
-                stroke: #00E5FF;
+                stroke: #2563eb;
                 stroke-width: 1.8;
                 stroke-linecap: round;
                 stroke-linejoin: round;
@@ -153,7 +153,7 @@ class LogoLoader extends React.Component {
               }
               .signature13 {
                 fill: transparent;
-                stroke: #00E5FF;
+                stroke: #2563eb;
                 stroke-width: 1.8;
                 stroke-linecap: round;
                 stroke-linejoin: round;
@@ -164,7 +164,7 @@ class LogoLoader extends React.Component {
               }
               .signature14 {
                 fill: transparent;
-                stroke: #00E5FF;
+                stroke: #2563eb;
                 stroke-width: 1.8;
                 stroke-linecap: round;
                 stroke-linejoin: round;
@@ -175,7 +175,7 @@ class LogoLoader extends React.Component {
               }
               .signature15 {
                 fill: transparent;
-                stroke: #00E5FF;
+                stroke: #2563eb;
                 stroke-width: 1.8;
                 stroke-linecap: round;
                 stroke-linejoin: round;
@@ -186,7 +186,7 @@ class LogoLoader extends React.Component {
               }
               .signature16 {
                 fill: transparent;
-                stroke: #00E5FF;
+                stroke: #2563eb;
                 stroke-width: 1.8;
                 stroke-linecap: round;
                 stroke-linejoin: round;
@@ -197,7 +197,7 @@ class LogoLoader extends React.Component {
               }
               .signature17 {
                 fill: transparent;
-                stroke: #00E5FF;
+                stroke: #2563eb;
                 stroke-width: 1.8;
                 stroke-linecap: round;
                 stroke-linejoin: round;
@@ -220,14 +220,14 @@ class LogoLoader extends React.Component {
                   fill: transparent;
                 }
                 100% {
-                  fill: #FFFFFF;
-                  stroke: #00E5FF;
+                  fill: #2563eb;
+                  stroke: #2563eb;
                 }
               }
 
               .signature-flourish {
                 fill: none;
-                stroke: #00E5FF;
+                stroke: #2563eb;
                 stroke-width: 2.2;
                 stroke-linecap: round;
                 stroke-linejoin: round;
