@@ -27,3 +27,8 @@ credentials.json
 *.njsproj
 *.sln
 *.sw?
+
+# Local reference directories
+Master CV/
+Resume/
+Ratul vai portfolio/

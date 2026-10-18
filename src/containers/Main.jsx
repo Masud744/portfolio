@@ -7,6 +7,11 @@ import Experience from "../pages/experience/Experience";
 import Opensource from "../pages/opensource/Opensource";
 import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
+import AboutComponent from "../pages/about/AboutComponent";
+import SkillsComponent from "../pages/skills/SkillsComponent";
+import ActivitiesComponent from "../pages/activities/ActivitiesComponent";
+import PublicationsComponent from "../pages/publications/PublicationsComponent";
+import TestimonialsComponent from "../pages/testimonials/TestimonialsComponent";
 import { settings } from "../portfolio.js";
 import Error404 from "../pages/errors/error404/Error";
 import ResumePage from "../pages/resume/Resume.jsx";
@@ -55,6 +60,14 @@ export default class Main extends Component {
             element={<Home theme={theme} />}
           />
           <Route
+            path="/about"
+            element={<AboutComponent theme={theme} />}
+          />
+          <Route
+            path="/skills"
+            element={<SkillsComponent theme={theme} />}
+          />
+          <Route
             path="/education"
             element={<Education theme={theme} />}
           />
@@ -73,6 +86,18 @@ export default class Main extends Component {
           <Route
             path="/projects"
             element={<Projects theme={theme} />}
+          />
+          <Route
+            path="/activities"
+            element={<ActivitiesComponent theme={theme} />}
+          />
+          <Route
+            path="/publications"
+            element={<PublicationsComponent theme={theme} />}
+          />
+          <Route
+            path="/testimonials"
+            element={<TestimonialsComponent theme={theme} />}
           />
           <Route
             path="/resume"

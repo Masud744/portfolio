@@ -24,6 +24,13 @@ export const greeting = {
   nickname: "Embedded & Edge AI",
   subTitle:
     "Bridging Low-Power Hardware Telemetry with Real-Time Intelligent Vision Systems. Undergraduate in IoT & Robotics Engineering at University of Frontier Technology, Bangladesh (UFTB).",
+  taglines: [
+    "Embedded Systems Engineer",
+    "Edge AI Researcher",
+    "Arduino Library Author",
+    "IoT Architecture Builder",
+    "FreeRTOS Developer",
+  ],
   resumeLink: "/assets/Shahriar_Alom_Masud_IoT_Resume.pdf",
   portfolio_repository: "https://github.com/Masud744/portfolio",
   githubProfile: "https://github.com/Masud744",
@@ -425,3 +432,82 @@ export const contactPageData = {
     subtitle: "+880 1740 071118",
   },
 };
+
+// About Section Data (from Master CV)
+export const aboutSection = {
+  title: "About",
+  subtitle: "Embedded Systems & Edge AI Engineer",
+  description:
+    "I am an Embedded Systems and Edge AI Engineer driven by the mission to build intelligent, low-power systems that operate reliably at the hardware-software boundary. Currently pursuing my B.Sc. in IoT & Robotics Engineering at University of Frontier Technology, Bangladesh (UFTB), I specialize in architecting end-to-end solutions — from bare-metal firmware to cloud-connected telemetry dashboards.",
+  paragraphs: [
+    "I am an Embedded Systems and Edge AI Engineer driven by the mission to build intelligent, low-power systems that operate reliably at the hardware-software boundary. Currently pursuing my B.Sc. in IoT & Robotics Engineering at University of Frontier Technology, Bangladesh (UFTB), I specialize in architecting end-to-end solutions — from bare-metal firmware to cloud-connected telemetry dashboards.",
+    "As the official author of SmartProv (v2.1.3) on the Arduino Library Manager, I have engineered production-grade asynchronous captive provisioning for ESP32/ESP8266 MCUs. My technical focus bridges FreeRTOS deterministic task scheduling, dual-core microcontroller architectures, and real-time computer vision inference pipelines running at 30–60 FPS.",
+    "Whether I am engineering encrypted OTA firmware updates with SHA-256 validation or deploying TreeSHAP explainability for clinical AI models, my goal is to create dependable, field-ready technology that combines low-power hardware telemetry with the analytical depth of applied AI.",
+  ],
+  coreExpertise: [
+    "Bare-metal C/C++ Firmware",
+    "FreeRTOS Deterministic Multitasking",
+    "Edge AI & TinyML Inference",
+    "Computer Vision (YOLOv8, MediaPipe, OpenCV)",
+    "Wireless Telemetry (LoRa SX1278, MQTT)",
+    "IoT Cloud Dashboards & CI/CD",
+  ],
+  metrics: [
+    { value: "v2.1.3", label: "Arduino Library Registry" },
+    { value: "30-60", label: "FPS Edge AI Inference" },
+    { value: "20+", label: "Flagship CV Projects" },
+    { value: "5.00", label: "Academic GPA (HSC/SSC)" },
+  ],
+};
+
+// Activities & Leadership Data (from Master CV)
+export const activitiesSection = {
+  title: "Activities",
+  subtitle: "Leadership, Community & Competitive Engagements",
+  description:
+    "Active participant and organizer across university robotics championships, technology clubs, and volunteer welfare units.",
+  activities: [
+    {
+      role: "Robo Soccer Segment Leader",
+      organization: "WALTON Presents RoboFusion 1.0 — UFTB Robotics Club",
+      duration: "Aug 2026",
+      location: "UFTB, Gazipur",
+      description:
+        "Led and coordinated the Robo Soccer segment, overseeing 20 participating inter-university teams, arena technical setups, wireless frequency allocations, and tournament execution.",
+    },
+    {
+      role: "Head of Membership Development",
+      organization: "UFTB Robotics & IoT Club",
+      duration: "Oct 2025 — Present",
+      location: "UFTB, Gazipur",
+      description:
+        "Organized hands-on technical workshops on microcontroller interfacing, C/C++ firmware debugging, and sensor-to-cloud telemetry for 60+ junior engineering students.",
+    },
+    {
+      role: "Organizational Secretary",
+      organization: "Rangpur Divisional Students' Welfare Association, UFTB",
+      duration: "Sep 2026 — Present",
+      location: "UFTB, Bangladesh",
+      description:
+        "Facilitate student networking, academic guidance, and welfare initiatives among engineering undergraduates from Rangpur division.",
+    },
+    {
+      role: "Treasurer",
+      organization: "Badhon — University of Frontier Technology Unit",
+      duration: "Feb 2026 — Present",
+      location: "UFTB Unit",
+      description:
+        "Managed financial records, budget allocations, and logistic planning for voluntary campus blood donation drives.",
+    },
+  ],
+};
+
+// Testimonials Section Data (Strictly empty per instruction - no fake data)
+export const testimonialsSection = {
+  title: "Testimonials",
+  subtitle: "Recommendations & Professional Endorsements",
+  description:
+    "Official endorsements and mentor recommendations will be updated upon completion of active research initiatives and industry fellowship programs.",
+  testimonials: [], // Kept strictly empty to prevent fake information
+};
+
