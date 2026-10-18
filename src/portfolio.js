@@ -27,9 +27,9 @@ export const greeting = {
   taglines: [
     "Embedded Systems Engineer",
     "Edge AI Researcher",
-    "Arduino Library Author",
-    "IoT Architecture Builder",
-    "FreeRTOS Developer",
+    "Robotics Engineer",
+    "IoT Systems Engineer",
+    "Firmware Developer",
   ],
   resumeLink: "/assets/Shahriar_Alom_Masud_IoT_Resume.pdf",
   portfolio_repository: "https://github.com/Masud744/portfolio",

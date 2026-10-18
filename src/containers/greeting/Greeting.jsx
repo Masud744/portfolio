@@ -5,9 +5,18 @@ import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import masudPortrait from "../../assets/images/masud_vector_portrait.png";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Greeting(props) {
   const theme = props.theme;
+
+  const typeSequence = React.useMemo(() => {
+    if (greeting.taglines && greeting.taglines.length > 0) {
+      return greeting.taglines.flatMap((item) => [item, 2200]);
+    }
+    return [greeting.nickname || "Embedded & Edge AI", 2200];
+  }, []);
+
   return (
     <Fade bottom duration={2000} distance="40px">
       <div className="greet-main" id="greeting">
@@ -19,7 +28,16 @@ export default function Greeting(props) {
               </h1>
               {greeting.nickname && (
                 <h2 className="greeting-nickname" style={{ color: theme.text }}>
-                  ( {greeting.nickname} )
+                  ({" "}
+                  <TypeAnimation
+                    sequence={typeSequence}
+                    wrapper="span"
+                    speed={50}
+                    deletionSpeed={65}
+                    repeat={Infinity}
+                    style={{ display: "inline-block" }}
+                  />{" "}
+                  )
                 </h2>
               )}
               <p
