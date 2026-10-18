@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Skills.css";
 import { skills } from "../../portfolio";
 import { Fade } from "react-reveal";
@@ -148,49 +148,45 @@ const techRow2 = [
 ];
 
 export default function SkillSection({ theme }) {
-  const [activeTab, setActiveTab] = useState(0);
-  const currentSkill = skills.data[activeTab] || skills.data[0];
-
   return (
     <div>
-      {/* Domain Navigation Tabs */}
-      <div className="skills-domain-tabs">
+      {/* Sequential Animated Domain Cards matching main branch scroll experience */}
+      <div className="skills-domains-list">
         {skills.data.map((skill, index) => (
-          <button
-            key={index}
-            className={`domain-tab-btn ${activeTab === index ? "active" : ""}`}
-            onClick={() => setActiveTab(index)}
-          >
-            {skill.title.split("&")[0].trim()}
-          </button>
+          <div key={index} className="skills-domain-card">
+            <Fade left duration={1500} distance="30px">
+              <div className="skills-illustration-col">
+                <GetSkillSvg
+                  fileName={skill.fileName}
+                  title={skill.title}
+                  theme={theme}
+                />
+              </div>
+            </Fade>
+
+            <Fade right duration={1500} distance="30px">
+              <div className="skills-content-col">
+                <span className="skills-domain-overline">Domain Expert</span>
+                <h2 className="skills-domain-title" style={{ color: theme.text }}>
+                  {skill.title}
+                </h2>
+
+                <div className="skills-bullets-grid">
+                  {skill.skills.map((sentence, idx) => {
+                    const cleanedText = sentence.replace(/^⚡\s*/, "");
+                    return (
+                      <div key={idx} className="skills-bullet-item">
+                        <span className="skills-bullet-icon">✦</span>
+                        <p className="skills-bullet-text">{cleanedText}</p>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </Fade>
+          </div>
         ))}
       </div>
-
-      {/* Domain Display Card */}
-      <Fade bottom duration={1000} distance="30px">
-        <div className="skills-domain-card">
-          <div className="skills-illustration-col">
-            <GetSkillSvg fileName={currentSkill.fileName} title={currentSkill.title} theme={theme} />
-          </div>
-
-          <div className="skills-content-col">
-            <span className="skills-domain-overline">Domain Expert</span>
-            <h2 className="skills-domain-title">{currentSkill.title}</h2>
-
-            <div className="skills-bullets-grid">
-              {currentSkill.skills.map((sentence, idx) => {
-                const cleanedText = sentence.replace(/^⚡\s*/, "");
-                return (
-                  <div key={idx} className="skills-bullet-item">
-                    <span className="skills-bullet-icon">✦</span>
-                    <p className="skills-bullet-text">{cleanedText}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </Fade>
 
       {/* Continuous Scrolling Technologies Ticker */}
       <div className="technologies-section-wrapper">
