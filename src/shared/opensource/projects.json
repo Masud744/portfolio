@@ -1,306 +1,1228 @@
 {
   "data": [
     {
-      "id": "smartprov-v2",
+      "id": "smartprov",
       "name": "SmartProv (v2.1.3)",
-      "category": "IoT & Embedded",
-      "createdAt": "2024-01-10T12:00:00Z",
+      "category": "IoT",
+      "categoryBadge": "EMBEDDED FIRMWARE",
+      "year": "2026",
+      "createdAt": "2026-04-01T00:00:00Z",
       "url": "https://github.com/Masud744/SmartProv",
       "liveUrl": "https://www.arduino.cc/reference/en/libraries/smartprov/",
-      "description": "Official Arduino Library Manager Package: Asynchronous captive-portal Wi-Fi provisioning framework for ESP32/ESP8266 with encrypted NVS flash persistence and zero-reflash deployment.",
-      "isFork": false,
+      "description": "Official Arduino Library for captive-portal Wi-Fi provisioning on ESP32/ESP8266 MCUs. Features encrypted NVS flash persistence, CRC integrity checks, multi-network fallback, and zero hardcoded credentials.",
+      "primaryLanguage": {
+        "name": "C++",
+        "color": "#f34b7d"
+      },
       "languages": [
-        { "name": "C++", "iconifyClass": "logos-c-plusplus" },
-        { "name": "ESP32", "iconifyClass": "simple-icons:espressif" },
-        { "name": "Arduino", "iconifyClass": "logos-arduino" }
+        {
+          "name": "C++",
+          "iconifyClass": "logos:c-plusplus"
+        },
+        {
+          "name": "Arduino",
+          "iconifyClass": "logos:arduino"
+        },
+        {
+          "name": "ESP32",
+          "iconifyClass": "simple-icons:espressif"
+        }
       ]
     },
     {
       "id": "respiguard",
       "name": "RespiGuard",
-      "category": "AI, ML & Vision",
-      "createdAt": "2024-05-20T14:00:00Z",
+      "category": "ML",
+      "categoryBadge": "EDGE AI & HEALTHCARE",
+      "year": "2026",
+      "createdAt": "2026-05-01T00:00:00Z",
       "url": "https://github.com/Masud744/RespiGuard",
       "liveUrl": "https://respiguard-fvh9.onrender.com/",
-      "description": "Investigational edge healthcare platform fusing ESP32 particulate sensing (PMS5003, MQ135) running FreeRTOS with TreeSHAP local explainability and Groq LLaMA clinical copilot.",
-      "isFork": false,
+      "description": "Intelligent cyber-physical healthcare platform coupling ESP32 FreeRTOS environmental particulate sensing (PMS5003, MQ-135) with outdoor meteorology and TreeSHAP waterfall explainability for asthma triage.",
+      "primaryLanguage": {
+        "name": "Python",
+        "color": "#3572A5"
+      },
       "languages": [
-        { "name": "C++", "iconifyClass": "logos-c-plusplus" },
-        { "name": "FreeRTOS", "iconifyClass": "simple-icons:freertos" },
-        { "name": "Python", "iconifyClass": "logos-python" },
-        { "name": "FastAPI", "iconifyClass": "simple-icons:fastapi" }
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
+        },
+        {
+          "name": "FreeRTOS",
+          "iconifyClass": "simple-icons:freertos"
+        },
+        {
+          "name": "React",
+          "iconifyClass": "logos:react"
+        },
+        {
+          "name": "FastAPI",
+          "iconifyClass": "logos:fastapi"
+        }
       ]
     },
     {
       "id": "solar-aware-hems",
-      "name": "solar-aware-hems",
-      "category": "IoT & Embedded",
-      "createdAt": "2024-07-08T09:00:00Z",
+      "name": "Solar-Aware HEMS",
+      "category": "IoT",
+      "categoryBadge": "CLEANTECH & XAI",
+      "year": "2026",
+      "createdAt": "2026-01-15T00:00:00Z",
       "url": "https://github.com/Masud744/solar-aware-hems",
       "liveUrl": "https://solar-aware-hems.vercel.app",
-      "description": "Risk-aware smart home energy management with solar forecasting, empirical uncertainty k-sigma bounds, and ESP32 8-channel relay control with 300ms break-before-make safety delay.",
-      "isFork": false,
+      "description": "Risk-aware Smart Home Energy Management System with ML solar/load forecasting, empirical uncertainty safety margins, TreeSHAP feature attribution, and ESP32 8-channel relay hardware control.",
+      "primaryLanguage": {
+        "name": "Python",
+        "color": "#3572A5"
+      },
       "languages": [
-        { "name": "Python", "iconifyClass": "logos-python" },
-        { "name": "ESP32", "iconifyClass": "simple-icons:espressif" },
-        { "name": "FastAPI", "iconifyClass": "simple-icons:fastapi" },
-        { "name": "SHAP", "iconifyClass": "simple-icons:plotly" }
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
+        },
+        {
+          "name": "ESP32",
+          "iconifyClass": "simple-icons:espressif"
+        },
+        {
+          "name": "FastAPI",
+          "iconifyClass": "logos:fastapi"
+        },
+        {
+          "name": "Vercel",
+          "iconifyClass": "logos:vercel-icon"
+        }
       ]
     },
     {
       "id": "smart-pond-xai",
-      "name": "smart-pond-xai",
-      "category": "IoT & Embedded",
-      "createdAt": "2024-09-12T16:00:00Z",
+      "name": "Smart Pond XAI",
+      "category": "Robotics",
+      "categoryBadge": "AUTONOMOUS ROBOTICS",
+      "year": "2026",
+      "createdAt": "2026-05-20T00:00:00Z",
       "url": "https://github.com/Masud744/smart-pond-xai",
       "liveUrl": "https://smart-pond-xai1.vercel.app/",
-      "description": "Autonomous IoT catamaran and precision aquaculture platform with SX1278 LoRa telemetry, InfluxDB Cloud time-series logging, and 85.26% species suitability ensemble model.",
-      "isFork": false,
+      "description": "Autonomous IoT catamaran smart boat for precision aquaculture featuring dual-controller Arduino Mega & ESP32 architecture, twin DC motor propulsion, SX1278 LoRa telemetry, and 85.26% accurate fish suitability AI.",
+      "primaryLanguage": {
+        "name": "C++",
+        "color": "#f34b7d"
+      },
       "languages": [
-        { "name": "C++", "iconifyClass": "logos-c-plusplus" },
-        { "name": "LoRa", "iconifyClass": "simple-icons:semtech" },
-        { "name": "InfluxDB", "iconifyClass": "simple-icons:influxdb" },
-        { "name": "Python", "iconifyClass": "logos-python" }
+        {
+          "name": "C++",
+          "iconifyClass": "logos:c-plusplus"
+        },
+        {
+          "name": "LoRa",
+          "iconifyClass": "simple-icons:semtech"
+        },
+        {
+          "name": "FastAPI",
+          "iconifyClass": "logos:fastapi"
+        },
+        {
+          "name": "React",
+          "iconifyClass": "logos:react"
+        }
       ]
     },
     {
       "id": "proctorai",
       "name": "ProctorAI",
-      "category": "AI, ML & Vision",
-      "createdAt": "2024-03-15T10:00:00Z",
+      "category": "ML",
+      "categoryBadge": "COMPUTER VISION",
+      "year": "2026",
+      "createdAt": "2026-03-10T00:00:00Z",
       "url": "https://github.com/Masud744/ProctorAI",
       "liveUrl": "https://ai-classroom-exam-monitoring.netlify.app",
-      "description": "Real-time 30–60 FPS computer vision proctoring engine with solvePnP 3D head-pose, eye gaze (EAR), mouth ratio (MAR), unauthorized phone detection, and live teacher analytics.",
-      "isFork": false,
+      "description": "Full-stack AI proctoring system using MediaPipe Face Mesh (468 landmarks) and YOLOv8 for real-time head pose estimation, phone detection, and gaze tracking at 30-60 FPS. Field-tested with 35+ students.",
+      "primaryLanguage": {
+        "name": "Python",
+        "color": "#3572A5"
+      },
       "languages": [
-        { "name": "Python", "iconifyClass": "logos-python" },
-        { "name": "OpenCV", "iconifyClass": "logos-opencv" },
-        { "name": "YOLOv8", "iconifyClass": "simple-icons:yolo" },
-        { "name": "FastAPI", "iconifyClass": "simple-icons:fastapi" }
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
+        },
+        {
+          "name": "OpenCV",
+          "iconifyClass": "logos:opencv"
+        },
+        {
+          "name": "YOLOv8",
+          "iconifyClass": "simple-icons:ultralytics"
+        },
+        {
+          "name": "Supabase",
+          "iconifyClass": "logos:supabase-icon"
+        }
       ]
     },
     {
       "id": "oncoscan-ai",
       "name": "OncoScan AI",
-      "category": "AI, ML & Vision",
-      "createdAt": "2024-04-10T12:00:00Z",
+      "category": "ML",
+      "categoryBadge": "MEDICAL DEEP LEARNING",
+      "year": "2026",
+      "createdAt": "2026-03-25T00:00:00Z",
       "url": "https://github.com/Masud744/oncoscan-ai",
       "liveUrl": "https://oncoscan-ai.netlify.app/",
-      "description": "Explainable deep learning brain tumor detection system with CNN (>90% accuracy), Grad-CAM heatmaps, and ONNX Runtime inference acceleration (4x speedup).",
-      "isFork": false,
+      "description": "Explainable medical AI web platform classifying brain MRI scans into 4 pathology classes using deep CNN (>90% accuracy), Grad-CAM visual heatmaps, and 4x ONNX Runtime inference acceleration.",
+      "primaryLanguage": {
+        "name": "Python",
+        "color": "#3572A5"
+      },
       "languages": [
-        { "name": "Python", "iconifyClass": "logos-python" },
-        { "name": "PyTorch", "iconifyClass": "logos-pytorch" },
-        { "name": "ONNX", "iconifyClass": "simple-icons:onnx" },
-        { "name": "FastAPI", "iconifyClass": "simple-icons:fastapi" }
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
+        },
+        {
+          "name": "TensorFlow",
+          "iconifyClass": "logos:tensorflow"
+        },
+        {
+          "name": "ONNX",
+          "iconifyClass": "logos:onnx"
+        }
       ]
     },
     {
-      "id": "esp32-github-ota",
-      "name": "ESP32-GitHub-OTA",
-      "category": "IoT & Embedded",
-      "createdAt": "2024-10-01T11:00:00Z",
-      "url": "https://github.com/Masud744/esp32-smartprov-github-ota",
-      "description": "Zero-bricking dual-partition OTA firmware engine with HTTPS SHA-256 binary validation, automated rollback watchdog recovery, and encrypted NVS state persistence.",
-      "isFork": false,
+      "id": "sentinel-grid",
+      "name": "Sentinel Grid",
+      "category": "IoT",
+      "categoryBadge": "DISTRIBUTED IOT",
+      "year": "2026",
+      "createdAt": "2026-09-01T00:00:00Z",
+      "url": "https://github.com/Masud744/sentinel-grid",
+      "liveUrl": "https://github.com/Masud744/sentinel-grid",
+      "description": "Autonomous multi-hazard campus safety telemetry system featuring real-time environmental hazard monitoring, distributed edge anomaly detection, and centralized websocket dispatch.",
+      "primaryLanguage": {
+        "name": "Python",
+        "color": "#3572A5"
+      },
       "languages": [
-        { "name": "C++", "iconifyClass": "logos-c-plusplus" },
-        { "name": "ESP32", "iconifyClass": "simple-icons:espressif" },
-        { "name": "FreeRTOS", "iconifyClass": "simple-icons:freertos" }
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
+        },
+        {
+          "name": "FastAPI",
+          "iconifyClass": "logos:fastapi"
+        },
+        {
+          "name": "Docker",
+          "iconifyClass": "logos:docker-icon"
+        }
       ]
     },
     {
-      "id": "raspberrypi-weather-ml",
-      "name": "Raspberry Pi Weather ML",
-      "category": "AI, ML & Vision",
-      "createdAt": "2024-02-15T09:00:00Z",
-      "url": "https://github.com/Masud744/raspberrypi-weather-ml",
-      "liveUrl": "https://raspberrypi-weather-dashboard.netlify.app/",
-      "description": "Edge-to-cloud weather forecasting system combining continuous Open-Meteo ingestion into InfluxDB Cloud with 30-minute lookahead time-series prediction models.",
-      "isFork": false,
+      "id": "department-routine",
+      "name": "Department Routine Engine",
+      "category": "Web",
+      "categoryBadge": "PWA & CANVAS",
+      "year": "2026",
+      "createdAt": "2026-08-15T00:00:00Z",
+      "url": "https://github.com/Masud744/department-routine",
+      "liveUrl": "https://department-routine.vercel.app",
+      "description": "Academic routine engine & real-time room vacancy allocator for Dept. of IRE, UFTB. Features offline-first PWA architecture, conflict-free schedule parsing, and dynamic celestial campus environment canvas.",
+      "primaryLanguage": {
+        "name": "TypeScript",
+        "color": "#3178c6"
+      },
       "languages": [
-        { "name": "Python", "iconifyClass": "logos-python" },
-        { "name": "Raspberry Pi", "iconifyClass": "logos-raspberry-pi" },
-        { "name": "InfluxDB", "iconifyClass": "simple-icons:influxdb" }
-      ]
-    },
-    {
-      "id": "facemask-ar-filter",
-      "name": "FaceMask AR Filter",
-      "category": "AI, ML & Vision",
-      "createdAt": "2024-04-05T14:00:00Z",
-      "url": "https://github.com/Masud744/facemask-ar-filter",
-      "description": "Real-time Augmented Reality face filtering application with 468 3D landmarks, dynamic affine rotation alignment, and flood-fill segmentation at 30+ FPS.",
-      "isFork": false,
-      "languages": [
-        { "name": "Python", "iconifyClass": "logos-python" },
-        { "name": "OpenCV", "iconifyClass": "logos-opencv" },
-        { "name": "MediaPipe", "iconifyClass": "simple-icons:google" }
-      ]
-    },
-    {
-      "id": "rtos-scheduling-experiment",
-      "name": "RTOS Scheduling Experiment",
-      "category": "IoT & Embedded",
-      "createdAt": "2024-02-01T10:00:00Z",
-      "url": "https://github.com/Masud744/rtos-scheduling-experiment-esp32",
-      "description": "Empirical comparison of EDF, Priority, and Round-Robin scheduling algorithms on ESP32 under FreeRTOS, analyzing CPU utilization and energy efficiency.",
-      "isFork": false,
-      "languages": [
-        { "name": "C++", "iconifyClass": "logos-c-plusplus" },
-        { "name": "ESP32", "iconifyClass": "simple-icons:espressif" },
-        { "name": "FreeRTOS", "iconifyClass": "simple-icons:freertos" }
+        {
+          "name": "TypeScript",
+          "iconifyClass": "logos:typescript-icon"
+        },
+        {
+          "name": "React",
+          "iconifyClass": "logos:react"
+        },
+        {
+          "name": "Tailwind",
+          "iconifyClass": "logos:tailwindcss-icon"
+        }
       ]
     },
     {
       "id": "robofusion-soccer",
-      "name": "RoboFusion 1.0 Tournament System",
-      "category": "Full-Stack & Web",
-      "createdAt": "2024-08-15T15:00:00Z",
+      "name": "RoboFusion Tournament System",
+      "category": "Web",
+      "categoryBadge": "TOURNAMENT ENGINE",
+      "year": "2026",
+      "createdAt": "2026-08-01T00:00:00Z",
       "url": "https://github.com/Masud744/robofusion-robo-soccer-tournament-system",
       "liveUrl": "https://robofusion-soccer.vercel.app/",
-      "description": "Official live tournament management and projector-optimized display system for the WALTON Presents RoboFusion 1.0 Robo Soccer competition at UFTB.",
-      "isFork": false,
+      "description": "Official live tournament management and match display system for WALTON Presents RoboFusion 1.0 competition. Projector-optimized arena display, knockout bracket generation, and sound FX.",
+      "primaryLanguage": {
+        "name": "TypeScript",
+        "color": "#3178c6"
+      },
       "languages": [
-        { "name": "TypeScript", "iconifyClass": "logos-typescript-icon" },
-        { "name": "React", "iconifyClass": "logos-react" },
-        { "name": "Tailwind", "iconifyClass": "logos-tailwindcss-icon" }
+        {
+          "name": "TypeScript",
+          "iconifyClass": "logos:typescript-icon"
+        },
+        {
+          "name": "React 19",
+          "iconifyClass": "logos:react"
+        },
+        {
+          "name": "Vite",
+          "iconifyClass": "logos:vitejs"
+        }
       ]
     },
     {
       "id": "cashly",
       "name": "Cashly",
-      "category": "Full-Stack & Web",
-      "createdAt": "2024-07-20T11:00:00Z",
+      "category": "Software",
+      "categoryBadge": "OFFLINE-FIRST APP",
+      "year": "2026",
+      "createdAt": "2026-07-10T00:00:00Z",
       "url": "https://github.com/Masud744/cashly",
-      "description": "Offline-first personal financial management application designed for students and private tutors with structured client-side caching and Chart.js analytics.",
-      "isFork": false,
+      "liveUrl": "https://cashly-masud.vercel.app",
+      "description": "Offline-first student expense tracker and financial planner with tuition income management, custom budgeting categories, interactive Chart.js analytics, and complete local persistence.",
+      "primaryLanguage": {
+        "name": "TypeScript",
+        "color": "#3178c6"
+      },
       "languages": [
-        { "name": "TypeScript", "iconifyClass": "logos-typescript-icon" },
-        { "name": "React", "iconifyClass": "logos-react" },
-        { "name": "Chart.js", "iconifyClass": "simple-icons:chartdotjs" }
+        {
+          "name": "TypeScript",
+          "iconifyClass": "logos:typescript-icon"
+        },
+        {
+          "name": "React 19",
+          "iconifyClass": "logos:react"
+        },
+        {
+          "name": "Chart.js",
+          "iconifyClass": "simple-icons:chartdotjs"
+        }
+      ]
+    },
+    {
+      "id": "shomvob",
+      "name": "Shomvob AI",
+      "category": "Software",
+      "categoryBadge": "CAREER OS & AI",
+      "year": "2026",
+      "createdAt": "2026-07-25T00:00:00Z",
+      "url": "https://github.com/Masud744/Shomvob",
+      "liveUrl": "https://shomvob.vercel.app",
+      "description": "AI-powered career operating system for tech engineers, featuring intelligent resume parsing, automated job matching pipelines, and interactive technical interview roadmaps.",
+      "primaryLanguage": {
+        "name": "TypeScript",
+        "color": "#3178c6"
+      },
+      "languages": [
+        {
+          "name": "TypeScript",
+          "iconifyClass": "logos:typescript-icon"
+        },
+        {
+          "name": "Next.js",
+          "iconifyClass": "logos:nextjs-icon"
+        },
+        {
+          "name": "Tailwind",
+          "iconifyClass": "logos:tailwindcss-icon"
+        }
+      ]
+    },
+    {
+      "id": "esp32-ota",
+      "name": "ESP32 GitHub OTA & Rollback",
+      "category": "IoT",
+      "categoryBadge": "FAIL-SAFE FIRMWARE",
+      "year": "2026",
+      "createdAt": "2026-06-15T00:00:00Z",
+      "url": "https://github.com/Masud744/esp32-smartprov-github-ota",
+      "liveUrl": "https://github.com/Masud744/esp32-smartprov-github-ota",
+      "description": "Industrial-grade ESP32 weather node framework featuring automated GitHub Releases OTA updates over HTTPS, encrypted NVS boot validation, and automated rollback across 15+ physical nodes.",
+      "primaryLanguage": {
+        "name": "C++",
+        "color": "#f34b7d"
+      },
+      "languages": [
+        {
+          "name": "C++",
+          "iconifyClass": "logos:c-plusplus"
+        },
+        {
+          "name": "ESP32",
+          "iconifyClass": "simple-icons:espressif"
+        },
+        {
+          "name": "GitHub Actions",
+          "iconifyClass": "logos:github-actions"
+        }
+      ]
+    },
+    {
+      "id": "rtos-scheduling",
+      "name": "FreeRTOS Scheduling Benchmark",
+      "category": "IoT",
+      "categoryBadge": "RTOS BENCHMARK",
+      "year": "2026",
+      "createdAt": "2026-01-20T00:00:00Z",
+      "url": "https://github.com/Masud744/rtos-scheduling-experiment-esp32",
+      "liveUrl": "https://github.com/Masud744/rtos-scheduling-experiment-esp32",
+      "description": "Experimental analysis of FreeRTOS scheduling algorithms (Priority, Round Robin, EDF) on dual-core ESP32 under identical sensor workloads, analyzing CPU utilization and energy efficiency.",
+      "primaryLanguage": {
+        "name": "C++",
+        "color": "#f34b7d"
+      },
+      "languages": [
+        {
+          "name": "C++",
+          "iconifyClass": "logos:c-plusplus"
+        },
+        {
+          "name": "FreeRTOS",
+          "iconifyClass": "simple-icons:freertos"
+        },
+        {
+          "name": "ESP32",
+          "iconifyClass": "simple-icons:espressif"
+        }
+      ]
+    },
+    {
+      "id": "human-robot",
+      "name": "Human Following Robot",
+      "category": "Robotics",
+      "categoryBadge": "AUTONOMOUS ROBOT",
+      "year": "2025",
+      "createdAt": "2025-01-20T00:00:00Z",
+      "url": "https://github.com/Masud744/human-following-robot-arduino",
+      "liveUrl": "https://github.com/Masud744/human-following-robot-arduino",
+      "description": "Autonomous mobile robot that tracks and follows human movement using HC-SR04 ultrasonic distance sensing and dual IR directional arrays with closed-loop motor velocity regulation.",
+      "primaryLanguage": {
+        "name": "C++",
+        "color": "#f34b7d"
+      },
+      "languages": [
+        {
+          "name": "Arduino",
+          "iconifyClass": "logos:arduino"
+        },
+        {
+          "name": "C++",
+          "iconifyClass": "logos:c-plusplus"
+        },
+        {
+          "name": "Robotics",
+          "iconifyClass": "simple-icons:ros"
+        }
+      ]
+    },
+    {
+      "id": "home-automation-fw",
+      "name": "IoT Home Energy Ecosystem",
+      "category": "IoT",
+      "categoryBadge": "SMART HOME IOT",
+      "year": "2025",
+      "createdAt": "2025-09-01T00:00:00Z",
+      "url": "https://github.com/Masud744/IoT-Based-Home-Automation-and-Energy-Monitoring-System",
+      "liveUrl": "https://smart-home-masud.netlify.app",
+      "description": "Multi-node ESP32 smart home ecosystem for multi-room appliance switching, ambient environmental sensing, and energy tracking with Firebase Realtime Database telemetry.",
+      "primaryLanguage": {
+        "name": "C++",
+        "color": "#f34b7d"
+      },
+      "languages": [
+        {
+          "name": "C++",
+          "iconifyClass": "logos:c-plusplus"
+        },
+        {
+          "name": "ESP32",
+          "iconifyClass": "simple-icons:espressif"
+        },
+        {
+          "name": "Firebase",
+          "iconifyClass": "logos:firebase"
+        }
+      ]
+    },
+    {
+      "id": "home-automation-ui",
+      "name": "Home Automation Dashboard",
+      "category": "Web",
+      "categoryBadge": "TELEMETRY DASHBOARD",
+      "year": "2025",
+      "createdAt": "2025-09-10T00:00:00Z",
+      "url": "https://github.com/Masud744/Home-Automation-and-Energy-Monitoring-Dashboard",
+      "liveUrl": "https://smart-home-masud.netlify.app",
+      "description": "Responsive web dashboard for an ESP32-based Smart Home system with live Firebase Realtime synchronization, interactive appliance toggles, and Chart.js energy trends.",
+      "primaryLanguage": {
+        "name": "CSS",
+        "color": "#563d7c"
+      },
+      "languages": [
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos:javascript"
+        },
+        {
+          "name": "CSS3",
+          "iconifyClass": "logos:css-3"
+        },
+        {
+          "name": "Firebase",
+          "iconifyClass": "logos:firebase"
+        }
+      ]
+    },
+    {
+      "id": "pi-weather-ml",
+      "name": "Raspberry Pi Weather ML",
+      "category": "ML",
+      "categoryBadge": "TIME-SERIES ML",
+      "year": "2026",
+      "createdAt": "2026-01-25T00:00:00Z",
+      "url": "https://github.com/Masud744/raspberrypi-weather-ml",
+      "liveUrl": "https://raspberrypi-weather-dashboard.netlify.app/",
+      "description": "Edge-to-cloud IoT weather monitoring and forecasting platform combining edge sensor ingestion on Raspberry Pi with InfluxDB Cloud streaming and ~85% accurate ML regression lookahead.",
+      "primaryLanguage": {
+        "name": "Python",
+        "color": "#3572A5"
+      },
+      "languages": [
+        {
+          "name": "Raspberry Pi",
+          "iconifyClass": "logos:raspberry-pi"
+        },
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
+        },
+        {
+          "name": "InfluxDB",
+          "iconifyClass": "simple-icons:influxdb"
+        }
+      ]
+    },
+    {
+      "id": "esp32-cam",
+      "name": "ESP32-CAM Telegram Motion Alert",
+      "category": "IoT",
+      "categoryBadge": "HARDWARE SURVEILLANCE",
+      "year": "2025",
+      "createdAt": "2025-11-20T00:00:00Z",
+      "url": "https://github.com/Masud744/esp32-cam-telegram-motion-alert",
+      "liveUrl": "https://github.com/Masud744/esp32-cam-telegram-motion-alert",
+      "description": "Low-cost IoT security node using ESP32-CAM and PIR motion sensor to capture and dispatch intruder photos to Telegram within 2 seconds, alongside local browser HTTP video streaming.",
+      "primaryLanguage": {
+        "name": "C",
+        "color": "#555555"
+      },
+      "languages": [
+        {
+          "name": "C",
+          "iconifyClass": "logos:c"
+        },
+        {
+          "name": "ESP32",
+          "iconifyClass": "simple-icons:espressif"
+        },
+        {
+          "name": "Telegram",
+          "iconifyClass": "logos:telegram"
+        }
+      ]
+    },
+    {
+      "id": "pi-esp32-mqtt",
+      "name": "Distributed Pi-ESP32 MQTT System",
+      "category": "IoT",
+      "categoryBadge": "MQTT BROKER NETWORK",
+      "year": "2026",
+      "createdAt": "2026-01-05T00:00:00Z",
+      "url": "https://github.com/Masud744/Raspberry-Pi-Controlled-ESP32-ESP8266-IoT-System-using-MQTT-Test1",
+      "liveUrl": "https://github.com/Masud744/Raspberry-Pi-Controlled-ESP32-ESP8266-IoT-System-using-MQTT-Test1",
+      "description": "Distributed IoT system with central Mosquitto MQTT broker on Raspberry Pi coordinating 4+ ESP32/ESP8266 sensor/actuator nodes with sub-50ms latency across heterogeneous hardware.",
+      "primaryLanguage": {
+        "name": "C++",
+        "color": "#f34b7d"
+      },
+      "languages": [
+        {
+          "name": "C++",
+          "iconifyClass": "logos:c-plusplus"
+        },
+        {
+          "name": "Raspberry Pi",
+          "iconifyClass": "logos:raspberry-pi"
+        },
+        {
+          "name": "MQTT",
+          "iconifyClass": "simple-icons:mqtt"
+        }
+      ]
+    },
+    {
+      "id": "facemask-ar",
+      "name": "FaceMask AR Filter",
+      "category": "ML",
+      "categoryBadge": "AUGMENTED REALITY",
+      "year": "2026",
+      "createdAt": "2026-04-12T00:00:00Z",
+      "url": "https://github.com/Masud744/facemask-ar-filter",
+      "liveUrl": "https://github.com/Masud744/facemask-ar-filter",
+      "description": "Real-time Augmented Reality face filter detecting 468 3D facial landmarks from live webcam streams via MediaPipe Face Mesh with affine transformation alignment at 30+ FPS.",
+      "primaryLanguage": {
+        "name": "Python",
+        "color": "#3572A5"
+      },
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
+        },
+        {
+          "name": "OpenCV",
+          "iconifyClass": "logos:opencv"
+        },
+        {
+          "name": "NumPy",
+          "iconifyClass": "logos:numpy"
+        }
       ]
     },
     {
       "id": "internradar",
       "name": "InternRadar",
-      "category": "Full-Stack & Web",
-      "createdAt": "2024-05-10T13:00:00Z",
+      "category": "Software",
+      "categoryBadge": "OPPORTUNITY AGGREGATOR",
+      "year": "2026",
+      "createdAt": "2026-05-15T00:00:00Z",
       "url": "https://github.com/Masud744/InternRader",
       "liveUrl": "https://internrader.netlify.app/",
-      "description": "Automated internship monitoring and aggregation platform with scheduled GitHub Actions scraping workflows, FastAPI backend, and Supabase PostgreSQL.",
-      "isFork": false,
+      "description": "Global internship aggregation and monitoring platform with scheduled GitHub Actions scrapers, Supabase PostgreSQL persistence, and searchable web analytics dashboard.",
+      "primaryLanguage": {
+        "name": "JavaScript",
+        "color": "#f1e05a"
+      },
       "languages": [
-        { "name": "Python", "iconifyClass": "logos-python" },
-        { "name": "FastAPI", "iconifyClass": "simple-icons:fastapi" },
-        { "name": "Supabase", "iconifyClass": "simple-icons:supabase" }
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
+        },
+        {
+          "name": "FastAPI",
+          "iconifyClass": "logos:fastapi"
+        },
+        {
+          "name": "Supabase",
+          "iconifyClass": "logos:supabase-icon"
+        }
       ]
     },
     {
-      "id": "linkedin-content-automation",
-      "name": "LinkedIn Content Automation (n8n)",
-      "category": "Automation & n8n",
-      "createdAt": "2024-02-25T16:00:00Z",
+      "id": "fire-alarm",
+      "name": "Fire Detection & Alarm System",
+      "category": "IoT",
+      "categoryBadge": "EMERGENCY ALARM",
+      "year": "2025",
+      "createdAt": "2025-10-10T00:00:00Z",
+      "url": "https://github.com/Masud744/fire-detection-alarm-arduino-python",
+      "liveUrl": "https://github.com/Masud744/fire-detection-alarm-arduino-python",
+      "description": "Hybrid fire detection platform coupling hardware flame/smoke sensor interrupts on Arduino with Python desktop sound triggers and real-time serial status logging.",
+      "primaryLanguage": {
+        "name": "Python",
+        "color": "#3572A5"
+      },
+      "languages": [
+        {
+          "name": "Arduino",
+          "iconifyClass": "logos:arduino"
+        },
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
+        }
+      ]
+    },
+    {
+      "id": "airsafe",
+      "name": "AirSafe IoT",
+      "category": "IoT",
+      "categoryBadge": "AIR QUALITY MONITOR",
+      "year": "2025",
+      "createdAt": "2025-03-12T00:00:00Z",
+      "url": "https://github.com/Masud744/AirSafe-IoT",
+      "liveUrl": "https://github.com/Masud744/AirSafe-IoT",
+      "description": "Environmental monitoring edge node utilizing MQ gas sensors on ESP32 to detect CO, LPG, smoke, and volatile contaminants with multi-stage threshold warnings.",
+      "primaryLanguage": {
+        "name": "C++",
+        "color": "#f34b7d"
+      },
+      "languages": [
+        {
+          "name": "C++",
+          "iconifyClass": "logos:c-plusplus"
+        },
+        {
+          "name": "ESP32",
+          "iconifyClass": "simple-icons:espressif"
+        }
+      ]
+    },
+    {
+      "id": "dry-handwash",
+      "name": "Dry Handwashing Machine",
+      "category": "Robotics",
+      "categoryBadge": "TOUCHLESS SANITIZATION",
+      "year": "2024",
+      "createdAt": "2024-08-20T00:00:00Z",
+      "url": "https://github.com/Masud744/dry-handwashing-machine",
+      "liveUrl": "https://github.com/Masud744/dry-handwashing-machine",
+      "description": "Automated touchless sanitization chamber using ultrasonic mist transducers and IR presence detection to dispense micronized fog disinfectant without liquid residue.",
+      "primaryLanguage": {
+        "name": "C++",
+        "color": "#f34b7d"
+      },
+      "languages": [
+        {
+          "name": "Arduino",
+          "iconifyClass": "logos:arduino"
+        },
+        {
+          "name": "C++",
+          "iconifyClass": "logos:c-plusplus"
+        }
+      ]
+    },
+    {
+      "id": "uno-esp-serial",
+      "name": "Arduino-ESP8266 Serial Gateway",
+      "category": "IoT",
+      "categoryBadge": "UART LOGIC TRANSLATOR",
+      "year": "2026",
+      "createdAt": "2026-01-18T00:00:00Z",
+      "url": "https://github.com/Masud744/arduino-uno-esp8266-dht22-serial",
+      "liveUrl": "https://github.com/Masud744/arduino-uno-esp8266-dht22-serial",
+      "description": "Serial communication pipeline between Arduino Uno (5V) and ESP8266 (3.3V) with calibrated resistive voltage division for safe logic shifting and DHT22 telemetry.",
+      "primaryLanguage": {
+        "name": "C++",
+        "color": "#f34b7d"
+      },
+      "languages": [
+        {
+          "name": "Arduino",
+          "iconifyClass": "logos:arduino"
+        },
+        {
+          "name": "ESP8266",
+          "iconifyClass": "simple-icons:espressif"
+        }
+      ]
+    },
+    {
+      "id": "weather-sim",
+      "name": "IoT InfluxDB Stream Simulator",
+      "category": "IoT",
+      "categoryBadge": "DATA STREAM SIMULATOR",
+      "year": "2026",
+      "createdAt": "2026-02-14T00:00:00Z",
+      "url": "https://github.com/Masud744/iot-realtime-weather-sensor-simulation-influxdb-open-meteo",
+      "liveUrl": "https://github.com/Masud744/iot-realtime-weather-sensor-simulation-influxdb-open-meteo",
+      "description": "Real-time IoT sensor simulator streaming synthetic ambient telemetries into InfluxDB Cloud with Open-Meteo real-world validation benchmarks.",
+      "primaryLanguage": {
+        "name": "Python",
+        "color": "#3572A5"
+      },
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
+        },
+        {
+          "name": "InfluxDB",
+          "iconifyClass": "simple-icons:influxdb"
+        }
+      ]
+    },
+    {
+      "id": "linkedin-n8n",
+      "name": "LinkedIn AI Content Automation",
+      "category": "Automation",
+      "categoryBadge": "11-STAR N8N SYSTEM",
+      "year": "2026",
+      "createdAt": "2026-02-05T00:00:00Z",
       "url": "https://github.com/Masud744/linkedin-content-automation-n8n",
-      "description": "Automated topic, caption, image, and hashtag generation pipeline using n8n workflows and AI APIs with direct publishing to LinkedIn (Recognized with 11⭐).",
-      "isFork": false,
+      "liveUrl": "https://github.com/Masud744/linkedin-content-automation-n8n",
+      "description": "End-to-end LinkedIn automation workflow built in n8n. Generates AI topics, captions, images, and schedules publications, reducing manual content creation effort by 80%.",
+      "primaryLanguage": {
+        "name": "JavaScript",
+        "color": "#f1e05a"
+      },
       "languages": [
-        { "name": "n8n", "iconifyClass": "simple-icons:n8n" },
-        { "name": "Workflow", "iconifyClass": "logos-javascript" }
+        {
+          "name": "n8n",
+          "iconifyClass": "logos:n8n"
+        },
+        {
+          "name": "AI / LLM",
+          "iconifyClass": "logos:openai-icon"
+        }
       ]
     },
     {
-      "id": "linkedin-job-scraper",
-      "name": "LinkedIn Job Scraper (n8n)",
-      "category": "Automation & n8n",
-      "createdAt": "2024-02-18T10:00:00Z",
+      "id": "linkedin-scraper",
+      "name": "LinkedIn Job Scraper Pipeline",
+      "category": "Automation",
+      "categoryBadge": "AUTOMATED SCRAPER",
+      "year": "2026",
+      "createdAt": "2026-02-12T00:00:00Z",
       "url": "https://github.com/Masud744/linkedin-job-scraper-n8n",
-      "description": "Event-driven n8n scraping and parsing pipeline that deduplicates and stores LinkedIn job postings with structured criteria filtering.",
-      "isFork": false,
+      "liveUrl": "https://github.com/Masud744/linkedin-job-scraper-n8n",
+      "description": "Automated LinkedIn job scraper and deduplication workflow built with n8n and Apify. Extracts company, role, location, and saves structured listings.",
+      "primaryLanguage": {
+        "name": "JavaScript",
+        "color": "#f1e05a"
+      },
       "languages": [
-        { "name": "n8n", "iconifyClass": "simple-icons:n8n" },
-        { "name": "Automation", "iconifyClass": "logos-python" }
+        {
+          "name": "n8n",
+          "iconifyClass": "logos:n8n"
+        },
+        {
+          "name": "Apify",
+          "iconifyClass": "simple-icons:apify"
+        }
       ]
     },
     {
-      "id": "n8n-url-shortener",
-      "name": "n8n URL Shortener & UI",
-      "category": "Automation & n8n",
-      "createdAt": "2023-12-15T12:00:00Z",
+      "id": "food-order-n8n",
+      "name": "Food Order Automation System",
+      "category": "Automation",
+      "categoryBadge": "ORDER PIPELINE",
+      "year": "2025",
+      "createdAt": "2025-12-10T00:00:00Z",
+      "url": "https://github.com/Masud744/food-order-automation-n8n",
+      "liveUrl": "https://github.com/Masud744/food-order-automation-n8n",
+      "description": "Event-driven restaurant food ordering pipeline in n8n handling customer intake via Telegram, ticket generation, and automated order fulfillment notifications.",
+      "primaryLanguage": {
+        "name": "JavaScript",
+        "color": "#f1e05a"
+      },
+      "languages": [
+        {
+          "name": "n8n",
+          "iconifyClass": "logos:n8n"
+        },
+        {
+          "name": "Telegram",
+          "iconifyClass": "logos:telegram"
+        }
+      ]
+    },
+    {
+      "id": "telegram-n8n",
+      "name": "Telegram Webhook Automation",
+      "category": "Automation",
+      "categoryBadge": "WEBHOOK DISPATCHER",
+      "year": "2025",
+      "createdAt": "2025-11-28T00:00:00Z",
+      "url": "https://github.com/Masud744/telegram-automation-with-n8n",
+      "liveUrl": "https://github.com/Masud744/telegram-automation-with-n8n",
+      "description": "Modular Telegram automation system using webhook triggers in n8n to accept real-time commands and orchestrate downstream server workflows.",
+      "primaryLanguage": {
+        "name": "JavaScript",
+        "color": "#f1e05a"
+      },
+      "languages": [
+        {
+          "name": "n8n",
+          "iconifyClass": "logos:n8n"
+        },
+        {
+          "name": "Telegram",
+          "iconifyClass": "logos:telegram"
+        }
+      ]
+    },
+    {
+      "id": "url-shortener-n8n",
+      "name": "n8n Dynamic URL Shortener",
+      "category": "Automation",
+      "categoryBadge": "SERVERLESS WEBHOOK",
+      "year": "2025",
+      "createdAt": "2025-12-15T00:00:00Z",
       "url": "https://github.com/Masud744/n8n-url-shortener",
       "liveUrl": "https://masud744-url-shortener.netlify.app/",
-      "description": "Webhook-triggered n8n workflow for dynamic URL shortening integrated with a glassmorphism frontend featuring live confetti animations.",
-      "isFork": false,
+      "description": "Webhook-triggered n8n workflow for dynamic URL shortening integrated with a glassmorphism frontend featuring live confetti celebrations.",
+      "primaryLanguage": {
+        "name": "JavaScript",
+        "color": "#f1e05a"
+      },
       "languages": [
-        { "name": "n8n", "iconifyClass": "simple-icons:n8n" },
-        { "name": "Webhooks", "iconifyClass": "logos-javascript" }
+        {
+          "name": "n8n",
+          "iconifyClass": "logos:n8n"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos:javascript"
+        }
       ]
     },
     {
-      "id": "home-automation-firebase",
-      "name": "IoT Home Automation & Energy",
-      "category": "IoT & Embedded",
-      "createdAt": "2023-09-01T14:00:00Z",
-      "url": "https://github.com/Masud744/IoT-Based-Home-Automation-and-Energy-Monitoring-System",
-      "description": "Multi-node ESP32 smart home ecosystem for multi-room appliance switching, environmental sensing, and energy monitoring synchronized with Firebase Realtime DB.",
-      "isFork": false,
+      "id": "url-shortener-ui",
+      "name": "URL Shortener Glass UI",
+      "category": "Web",
+      "categoryBadge": "FRONTEND UI",
+      "year": "2025",
+      "createdAt": "2025-12-16T00:00:00Z",
+      "url": "https://github.com/Masud744/url-shortener-ui",
+      "liveUrl": "https://masud744-url-shortener.netlify.app/",
+      "description": "Minimalist dark-themed glassmorphism user interface designed for webhook URL shortener backends with one-click copy and reactive error routing.",
+      "primaryLanguage": {
+        "name": "CSS",
+        "color": "#563d7c"
+      },
       "languages": [
-        { "name": "C++", "iconifyClass": "logos-c-plusplus" },
-        { "name": "ESP32", "iconifyClass": "simple-icons:espressif" },
-        { "name": "Firebase", "iconifyClass": "logos-firebase" }
+        {
+          "name": "HTML5",
+          "iconifyClass": "logos:html-5"
+        },
+        {
+          "name": "CSS3",
+          "iconifyClass": "logos:css-3"
+        }
       ]
     },
     {
-      "id": "esp32-cam-motion-alert",
-      "name": "ESP32-CAM Motion Alert System",
-      "category": "IoT & Embedded",
-      "createdAt": "2023-11-20T10:00:00Z",
-      "url": "https://github.com/Masud744/esp32-cam-telegram-motion-alert",
-      "description": "Low-cost IoT security system using ESP32-CAM and PIR sensor, capturing and dispatching intruder snapshots to Telegram Bot within 2 seconds.",
-      "isFork": false,
+      "id": "todo-docker",
+      "name": "Dockerized Flask Microservice",
+      "category": "Software",
+      "categoryBadge": "DEVOPS LAB",
+      "year": "2025",
+      "createdAt": "2025-11-05T00:00:00Z",
+      "url": "https://github.com/Masud744/todo-app-docker-lab",
+      "liveUrl": "https://github.com/Masud744/todo-app-docker-lab",
+      "description": "Containerized Flask task management lab showcasing isolated multi-container architectures, volume persistence, and Docker compose orchestration.",
+      "primaryLanguage": {
+        "name": "Python",
+        "color": "#3572A5"
+      },
       "languages": [
-        { "name": "C++", "iconifyClass": "logos-c-plusplus" },
-        { "name": "ESP32", "iconifyClass": "simple-icons:espressif" },
-        { "name": "Telegram", "iconifyClass": "logos-telegram" }
+        {
+          "name": "Docker",
+          "iconifyClass": "logos:docker-icon"
+        },
+        {
+          "name": "Flask",
+          "iconifyClass": "logos:flask"
+        }
       ]
     },
     {
-      "id": "fire-detection-alarm",
-      "name": "Fire Detection & Alarm System",
-      "category": "IoT & Embedded",
-      "createdAt": "2023-10-10T09:00:00Z",
-      "url": "https://github.com/Masud744/fire-detection-alarm-arduino-python",
-      "description": "Hybrid emergency fire detection platform coupling hardware flame/smoke sensing on Arduino with software alert processing in Python over serial.",
-      "isFork": false,
+      "id": "docker-n8n",
+      "name": "Local Docker n8n Setup",
+      "category": "Automation",
+      "categoryBadge": "CONTAINERIZED DEVOPS",
+      "year": "2025",
+      "createdAt": "2025-10-25T00:00:00Z",
+      "url": "https://github.com/Masud744/docker-n8n-local-setup",
+      "liveUrl": "https://github.com/Masud744/docker-n8n-local-setup",
+      "description": "Step-by-step local setup of Docker and n8n with PostgreSQL database persistence and volume storage for robust automation workflows.",
+      "primaryLanguage": {
+        "name": "Shell",
+        "color": "#89e051"
+      },
       "languages": [
-        { "name": "Arduino", "iconifyClass": "logos-arduino" },
-        { "name": "Python", "iconifyClass": "logos-python" }
+        {
+          "name": "Docker",
+          "iconifyClass": "logos:docker-icon"
+        },
+        {
+          "name": "n8n",
+          "iconifyClass": "logos:n8n"
+        }
       ]
     },
     {
-      "id": "airsafe-iot",
-      "name": "AirSafe IoT",
-      "category": "IoT & Embedded",
-      "createdAt": "2023-03-12T11:00:00Z",
-      "url": "https://github.com/Masud744/AirSafe-IoT",
-      "description": "Environmental monitoring edge node utilizing MQ gas sensors on ESP32 to detect CO, LPG, and hazardous smoke with threshold-based buzzer alerts.",
-      "isFork": false,
+      "id": "financial-network",
+      "name": "Financial Institute Network Design",
+      "category": "Software",
+      "categoryBadge": "CISCO NETWORKING",
+      "year": "2025",
+      "createdAt": "2025-06-30T00:00:00Z",
+      "url": "https://github.com/Masud744/Financial-Institute-Network-Design",
+      "liveUrl": "https://github.com/Masud744/Financial-Institute-Network-Design",
+      "description": "Secure, scalable enterprise network topology for multi-branch financial institutions built with Cisco Packet Tracer, implementing VLANs, ACLs, and routing.",
+      "primaryLanguage": {
+        "name": "Networking",
+        "color": "#0284c7"
+      },
       "languages": [
-        { "name": "C++", "iconifyClass": "logos-c-plusplus" },
-        { "name": "ESP32", "iconifyClass": "simple-icons:espressif" }
+        {
+          "name": "Cisco",
+          "iconifyClass": "simple-icons:cisco"
+        },
+        {
+          "name": "Network",
+          "iconifyClass": "simple-icons:wireshark"
+        }
       ]
     },
     {
-      "id": "human-following-robot",
-      "name": "Human Following Robot",
-      "category": "IoT & Embedded",
-      "createdAt": "2023-01-20T12:00:00Z",
-      "url": "https://github.com/Masud744/human-following-robot-arduino",
-      "description": "Autonomous mobile robot tracking human movement via ultrasonic distance sensing and IR arrays with closed-loop motor velocity control.",
-      "isFork": false,
+      "id": "firebase-led",
+      "name": "Firebase ESP32 Cloud Actuator",
+      "category": "IoT",
+      "categoryBadge": "CLOUD ACTUATOR",
+      "year": "2024",
+      "createdAt": "2024-11-15T00:00:00Z",
+      "url": "https://github.com/Masud744/Firebase-ESP32-LED-Control",
+      "liveUrl": "https://github.com/Masud744/Firebase-ESP32-LED-Control",
+      "description": "Real-time cloud database hardware actuator controller communicating with Google Firebase Realtime Database over secure Wi-Fi sockets.",
+      "primaryLanguage": {
+        "name": "C++",
+        "color": "#f34b7d"
+      },
       "languages": [
-        { "name": "Arduino", "iconifyClass": "logos-arduino" },
-        { "name": "C++", "iconifyClass": "logos-c-plusplus" }
+        {
+          "name": "ESP32",
+          "iconifyClass": "simple-icons:espressif"
+        },
+        {
+          "name": "Firebase",
+          "iconifyClass": "logos:firebase"
+        }
+      ]
+    },
+    {
+      "id": "ultrasonic-dist",
+      "name": "Ultrasonic Distance Sonar",
+      "category": "IoT",
+      "categoryBadge": "SENSOR TELEMETRY",
+      "year": "2024",
+      "createdAt": "2024-07-10T00:00:00Z",
+      "url": "https://github.com/Masud744/Ultrasonic-Distance-Measurement",
+      "liveUrl": "https://github.com/Masud744/Ultrasonic-Distance-Measurement",
+      "description": "Precise non-contact distance measurement firmware utilizing HC-SR04 ultrasonic sonar pulses, temperature sound speed compensation, and LCD display.",
+      "primaryLanguage": {
+        "name": "C++",
+        "color": "#f34b7d"
+      },
+      "languages": [
+        {
+          "name": "Arduino",
+          "iconifyClass": "logos:arduino"
+        },
+        {
+          "name": "C++",
+          "iconifyClass": "logos:c-plusplus"
+        }
+      ]
+    },
+    {
+      "id": "serial-csv",
+      "name": "Serial Monitor to CSV Logger",
+      "category": "Software",
+      "categoryBadge": "DEVELOPER TOOL",
+      "year": "2026",
+      "createdAt": "2026-02-28T00:00:00Z",
+      "url": "https://github.com/Masud744/serial-monitor-to-csv-guide",
+      "liveUrl": "https://github.com/Masud744/serial-monitor-to-csv-guide",
+      "description": "Practical developer guide and high-speed Python CLI serial logger for streaming live microcontroller telemetry into structured CSV datasets.",
+      "primaryLanguage": {
+        "name": "Python",
+        "color": "#3572A5"
+      },
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
+        },
+        {
+          "name": "Serial",
+          "iconifyClass": "logos:bash"
+        }
+      ]
+    },
+    {
+      "id": "pi-os-guide",
+      "name": "Raspberry Pi OS Headless Guide",
+      "category": "Software",
+      "categoryBadge": "SYSTEMS GUIDE",
+      "year": "2025",
+      "createdAt": "2025-05-18T00:00:00Z",
+      "url": "https://github.com/Masud744/raspberry-pi-os-install-guide",
+      "liveUrl": "https://github.com/Masud744/raspberry-pi-os-install-guide",
+      "description": "Comprehensive technical setup guide for installing, configuring, and securing headless Raspberry Pi OS with SSH keys and network optimization.",
+      "primaryLanguage": {
+        "name": "Markdown",
+        "color": "#083fa1"
+      },
+      "languages": [
+        {
+          "name": "Linux",
+          "iconifyClass": "logos:linux-tux"
+        },
+        {
+          "name": "Raspberry Pi",
+          "iconifyClass": "logos:raspberry-pi"
+        }
+      ]
+    },
+    {
+      "id": "library-reg",
+      "name": "Arduino Registry Index",
+      "category": "IoT",
+      "categoryBadge": "GLOBAL INDEX",
+      "year": "2026",
+      "createdAt": "2026-04-05T00:00:00Z",
+      "url": "https://github.com/Masud744/library-registry",
+      "liveUrl": "https://github.com/arduino/library-registry",
+      "description": "Official metadata registry deployment that indexed SmartProv into the global Arduino Library Manager database for worldwide developers.",
+      "primaryLanguage": {
+        "name": "JSON",
+        "color": "#292929"
+      },
+      "languages": [
+        {
+          "name": "Arduino",
+          "iconifyClass": "logos:arduino"
+        },
+        {
+          "name": "Git",
+          "iconifyClass": "logos:git-icon"
+        }
+      ]
+    },
+    {
+      "id": "copilot-ai",
+      "name": "EngineerCopilot AI",
+      "category": "Software",
+      "categoryBadge": "DEVELOPER COPILOT",
+      "year": "2026",
+      "createdAt": "2026-06-01T00:00:00Z",
+      "url": "https://github.com/Masud744/EngineerCopilot-AI",
+      "liveUrl": "https://github.com/Masud744/EngineerCopilot-AI",
+      "description": "AI assistant engineered to automate microcontroller pinout mapping, datasheet register parsing, and boilerplate FreeRTOS firmware scaffolding.",
+      "primaryLanguage": {
+        "name": "Python",
+        "color": "#3572A5"
+      },
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
+        },
+        {
+          "name": "AI / LLM",
+          "iconifyClass": "logos:openai-icon"
+        }
+      ]
+    },
+    {
+      "id": "aiml-lab",
+      "name": "AI-ML Laboratory Codebase",
+      "category": "ML",
+      "categoryBadge": "ALGORITHMS LAB",
+      "year": "2025",
+      "createdAt": "2025-04-10T00:00:00Z",
+      "url": "https://github.com/Masud744/AI-ML-Lab",
+      "liveUrl": "https://github.com/Masud744/AI-ML-Lab",
+      "description": "Machine learning algorithms and optimization experiments from scratch, covering gradient descent, regression, SVMs, and neural estimators.",
+      "primaryLanguage": {
+        "name": "Python",
+        "color": "#3572A5"
+      },
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
+        },
+        {
+          "name": "NumPy",
+          "iconifyClass": "logos:numpy"
+        }
+      ]
+    },
+    {
+      "id": "graphics-lab",
+      "name": "Computer Graphics Lab",
+      "category": "Software",
+      "categoryBadge": "OPENGL GRAPHICS",
+      "year": "2025",
+      "createdAt": "2025-03-20T00:00:00Z",
+      "url": "https://github.com/Masud744/Computer-Graphics-Lab",
+      "liveUrl": "https://github.com/Masud744/Computer-Graphics-Lab",
+      "description": "Computer graphics rendering algorithms implementing Bresenham lines, 3D affine matrix transformations, and viewport projections in C++.",
+      "primaryLanguage": {
+        "name": "C++",
+        "color": "#f34b7d"
+      },
+      "languages": [
+        {
+          "name": "C++",
+          "iconifyClass": "logos:c-plusplus"
+        },
+        {
+          "name": "OpenGL",
+          "iconifyClass": "logos:opengl"
+        }
+      ]
+    },
+    {
+      "id": "fullstack-web",
+      "name": "Full-Stack Web Practice Lab",
+      "category": "Web",
+      "categoryBadge": "WEB ARCHITECTURE",
+      "year": "2025",
+      "createdAt": "2025-02-10T00:00:00Z",
+      "url": "https://github.com/Masud744/Full-Stack-Web-Development",
+      "liveUrl": "https://github.com/Masud744/Full-Stack-Web-Development",
+      "description": "Full-stack web engineering projects spanning RESTful server design, semantic HTML5, modern CSS layouts, and database interfacing.",
+      "primaryLanguage": {
+        "name": "HTML",
+        "color": "#e34c26"
+      },
+      "languages": [
+        {
+          "name": "HTML5",
+          "iconifyClass": "logos:html-5"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos:javascript"
+        }
+      ]
+    },
+    {
+      "id": "smart-pond-base",
+      "name": "Smart Pond Firmware Probe",
+      "category": "IoT",
+      "categoryBadge": "AQUACULTURE PROBE",
+      "year": "2025",
+      "createdAt": "2025-05-10T00:00:00Z",
+      "url": "https://github.com/Masud744/smart-pond",
+      "liveUrl": "https://github.com/Masud744/smart-pond",
+      "description": "Foundational telemetry probe firmware for aquaculture water quality tracking, reading analog pH and DS18B20 1-wire digital temperature sensors.",
+      "primaryLanguage": {
+        "name": "C++",
+        "color": "#f34b7d"
+      },
+      "languages": [
+        {
+          "name": "Arduino",
+          "iconifyClass": "logos:arduino"
+        },
+        {
+          "name": "C++",
+          "iconifyClass": "logos:c-plusplus"
+        }
       ]
     }
   ]

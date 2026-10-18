@@ -4,7 +4,6 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
-import { TypeAnimation } from "react-type-animation";
 import masudPortrait from "../../assets/images/masud_vector_portrait.png";
 
 export default function Greeting(props) {
@@ -18,44 +17,11 @@ export default function Greeting(props) {
               <h1 className="greeting-text" style={{ color: theme.text }}>
                 {greeting.title}
               </h1>
-              <div
-                className="terminal-typewriter-container"
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "8px",
-                  background: "rgba(10, 102, 194, 0.08)",
-                  padding: "6px 16px",
-                  borderRadius: "20px",
-                  margin: "8px 0 16px 0",
-                  border: "1px solid rgba(10, 102, 194, 0.2)",
-                }}
-              >
-                <span style={{ color: "#0A66C2", fontWeight: "bold" }}>&gt;</span>
-                <TypeAnimation
-                  sequence={[
-                    "Embedded Systems Engineer",
-                    2200,
-                    "Edge AI Researcher",
-                    2200,
-                    "Arduino Library Author",
-                    2200,
-                    "IoT Architecture Builder",
-                    2200,
-                    "FreeRTOS Developer",
-                    2200,
-                  ]}
-                  wrapper="span"
-                  speed={50}
-                  repeat={Infinity}
-                  style={{
-                    fontFamily: "'JetBrains Mono', monospace",
-                    fontSize: "1.05rem",
-                    fontWeight: "600",
-                    color: theme.text,
-                  }}
-                />
-              </div>
+              {greeting.nickname && (
+                <h2 className="greeting-nickname" style={{ color: theme.text }}>
+                  ( {greeting.nickname} )
+                </h2>
+              )}
               <p
                 className="greeting-text-p subTitle"
                 style={{ color: theme.secondaryText }}

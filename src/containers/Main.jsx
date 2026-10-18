@@ -10,7 +10,6 @@ import Projects from "../pages/projects/Projects";
 import AboutComponent from "../pages/about/AboutComponent";
 import SkillsComponent from "../pages/skills/SkillsComponent";
 import ActivitiesComponent from "../pages/activities/ActivitiesComponent";
-import PublicationsComponent from "../pages/publications/PublicationsComponent";
 import TestimonialsComponent from "../pages/testimonials/TestimonialsComponent";
 import { settings } from "../portfolio.js";
 import Error404 from "../pages/errors/error404/Error";
@@ -90,10 +89,6 @@ export default class Main extends Component {
           <Route
             path="/activities"
             element={<ActivitiesComponent theme={theme} />}
-          />
-          <Route
-            path="/publications"
-            element={<PublicationsComponent theme={theme} />}
           />
           <Route
             path="/testimonials"

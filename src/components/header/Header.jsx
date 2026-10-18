@@ -113,18 +113,6 @@ class Header extends Component {
               </li>
               <li>
                 <NavLink
-                  to="/publications"
-                  className={({ isActive }) => (isActive ? "active-link" : "")}
-                  style={({ isActive }) => ({
-                    color: theme.text,
-                    fontWeight: isActive ? "bold" : "normal",
-                  })}
-                >
-                  Publications
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
                   to="/testimonials"
                   className={({ isActive }) => (isActive ? "active-link" : "")}
                   style={({ isActive }) => ({

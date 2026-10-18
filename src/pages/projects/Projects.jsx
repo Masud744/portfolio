@@ -1,106 +1,113 @@
-import React, { Component } from "react";
+import React, { useState, useMemo } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
-import PublicationCard from "../../components/publicationsCard/PublicationCard";
-import Button from "../../components/button/Button";
 import TopButton from "../../components/topButton/TopButton";
-import { Fade } from "react-reveal";
-import {
-  greeting,
-  projectsHeader,
-  publicationsHeader,
-  publications,
-} from "../../portfolio.js";
 import ProjectsData from "../../shared/opensource/projects.json";
 import "./Projects.css";
-import ProjectsImg from "./ProjectsImg";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
-class Projects extends Component {
-  render() {
-    const theme = this.props.theme;
-    return (
-      <div className="projects-main">
-        <Header
-          theme={theme}
-          themeMode={this.props.themeMode}
-          onToggle={this.props.onToggle}
-        />
-        <div className="basic-projects">
-          <Fade bottom duration={2000} distance="40px">
-            <div className="projects-heading-div">
-              <div className="projects-heading-img-div">
-                {/* <img
-											src={require(`../../assets/images/${projectsHeader["avatar_image_path"]}`)}
-											alt=""
-										/> */}
-                <ProjectsImg theme={theme} />
-              </div>
-              <div className="projects-heading-text-div">
-                <h1
-                  className="projects-heading-text"
-                  style={{ color: theme.text }}
-                >
-                  {projectsHeader.title}
-                </h1>
-                <p
-                  className="projects-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {projectsHeader["description"]}
-                </p>
-              </div>
-            </div>
-          </Fade>
-        </div>
-        <div className="repo-cards-div-main">
-          {ProjectsData.data.map((repo) => {
-            return <GithubRepoCard repo={repo} theme={theme} />;
-          })}
-        </div>
-        <Button
-          text={"More Projects"}
-          className="project-button"
-          href={greeting.githubProfile}
-          newTab={true}
-          theme={theme}
-        />
+export default function Projects(props) {
+  const theme = props.theme;
+  const [filter, setFilter] = useState("all");
+  const [showAll, setShowAll] = useState(false);
 
-        {/* Publications  */}
-        {publications.data.length > 0 ? (
-          <div className="basic-projects">
-            <Fade bottom duration={2000} distance="40px">
-              <div className="publications-heading-div">
-                <div className="publications-heading-text-div">
-                  <h1
-                    className="publications-heading-text"
-                    style={{ color: theme.text }}
-                  >
-                    {publicationsHeader.title}
-                  </h1>
-                  <p
-                    className="projects-header-detail-text subTitle"
-                    style={{ color: theme.secondaryText }}
-                  >
-                    {publicationsHeader["description"]}
-                  </p>
-                </div>
-              </div>
-            </Fade>
+  // Exact 6 categories from Screenshot 5
+  const categories = [
+    { key: "all", label: "All" },
+    { key: "software", label: "Software" },
+    { key: "iot", label: "IoT" },
+    { key: "robotics", label: "Robotics" },
+    { key: "ml", label: "Machine Learning" },
+    { key: "web", label: "Web" },
+  ];
+
+  const filteredProjects = useMemo(() => {
+    if (filter === "all") return ProjectsData.data;
+    return ProjectsData.data.filter((proj) => {
+      const cat = (proj.category || "").toLowerCase();
+      if (filter === "software") return cat.includes("software");
+      if (filter === "iot") return cat.includes("iot") || cat.includes("embedded");
+      if (filter === "robotics") return cat.includes("robotics");
+      if (filter === "ml") return cat.includes("ml") || cat.includes("learning") || cat.includes("ai");
+      if (filter === "web") return cat.includes("web") || cat.includes("full-stack");
+      return cat.includes(filter);
+    });
+  }, [filter]);
+
+  // Default display 6 projects (2 full rows of 3), matching Screenshot 5
+  const displayedProjects = showAll
+    ? filteredProjects
+    : filteredProjects.slice(0, 6);
+
+  return (
+    <div className="projects-main">
+      <Header
+        theme={theme}
+        themeMode={props.themeMode}
+        onToggle={props.onToggle}
+      />
+
+      <div className="projects-container">
+        {/* Header with Title & Category Filter Tabs matching Screenshot 5 */}
+        <div className="projects-section-header">
+          <div className="projects-title-wrapper">
+            <h2 className="projects-section-title">
+              Other Notable Projects
+            </h2>
+            <div className="projects-title-divider" />
           </div>
-        ) : null}
 
-        <div className="repo-cards-div-main">
-          {publications.data.map((pub) => {
-            return <PublicationCard pub={pub} theme={theme} />;
-          })}
+          <div className="projects-filter-tabs">
+            {categories.map((cat) => (
+              <button
+                key={cat.key}
+                type="button"
+                onClick={() => {
+                  setFilter(cat.key);
+                  setShowAll(false);
+                }}
+                className={`project-filter-pill ${
+                  filter === cat.key ? "filter-pill-active" : ""
+                }`}
+              >
+                {cat.label}
+              </button>
+            ))}
+          </div>
         </div>
 
-        <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
-        <TopButton theme={this.props.theme} />
-      </div>
-    );
-  }
-}
+        {/* 3-Column Responsive Grid matching Screenshot 5 */}
+        <div className="projects-grid-container">
+          {displayedProjects.map((repo) => (
+            <GithubRepoCard key={repo.id} repo={repo} theme={theme} />
+          ))}
+        </div>
 
-export default Projects;
+        {/* Show More / Show Less Button */}
+        {filteredProjects.length > 6 && (
+          <div className="projects-show-more-wrapper">
+            <button
+              type="button"
+              className="projects-toggle-btn"
+              onClick={() => setShowAll(!showAll)}
+            >
+              {showAll ? (
+                <>
+                  Show Less <FiChevronUp />
+                </>
+              ) : (
+                <>
+                  See More Projects <FiChevronDown />
+                </>
+              )}
+            </button>
+          </div>
+        )}
+      </div>
+
+      <Footer theme={theme} onToggle={props.onToggle} />
+      <TopButton theme={theme} />
+    </div>
+  );
+}

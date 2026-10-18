@@ -1,117 +1,143 @@
 .projects-main {
   width: 100%;
-  text-align: center;
+  min-height: 100vh;
+  background: #ffffff;
 }
 
-.basic-projects {
-  margin-left: 5%;
-  margin-right: 5%;
+.projects-container {
+  width: 90%;
+  margin: 3rem auto 6rem auto;
 }
 
-.projects-heading-div {
+.projects-section-header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 
-.projects-heading-div > * {
-  flex: 1;
-}
-
-.projects-heading-img-div {
+.projects-title-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 16px;
+  flex-grow: 1;
 }
 
-.projects-heading-text-div {
-  text-align: center;
+.projects-section-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  white-space: nowrap;
+  margin: 0;
+  color: #0f172a;
+  letter-spacing: -0.02em;
 }
 
-.projects-heading-img-div > * {
-  max-width: 100%;
-  height: auto;
+.projects-title-divider {
+  height: 1px;
+  background: #e2e8f0;
+  flex-grow: 1;
+  max-width: 260px;
 }
 
-.projects-heading-text {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "Google Sans Medium";
-  line-height: 1.1;
-  text-align: center;
-  margin-top: 80px;
+.projects-filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
 }
 
-.projects-heading-sub-text {
-  font-size: 30px;
-  font-family: "Google Sans Regular";
-  text-align: center;
-  margin-bottom: 10px;
+.project-filter-pill {
+  padding: 6px 18px;
+  border-radius: 9999px;
+  font-size: 13.5px;
+  font-weight: 500;
+  border: none;
+  background: #f1f5f9;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  outline: none;
 }
 
-.projects-header-detail-text {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: "Google Sans Medium";
-}
-.publications-heading-text-div {
-  text-align: center;
-  font-family: "Google Sans Regular";
-  margin-top: 70px;
+.project-filter-pill:hover {
+  background: #e2e8f0;
+  color: #0f172a;
 }
 
-.publications-heading-text {
-  font-size: 56px;
+.filter-pill-active {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
   font-weight: 600;
 }
-.repo-cards-div-main {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1rem 1rem;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 60px;
+
+/* Strictly 3 columns on desktop matching Screenshot 5 */
+.projects-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 32px;
+  row-gap: 40px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-@media (max-width: 1380px) {
-  .projects-heading-text {
-    font-size: 50px;
-    margin-top: 80px;
-  }
-  .projects-heading-sub-text {
-    font-size: 25px;
+.projects-show-more-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.projects-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 28px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.projects-toggle-btn:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+  background: #f8fafc;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.12);
+}
+
+@media (max-width: 1080px) {
+  .projects-grid-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
   }
 }
 
 @media (max-width: 768px) {
-  .projects-heading-text,
-  .publications-heading-text {
-    font-size: 30px;
-    margin-top: 20px;
-  }
-
-  .projects-heading-sub-text {
-    font-size: 20px;
-  }
-
-  .projects-heading-div {
+  .projects-section-header {
     flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
   }
-
-  .projects-header-detail-text {
-    font-size: 16px;
-    margin-right: 0px;
-    margin-left: 0px;
-    line-height: normal;
-    text-align: center;
+  .projects-title-wrapper {
+    width: 100%;
   }
-
-  .repo-cards-div-main {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 30px;
+  .projects-title-divider {
+    display: none;
+  }
+  .projects-grid-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .projects-section-title {
+    font-size: 1.5rem;
   }
 }

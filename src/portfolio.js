@@ -323,7 +323,7 @@ export const certifications = {
 // Experience Page
 export const experience = {
   title: "Experience",
-  subtitle: "Open Source, Engineering Projects & Leadership",
+  subtitle: "Open Source & Engineering Traineeship",
   description:
     "I have designed resilient bare-metal firmware, orchestrated real-time computer vision pipelines, and published production libraries to global developer registries. I thrive at the hardware-software boundary.",
   header_image_path: "experience.svg",
@@ -355,22 +355,6 @@ export const experience = {
         },
       ],
     },
-    {
-      title: "Leadership & Community",
-      experiences: [
-        {
-          title: "System Architect & Hardware Segment Leader",
-          company: "UFTB Robotics & IoT Club",
-          company_url: "https://uftb.ac.bd",
-          logo_path: "university_logo.png",
-          duration: "2023 - PRESENT",
-          location: "UFTB, Bangladesh",
-          description:
-            "Spearheaded technical workshops and hackathons on microcontroller interfacing, sensor-to-cloud telemetry, and PCB circuit design. Mentored junior engineering students in C/C++ firmware debugging.",
-          color: "#0A2472",
-        },
-      ],
-    },
   ],
 };
 
@@ -378,27 +362,17 @@ export const experience = {
 export const projectsHeader = {
   title: "Projects",
   description:
-    "Flagship engineering achievements bridging bare-metal hardware, FreeRTOS, explainable AI, and full-stack cloud telemetry.",
+    "Flagship engineering achievements bridging bare-metal hardware, FreeRTOS, edge AI, and full-stack cloud telemetry.",
   avatar_image_path: "projects_image.svg",
 };
 
 export const publicationsHeader = {
-  title: "Publications & Research",
-  description:
-    "Research papers and investigational studies in explainable Edge AI, FreeRTOS healthcare monitoring, and precision aquaculture.",
+  title: "Publications",
+  description: "",
 };
 
 export const publications = {
-  data: [
-    {
-      id: "respiguard-paper",
-      name: "RespiGuard: Hierarchical Explainable Edge AI for Respiratory Risk Prediction",
-      createdAt: "2024-06-01T00:00:00Z",
-      description:
-        "Investigational study coupling FreeRTOS ambient environmental sensing with TreeSHAP local waterfall explainability for early clinical risk assessment.",
-      url: "https://github.com/Masud744/RespiGuard",
-    },
-  ],
+  data: [],
 };
 
 // Contact Page
@@ -477,7 +451,7 @@ export const activitiesSection = {
     },
     {
       role: "Head of Membership Development",
-      organization: "UFTB Robotics & IoT Club",
+      organization: "UFTB Robotics Club",
       duration: "Oct 2025 — Present",
       location: "UFTB, Gazipur",
       description:

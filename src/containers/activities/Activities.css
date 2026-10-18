@@ -1,8 +1,7 @@
 .activities-main {
   width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 4rem;
+  padding: 10px;
+  margin: 2.5rem auto 4rem auto;
 }
 
 .activities-heading {
@@ -22,8 +21,9 @@
 
 .activities-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 24px;
+  width: 100%;
 }
 
 .activity-card {
