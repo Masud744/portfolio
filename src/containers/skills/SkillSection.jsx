@@ -26,13 +26,7 @@ function GetSkillSvg(props) {
     <img
       src={avatarSrc}
       alt={avatarAlt}
-      style={{
-        width: "100%",
-        maxHeight: "340px",
-        objectFit: "contain",
-        borderRadius: "16px",
-        filter: "drop-shadow(0 12px 28px rgba(0, 28, 85, 0.12))",
-      }}
+      className="skills-domain-avatar"
     />
   );
 }
@@ -154,7 +148,7 @@ export default function SkillSection({ theme }) {
       <div className="skills-domains-list">
         {skills.data.map((skill, index) => (
           <div key={index} className="skills-domain-card">
-            <Fade left duration={900} distance="30px">
+            <Fade left duration={900} distance="30px" className="skills-domain-fade-left">
               <div className="skills-illustration-col">
                 <GetSkillSvg
                   fileName={skill.fileName}
@@ -164,7 +158,7 @@ export default function SkillSection({ theme }) {
               </div>
             </Fade>
 
-            <Fade right duration={900} distance="30px">
+            <Fade right duration={900} distance="30px" className="skills-domain-fade-right">
               <div className="skills-content-col">
                 <span className="skills-domain-overline">Domain Expert</span>
                 <h2 className="skills-domain-title" style={{ color: theme.text }}>

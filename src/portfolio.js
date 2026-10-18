@@ -294,28 +294,68 @@ export const degrees = {
 export const certifications = {
   certifications: [
     {
+      title: "Certificate of Appreciation (Executive Member)",
+      subtitle: "- WALTON Presents RoboFusion 1.0, UFTB Robotics Club (2026)",
+      logo_path: "university_logo.png",
+      certificate_link: "https://github.com/Masud744",
+      alt_name: "UFTB Robotics Club",
+      color_code: "#f8fafc",
+    },
+    {
+      title: "Participant, Mini RoboSoccer Segment",
+      subtitle: "- National Robotics Championship (NRC) 2025, BUBT (2025)",
+      logo_path: "bubt_logo.png",
+      certificate_link: "https://github.com/Masud744",
+      alt_name: "BUBT NRC",
+      color_code: "#f8fafc",
+    },
+    {
+      title: "Introduction to Generative AI",
+      subtitle: "- Google Cloud Skills Boost (2024)",
+      logo_path: "gcp_logo.png",
+      certificate_link: "https://www.cloudskillsboost.google/",
+      alt_name: "Google Cloud",
+      color_code: "#f8fafc",
+    },
+    {
+      title: "Job Ready: Intermediate",
+      subtitle: "- Wadhwani Foundation (2023)",
+      logo_path: "wadhwani_logo.png",
+      certificate_link: "https://www.wfglobal.org/",
+      alt_name: "Wadhwani Foundation",
+      color_code: "#f8fafc",
+    },
+    {
+      title: "Ambassador Badge & Effective Leadership",
+      subtitle: "- HP LIFE (2024)",
+      logo_path: "hp_logo.png",
+      certificate_link: "https://www.life-global.org/",
+      alt_name: "HP LIFE",
+      color_code: "#f8fafc",
+    },
+    {
+      title: "Ambassador (Nilphamari District)",
+      subtitle: "- ICT Olympiad Bangladesh (2023)",
+      logo_path: "ict_logo.png",
+      certificate_link: "https://ictolympiadbd.com/",
+      alt_name: "ICT Olympiad Bangladesh",
+      color_code: "#f8fafc",
+    },
+    {
+      title: "HTML, CSS, Java & JavaScript: Full Stack Programming",
+      subtitle: "- Udemy (2025)",
+      logo_path: "udemy_logo.png",
+      certificate_link: "https://www.udemy.com/",
+      alt_name: "Udemy",
+      color_code: "#f8fafc",
+    },
+    {
       title: "Official Arduino Library Manager Author (v2.1.3)",
-      subtitle: "- Arduino Library Registry",
+      subtitle: "- Arduino Library Registry (2024)",
       logo_path: "arduino_logo.png",
       certificate_link: "https://www.arduino.cc/reference/en/libraries/smartprov/",
-      alt_name: "Arduino",
-      color_code: "#ffffff",
-    },
-    {
-      title: "Edge AI for Immersive Technology Trainee",
-      subtitle: "- ICT Division, Bangladesh",
-      logo_path: "ict_logo.png",
-      certificate_link: "https://ictd.gov.bd/",
-      alt_name: "ICT Division",
-      color_code: "#ffffff",
-    },
-    {
-      title: "Champion — National Science & Technology Week",
-      subtitle: "- Ministry of Science & Technology",
-      logo_path: "most_logo.png",
-      certificate_link: "#",
-      alt_name: "MoST",
-      color_code: "#ffffff",
+      alt_name: "Arduino Registry",
+      color_code: "#f8fafc",
     },
   ],
 };
@@ -323,11 +363,27 @@ export const certifications = {
 // Experience Page
 export const experience = {
   title: "Experience",
-  subtitle: "Open Source & Engineering Traineeship",
+  subtitle: "Training, Engineering & Open Source",
   description:
-    "I have designed resilient bare-metal firmware, orchestrated real-time computer vision pipelines, and published production libraries to global developer registries. I thrive at the hardware-software boundary.",
+    "Specialized technical training in immersive technologies (AR/VR/XR) and edge AI, alongside production firmware architecture and global open-source libraries.",
   header_image_path: "experience.svg",
   sections: [
+    {
+      title: "Training",
+      experiences: [
+        {
+          title: "AI for Immersive Technology (BDSET)",
+          company: "Kaliakoir Hi-Tech Park, Gazipur",
+          company_url: "https://bdset.gov.bd/",
+          logo_path: "ict_logo.png",
+          duration: "Oct 2025 – Present",
+          location: "Kaliakoir Hi-Tech Park, Gazipur",
+          description:
+            "• Gaining hands-on experience in AI/ML, deep learning, and immersive technologies (AR, VR, MR, and XR).\n• Developing real-world applications in edge artificial intelligence, computer vision, and intelligent system design.",
+          color: "#0284c7",
+        },
+      ],
+    },
     {
       title: "Engineering & Open Source",
       experiences: [
@@ -341,17 +397,6 @@ export const experience = {
           description:
             "Engineered an asynchronous captive portal provisioning engine for ESP32/ESP8266 MCUs. Features encrypted Non-Volatile Storage (NVS) flash persistence, CRC integrity checks, and automated multi-network fallback. Certified and indexed across the official global Arduino Library Manager.",
           color: "#00979D",
-        },
-        {
-          title: "Edge AI & Embedded Systems Trainee",
-          company: "EDGE Project, ICT Division, Bangladesh",
-          company_url: "https://ictd.gov.bd/",
-          logo_path: "ict_logo.png",
-          duration: "2024",
-          location: "Dhaka, Bangladesh",
-          description:
-            "Completed rigorous hands-on training in Deep Learning for Edge Devices, TinyML model quantization, TensorRT acceleration, and 30-60 FPS computer vision pipelines using OpenCV and YOLOv8.",
-          color: "#138808",
         },
       ],
     },

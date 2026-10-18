@@ -32,69 +32,80 @@
 .skills-domains-list {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 36px;
   margin-bottom: 3.5rem;
 }
 
 .skills-domain-card {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 36px;
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 20px;
-  padding: 40px;
+  padding: 32px 36px;
   box-shadow: 0 4px 20px rgba(0, 28, 85, 0.04);
   transition: box-shadow 0.3s ease;
-}
-
-.skills-domain-card > *:first-child {
-  flex: 0 0 40%;
-  display: flex;
-}
-
-.skills-domain-card > *:last-child {
-  flex: 1;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .skills-domain-card:hover {
   box-shadow: 0 8px 30px rgba(0, 28, 85, 0.08);
 }
 
-.skills-illustration-col {
-  flex: 0 0 40%;
+.skills-domain-fade-left {
+  flex: 0 0 320px !important;
+  max-width: 320px !important;
+  width: 320px !important;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.skills-illustration-col > * {
-  max-width: 100%;
-  max-height: 340px;
-  height: auto;
+.skills-illustration-col {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-domain-avatar {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  box-shadow: 0 8px 24px rgba(0, 28, 85, 0.08);
+}
+
+.skills-domain-fade-right {
+  flex: 1 !important;
+  min-width: 0 !important;
+  width: 100% !important;
 }
 
 .skills-content-col {
-  flex: 1;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .skills-domain-overline {
-  font-size: 12.5px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #2563eb;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 .skills-domain-title {
-  font-size: 1.85rem;
+  font-size: 1.75rem;
   font-weight: 800;
   color: #001C55;
-  margin: 0 0 24px 0;
+  margin: 0 0 18px 0;
   line-height: 1.25;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
@@ -103,7 +114,8 @@
 .skills-bullets-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px 24px;
+  gap: 14px 20px;
+  width: 100%;
 }
 
 .skills-bullet-item {
@@ -238,37 +250,44 @@
 /* Responsive Media Queries */
 @media (max-width: 1080px) {
   .skills-domain-card {
-    gap: 30px;
-    padding: 30px;
+    gap: 28px;
+    padding: 28px;
   }
-  .skills-illustration-col {
-    flex: 0 0 45%;
+  .skills-domain-fade-left {
+    flex: 0 0 260px !important;
+    max-width: 260px !important;
+    width: 260px !important;
+  }
+  .skills-domain-avatar {
+    height: 240px;
   }
   .skills-bullets-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 14px;
   }
 }
 
 @media (max-width: 768px) {
   .skills-domain-card {
     flex-direction: column;
-    padding: 24px;
-    gap: 24px;
+    padding: 20px;
+    gap: 20px;
   }
-  .skills-illustration-col {
-    width: 100%;
+  .skills-domain-fade-left {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
-  .skills-illustration-col > * {
-    max-height: 240px;
+  .skills-domain-avatar {
+    height: 220px;
   }
   .skills-domain-title {
-    font-size: 1.5rem;
-    margin-bottom: 18px;
+    font-size: 1.4rem;
+    margin-bottom: 14px;
   }
   .skills-bullets-grid {
     grid-template-columns: 1fr;
-    gap: 14px;
+    gap: 12px;
   }
   .skills-section-title {
     font-size: 1.7rem;
