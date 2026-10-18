@@ -35,8 +35,9 @@ class Contact extends Component {
                   src={masudPortrait}
                   alt={ContactData["title"]}
                   style={{
-                    maxWidth: "100%",
-                    maxHeight: "560px",
+                    width: "100%",
+                    maxWidth: "680px",
+                    maxHeight: "78vh",
                     objectFit: "contain",
                     display: "block",
                     margin: "0 auto",
