@@ -13,7 +13,7 @@ export default class SkillsComponent extends Component {
           themeMode={this.props.themeMode}
           onToggle={this.props.onToggle}
         />
-        <Skills theme={this.props.theme} />
+        <Skills theme={this.props.theme} title="Skills & Technologies" />
         <Footer theme={this.props.theme} />
         <TopButton theme={this.props.theme} />
       </div>
