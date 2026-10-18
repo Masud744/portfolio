@@ -8,7 +8,8 @@ export function getImage(filename) {
   if (
     filename.startsWith("http://") ||
     filename.startsWith("https://") ||
-    filename.startsWith("data:")
+    filename.startsWith("data:") ||
+    filename.startsWith("/")
   ) {
     return filename;
   }

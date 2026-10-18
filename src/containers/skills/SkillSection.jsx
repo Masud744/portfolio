@@ -147,7 +147,7 @@ export default function SkillSection({ theme }) {
       {/* Sequential Animated Domain Cards matching main branch scroll experience */}
       <div className="skills-domains-list">
         {skills.data.map((skill, index) => (
-          <div key={index} className="skills-domain-card">
+          <div key={index} className="skills-domain-card" style={{ backgroundColor: theme.body }}>
             <Fade left duration={900} distance="30px" className="skills-domain-fade-left">
               <div className="skills-illustration-col">
                 <GetSkillSvg
