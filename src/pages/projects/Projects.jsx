@@ -79,7 +79,7 @@ export default function Projects(props) {
         </div>
 
         {/* 3-Column Responsive Grid matching Screenshot 5 with smooth entrance */}
-        <Fade bottom duration={1200} distance="30px">
+        <Fade bottom duration={800} distance="25px">
           <div className="projects-grid-container">
             {displayedProjects.map((repo) => (
               <GithubRepoCard key={repo.id} repo={repo} theme={theme} />

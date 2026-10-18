@@ -12,6 +12,9 @@ export default function ProjectVisualMockup({ project }) {
           alt={project.name}
           className="real-project-img"
           loading="lazy"
+          decoding="async"
+          width="400"
+          height="180"
           onError={(e) => {
             e.currentTarget.style.display = "none";
           }}

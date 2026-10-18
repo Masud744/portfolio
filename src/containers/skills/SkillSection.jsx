@@ -154,7 +154,7 @@ export default function SkillSection({ theme }) {
       <div className="skills-domains-list">
         {skills.data.map((skill, index) => (
           <div key={index} className="skills-domain-card">
-            <Fade left duration={1500} distance="30px">
+            <Fade left duration={900} distance="30px">
               <div className="skills-illustration-col">
                 <GetSkillSvg
                   fileName={skill.fileName}
@@ -164,7 +164,7 @@ export default function SkillSection({ theme }) {
               </div>
             </Fade>
 
-            <Fade right duration={1500} distance="30px">
+            <Fade right duration={900} distance="30px">
               <div className="skills-content-col">
                 <span className="skills-domain-overline">Domain Expert</span>
                 <h2 className="skills-domain-title" style={{ color: theme.text }}>

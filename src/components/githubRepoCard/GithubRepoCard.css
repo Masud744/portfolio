@@ -7,26 +7,16 @@
   padding: 16px;
   box-sizing: border-box;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   width: 100%;
-  animation: cardFadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  content-visibility: auto;
+  contain-intrinsic-size: 0 430px;
 }
 
 .notable-project-card:hover {
   transform: translateY(-8px);
   border-color: #0a66c2;
   box-shadow: 0 16px 36px rgba(10, 102, 194, 0.14);
-}
-
-@keyframes cardFadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .project-card-visual-wrapper {

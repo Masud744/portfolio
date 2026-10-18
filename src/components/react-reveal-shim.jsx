@@ -25,8 +25,8 @@ function useRevealObserver() {
         }
       },
       {
-        threshold: 0.05,
-        rootMargin: "0px 0px -40px 0px",
+        threshold: 0.02,
+        rootMargin: "60px 0px 0px 0px",
       }
     );
 
@@ -46,13 +46,15 @@ export function Fade({
   top,
   left,
   right,
-  duration = 1000,
+  duration = 900,
   delay = 0,
+  distance = "32px",
   style,
   className = "",
   ...rest
 }) {
   const [ref, isVisible] = useRevealObserver();
+  const [animDone, setAnimDone] = useState(false);
 
   let animName = "rRevealFadeInUp";
   if (left) animName = "rRevealFadeInLeft";
@@ -61,18 +63,27 @@ export function Fade({
   else if (bottom) animName = "rRevealFadeInUp";
 
   const animStyle = isVisible
-    ? {
-        animation: `${animName} ${duration}ms cubic-bezier(0.25, 0.46, 0.45, 0.94) ${delay}ms both`,
-        willChange: "opacity, transform",
-        ...style,
-      }
+    ? animDone
+      ? { ...style }
+      : {
+          animation: `${animName} ${duration}ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms both`,
+          "--reveal-dist": distance,
+          willChange: "opacity, transform",
+          ...style,
+        }
     : {
         opacity: 0,
         ...style,
       };
 
   return (
-    <div ref={ref} className={className} style={animStyle} {...rest}>
+    <div
+      ref={ref}
+      className={className}
+      style={animStyle}
+      onAnimationEnd={() => setAnimDone(true)}
+      {...rest}
+    >
       {children}
     </div>
   );
@@ -80,27 +91,36 @@ export function Fade({
 
 export function Flip({
   children,
-  duration = 1000,
+  duration = 900,
   delay = 0,
   style,
   className = "",
   ...rest
 }) {
   const [ref, isVisible] = useRevealObserver();
+  const [animDone, setAnimDone] = useState(false);
 
   const animStyle = isVisible
-    ? {
-        animation: `rRevealFlipY ${duration}ms cubic-bezier(0.25, 0.46, 0.45, 0.94) ${delay}ms both`,
-        willChange: "opacity, transform",
-        ...style,
-      }
+    ? animDone
+      ? { ...style }
+      : {
+          animation: `rRevealFlipY ${duration}ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms both`,
+          willChange: "opacity, transform",
+          ...style,
+        }
     : {
         opacity: 0,
         ...style,
       };
 
   return (
-    <div ref={ref} className={className} style={animStyle} {...rest}>
+    <div
+      ref={ref}
+      className={className}
+      style={animStyle}
+      onAnimationEnd={() => setAnimDone(true)}
+      {...rest}
+    >
       {children}
     </div>
   );
@@ -108,27 +128,36 @@ export function Flip({
 
 export function Zoom({
   children,
-  duration = 1000,
+  duration = 900,
   delay = 0,
   style,
   className = "",
   ...rest
 }) {
   const [ref, isVisible] = useRevealObserver();
+  const [animDone, setAnimDone] = useState(false);
 
   const animStyle = isVisible
-    ? {
-        animation: `rRevealZoom ${duration}ms cubic-bezier(0.25, 0.46, 0.45, 0.94) ${delay}ms both`,
-        willChange: "opacity, transform",
-        ...style,
-      }
+    ? animDone
+      ? { ...style }
+      : {
+          animation: `rRevealZoom ${duration}ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms both`,
+          willChange: "opacity, transform",
+          ...style,
+        }
     : {
         opacity: 0,
         ...style,
       };
 
   return (
-    <div ref={ref} className={className} style={animStyle} {...rest}>
+    <div
+      ref={ref}
+      className={className}
+      style={animStyle}
+      onAnimationEnd={() => setAnimDone(true)}
+      {...rest}
+    >
       {children}
     </div>
   );
