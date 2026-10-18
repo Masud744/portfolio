@@ -36,11 +36,13 @@ class Contact extends Component {
                   alt={ContactData["title"]}
                   style={{
                     width: "100%",
-                    maxWidth: "680px",
-                    maxHeight: "78vh",
+                    maxWidth: "700px",
+                    maxHeight: "85vh",
                     objectFit: "contain",
                     display: "block",
                     margin: "0 auto",
+                    marginBottom: 0,
+                    verticalAlign: "bottom",
                     filter: "drop-shadow(0 15px 35px rgba(0, 0, 0, 0.35))",
                   }}
                 />
