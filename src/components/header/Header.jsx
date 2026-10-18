@@ -41,30 +41,6 @@ class Header extends Component {
               </li>
               <li>
                 <NavLink
-                  to="/about"
-                  className={({ isActive }) => (isActive ? "active-link" : "")}
-                  style={({ isActive }) => ({
-                    color: theme.text,
-                    fontWeight: isActive ? "bold" : "normal",
-                  })}
-                >
-                  About
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/skills"
-                  className={({ isActive }) => (isActive ? "active-link" : "")}
-                  style={({ isActive }) => ({
-                    color: theme.text,
-                    fontWeight: isActive ? "bold" : "normal",
-                  })}
-                >
-                  Skills
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
                   to="/education"
                   className={({ isActive }) => (isActive ? "active-link" : "")}
                   style={({ isActive }) => ({
@@ -97,30 +73,6 @@ class Header extends Component {
                   })}
                 >
                   Projects
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/activities"
-                  className={({ isActive }) => (isActive ? "active-link" : "")}
-                  style={({ isActive }) => ({
-                    color: theme.text,
-                    fontWeight: isActive ? "bold" : "normal",
-                  })}
-                >
-                  Activities
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/testimonials"
-                  className={({ isActive }) => (isActive ? "active-link" : "")}
-                  style={({ isActive }) => ({
-                    color: theme.text,
-                    fontWeight: isActive ? "bold" : "normal",
-                  })}
-                >
-                  Testimonials
                 </NavLink>
               </li>
               <li>

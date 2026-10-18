@@ -6,7 +6,6 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import BlogsImg from "./BlogsImg";
 import AddressImg from "./AddressImg";
-import masudPortrait from "../../assets/images/masud_vector_portrait.png";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
 import { contactPageData } from "../../portfolio.js";
@@ -32,19 +31,8 @@ class Contact extends Component {
             <div className="contact-heading-div">
               <div className="contact-heading-img-div">
                 <img
-                  src={masudPortrait}
-                  alt={ContactData["title"]}
-                  style={{
-                    width: "100%",
-                    maxWidth: "700px",
-                    maxHeight: "85vh",
-                    objectFit: "contain",
-                    display: "block",
-                    margin: "0 auto",
-                    marginBottom: 0,
-                    verticalAlign: "bottom",
-                    filter: "drop-shadow(0 15px 35px rgba(0, 0, 0, 0.35))",
-                  }}
+                  src={getImage(ContactData["profile_image_path"]) || getImage("animated_ashutosh.png")}
+                  alt=""
                 />
               </div>
               <div className="contact-heading-text-div">
@@ -93,6 +81,10 @@ class Contact extends Component {
                 </div>
               </div>
               <div className="blog-heading-img-div">
+                {/* <img
+											src={require(`../../assets/images/${blogSection["avatar_image_path"]}`)}
+											alt=""
+										/> */}
                 <BlogsImg theme={theme} />
               </div>
             </div>
@@ -100,6 +92,10 @@ class Contact extends Component {
           <Fade bottom duration={1000} distance="40px">
             <div className="address-heading-div">
               <div className="contact-heading-img-div">
+                {/* <img
+											src={require(`../../assets/images/${addressSection["avatar_image_path"]}`)}
+											alt=""
+										/> */}
                 <AddressImg theme={theme} />
               </div>
               <div className="address-heading-text-div">
