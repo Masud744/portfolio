@@ -7,20 +7,20 @@
 
 .about-header-block {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 36px;
 }
 
 .about-heading {
   font-size: 52px;
   font-weight: 800;
   color: #001C55;
-  margin: 0 0 8px 0;
+  margin: 0 0 14px 0;
   font-family: "Google Sans Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   letter-spacing: -0.02em;
 }
 
 .about-subheading-tag {
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 600;
   color: #2563eb;
   margin: 0;
@@ -28,12 +28,12 @@
   letter-spacing: -0.01em;
 }
 
-/* Profile Card (Screenshot 4 fix: clean academic spacing & tone) */
+/* Profile Card (clean academic spacing & tone) */
 .about-profile-card {
   background: #ffffff;
   border: 1px solid rgba(0, 28, 85, 0.12);
   border-radius: 16px;
-  padding: 32px 36px;
+  padding: 34px 38px;
   box-shadow: 0 4px 16px rgba(0, 28, 85, 0.04);
   margin-bottom: 45px;
   transition: all 0.25s ease;

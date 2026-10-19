@@ -537,13 +537,13 @@ export const contactPageData = {
   },
 };
 
-// About Section Data (Academic & Engineering Profile)
+// About Section Data (Engineering Profile)
 export const aboutSection = {
   title: "About Me",
-  subtitle: "Undergraduate Researcher & Embedded Systems Engineer",
+  subtitle: "Embedded Systems & Edge AI Engineer",
   paragraphs: [
-    "I am an undergraduate engineering student pursuing a B.Sc. in Internet of Things & Robotics Engineering at University of Frontier Technology, Bangladesh (UFTB). My technical focus is centered on embedded systems, C/C++ firmware development, FreeRTOS multitasking, and applied edge computer vision.",
-    "As the author of SmartProv (v2.1.3), an open-source Wi-Fi provisioning library indexed in the official Arduino Library Manager, I work on developing reliable embedded solutions—ranging from low-level sensor interfacing and fail-safe firmware updates to on-device machine learning inference and wireless telemetry over LoRa and MQTT.",
+    "I’m an embedded software engineer focused on microcontroller firmware, real-time systems, and hardware-software integration. I work primarily with C and C++, building modular firmware, developing reliable sensor interfaces, and implementing FreeRTOS-based task architectures and secure OTA updates.",
+    "I also work on edge AI and computer vision, with a focus on deploying machine learning models directly on embedded hardware. I optimize on-device inference for low latency and minimal memory overhead, while building reliable telemetry pipelines that connect physical devices with cloud systems.",
   ],
   pillars: [
     {
