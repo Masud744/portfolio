@@ -48,7 +48,7 @@ export default function Greeting(props) {
                     style={{
                       color: theme.secondaryText,
                       marginBottom:
-                        index === greeting.subTitle.length - 1 ? "22px" : "12px",
+                        index === greeting.subTitle.length - 1 ? "16px" : "12px",
                     }}
                   >
                     {para}
@@ -57,7 +57,7 @@ export default function Greeting(props) {
               ) : (
                 <p
                   className="greeting-text-p subTitle"
-                  style={{ color: theme.secondaryText, marginBottom: "22px" }}
+                  style={{ color: theme.secondaryText, marginBottom: "16px" }}
                 >
                   {greeting.subTitle}
                 </p>
