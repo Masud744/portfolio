@@ -227,124 +227,34 @@
       "imageUrl": "/project_images/sentinel-grid.png"
     },
     {
-      "id": "department-routine",
-      "name": "Department Routine Engine",
-      "category": "Web",
-      "categoryBadge": "PWA & CANVAS",
-      "year": "2026",
-      "createdAt": "2026-08-15T00:00:00Z",
-      "url": "https://github.com/Masud744/department-routine",
-      "liveUrl": "https://department-routine.vercel.app",
-      "description": "Academic routine engine & real-time room vacancy allocator for Dept. of IRE, UFTB. Features offline-first PWA architecture, conflict-free schedule parsing, and dynamic celestial campus environment canvas.",
+      "id": "human-robot",
+      "name": "Human Following Robot",
+      "category": "Robotics",
+      "categoryBadge": "AUTONOMOUS ROBOT",
+      "year": "2025",
+      "createdAt": "2025-01-20T00:00:00Z",
+      "url": "https://github.com/Masud744/human-following-robot-arduino",
+      "liveUrl": "https://github.com/Masud744/human-following-robot-arduino",
+      "description": "Autonomous mobile robot that tracks and follows human movement using HC-SR04 ultrasonic distance sensing and dual IR directional arrays with closed-loop motor velocity regulation.",
       "primaryLanguage": {
-        "name": "TypeScript",
-        "color": "#3178c6"
+        "name": "C++",
+        "color": "#f34b7d"
       },
       "languages": [
         {
-          "name": "TypeScript",
-          "iconifyClass": "logos:typescript-icon"
+          "name": "Arduino",
+          "iconifyClass": "logos:arduino"
         },
         {
-          "name": "React",
-          "iconifyClass": "logos:react"
+          "name": "C++",
+          "iconifyClass": "logos:c-plusplus"
         },
         {
-          "name": "Tailwind",
-          "iconifyClass": "logos:tailwindcss-icon"
+          "name": "Robotics",
+          "iconifyClass": "simple-icons:ros"
         }
       ],
-      "imageUrl": "/project_images/department-routine.jpeg"
-    },
-    {
-      "id": "robofusion-soccer",
-      "name": "RoboFusion Tournament System",
-      "category": "Web",
-      "categoryBadge": "TOURNAMENT ENGINE",
-      "year": "2026",
-      "createdAt": "2026-08-01T00:00:00Z",
-      "url": "https://github.com/Masud744/robofusion-robo-soccer-tournament-system",
-      "liveUrl": "https://robofusion-soccer.vercel.app/",
-      "description": "Official live tournament management and match display system for WALTON Presents RoboFusion 1.0 competition. Projector-optimized arena display, knockout bracket generation, and sound FX.",
-      "primaryLanguage": {
-        "name": "TypeScript",
-        "color": "#3178c6"
-      },
-      "languages": [
-        {
-          "name": "TypeScript",
-          "iconifyClass": "logos:typescript-icon"
-        },
-        {
-          "name": "React 19",
-          "iconifyClass": "logos:react"
-        },
-        {
-          "name": "Vite",
-          "iconifyClass": "logos:vitejs"
-        }
-      ],
-      "imageUrl": "/project_images/robofusion-robo-soccer-tournament-system.png"
-    },
-    {
-      "id": "cashly",
-      "name": "Cashly",
-      "category": "Software",
-      "categoryBadge": "OFFLINE-FIRST APP",
-      "year": "2026",
-      "createdAt": "2026-07-10T00:00:00Z",
-      "url": "https://github.com/Masud744/cashly",
-      "liveUrl": "https://cashly-masud.vercel.app",
-      "description": "Offline-first student expense tracker and financial planner with tuition income management, custom budgeting categories, interactive Chart.js analytics, and complete local persistence.",
-      "primaryLanguage": {
-        "name": "TypeScript",
-        "color": "#3178c6"
-      },
-      "languages": [
-        {
-          "name": "TypeScript",
-          "iconifyClass": "logos:typescript-icon"
-        },
-        {
-          "name": "React 19",
-          "iconifyClass": "logos:react"
-        },
-        {
-          "name": "Chart.js",
-          "iconifyClass": "simple-icons:chartdotjs"
-        }
-      ],
-      "imageUrl": "/project_images/cashly.png"
-    },
-    {
-      "id": "shomvob",
-      "name": "Shomvob AI",
-      "category": "Software",
-      "categoryBadge": "CAREER OS & AI",
-      "year": "2026",
-      "createdAt": "2026-07-25T00:00:00Z",
-      "url": "https://github.com/Masud744/Shomvob",
-      "liveUrl": "https://shomvob.vercel.app",
-      "description": "AI-powered career operating system for tech engineers, featuring intelligent resume parsing, automated job matching pipelines, and interactive technical interview roadmaps.",
-      "primaryLanguage": {
-        "name": "TypeScript",
-        "color": "#3178c6"
-      },
-      "languages": [
-        {
-          "name": "TypeScript",
-          "iconifyClass": "logos:typescript-icon"
-        },
-        {
-          "name": "Next.js",
-          "iconifyClass": "logos:nextjs-icon"
-        },
-        {
-          "name": "Tailwind",
-          "iconifyClass": "logos:tailwindcss-icon"
-        }
-      ],
-      "imageUrl": "/project_images/Shomvob.png"
+      "imageUrl": "/project_images/human-following-robot-arduino.jpg"
     },
     {
       "id": "esp32-ota",
@@ -407,154 +317,120 @@
       "imageUrl": "/project_images/rtos-scheduling-experiment-esp32.png"
     },
     {
-      "id": "human-robot",
-      "name": "Human Following Robot",
-      "category": "Robotics",
-      "categoryBadge": "AUTONOMOUS ROBOT",
-      "year": "2025",
-      "createdAt": "2025-01-20T00:00:00Z",
-      "url": "https://github.com/Masud744/human-following-robot-arduino",
-      "liveUrl": "https://github.com/Masud744/human-following-robot-arduino",
-      "description": "Autonomous mobile robot that tracks and follows human movement using HC-SR04 ultrasonic distance sensing and dual IR directional arrays with closed-loop motor velocity regulation.",
-      "primaryLanguage": {
-        "name": "C++",
-        "color": "#f34b7d"
-      },
-      "languages": [
-        {
-          "name": "Arduino",
-          "iconifyClass": "logos:arduino"
-        },
-        {
-          "name": "C++",
-          "iconifyClass": "logos:c-plusplus"
-        },
-        {
-          "name": "Robotics",
-          "iconifyClass": "simple-icons:ros"
-        }
-      ],
-      "imageUrl": "/project_images/human-following-robot-arduino.jpg"
-    },
-    {
-      "id": "home-automation-fw",
-      "name": "IoT Home Energy Ecosystem",
-      "category": "IoT",
-      "categoryBadge": "SMART HOME IOT",
-      "year": "2025",
-      "createdAt": "2025-09-01T00:00:00Z",
-      "url": "https://github.com/Masud744/IoT-Based-Home-Automation-and-Energy-Monitoring-System",
-      "liveUrl": "https://smart-home-masud.netlify.app",
-      "description": "Multi-node ESP32 smart home ecosystem for multi-room appliance switching, ambient environmental sensing, and energy tracking with Firebase Realtime Database telemetry.",
-      "primaryLanguage": {
-        "name": "C++",
-        "color": "#f34b7d"
-      },
-      "languages": [
-        {
-          "name": "C++",
-          "iconifyClass": "logos:c-plusplus"
-        },
-        {
-          "name": "ESP32",
-          "iconifyClass": "simple-icons:espressif"
-        },
-        {
-          "name": "Firebase",
-          "iconifyClass": "logos:firebase"
-        }
-      ],
-      "imageUrl": "/project_images/IoT-Based-Home-Automation-and-Energy-Monitoring-System.jpg"
-    },
-    {
-      "id": "home-automation-ui",
-      "name": "Home Automation Dashboard",
+      "id": "robofusion-soccer",
+      "name": "RoboFusion Tournament System",
       "category": "Web",
-      "categoryBadge": "TELEMETRY DASHBOARD",
-      "year": "2025",
-      "createdAt": "2025-09-10T00:00:00Z",
-      "url": "https://github.com/Masud744/Home-Automation-and-Energy-Monitoring-Dashboard",
-      "liveUrl": "https://smart-home-masud.netlify.app",
-      "description": "Responsive web dashboard for an ESP32-based Smart Home system with live Firebase Realtime synchronization, interactive appliance toggles, and Chart.js energy trends.",
+      "categoryBadge": "TOURNAMENT ENGINE",
+      "year": "2026",
+      "createdAt": "2026-08-01T00:00:00Z",
+      "url": "https://github.com/Masud744/robofusion-robo-soccer-tournament-system",
+      "liveUrl": "https://robofusion-soccer.vercel.app/",
+      "description": "Official live tournament management and match display system for WALTON Presents RoboFusion 1.0 competition. Projector-optimized arena display, knockout bracket generation, and sound FX.",
       "primaryLanguage": {
-        "name": "CSS",
-        "color": "#563d7c"
+        "name": "TypeScript",
+        "color": "#3178c6"
       },
       "languages": [
         {
-          "name": "JavaScript",
-          "iconifyClass": "logos:javascript"
+          "name": "TypeScript",
+          "iconifyClass": "logos:typescript-icon"
         },
         {
-          "name": "CSS3",
-          "iconifyClass": "logos:css-3"
+          "name": "React 19",
+          "iconifyClass": "logos:react"
         },
         {
-          "name": "Firebase",
-          "iconifyClass": "logos:firebase"
+          "name": "Vite",
+          "iconifyClass": "logos:vitejs"
         }
       ],
-      "imageUrl": "/project_images/Home-Automation-and-Energy-Monitoring-Dashboard.png"
+      "imageUrl": "/project_images/robofusion-robo-soccer-tournament-system.png"
     },
     {
-      "id": "pi-weather-ml",
-      "name": "Raspberry Pi Weather ML",
-      "category": "ML",
-      "categoryBadge": "TIME-SERIES ML",
+      "id": "copilot-ai",
+      "name": "EngineerCopilot AI",
+      "category": "Software",
+      "categoryBadge": "DEVELOPER COPILOT",
       "year": "2026",
-      "createdAt": "2026-01-25T00:00:00Z",
-      "url": "https://github.com/Masud744/raspberrypi-weather-ml",
-      "liveUrl": "https://raspberrypi-weather-dashboard.netlify.app/",
-      "description": "Edge-to-cloud IoT weather monitoring and forecasting platform combining edge sensor ingestion on Raspberry Pi with InfluxDB Cloud streaming and ~85% accurate ML regression lookahead.",
+      "createdAt": "2026-06-01T00:00:00Z",
+      "url": "https://github.com/Masud744/EngineerCopilot-AI",
+      "liveUrl": "https://github.com/Masud744/EngineerCopilot-AI",
+      "description": "AI assistant engineered to automate microcontroller pinout mapping, datasheet register parsing, and boilerplate FreeRTOS firmware scaffolding.",
       "primaryLanguage": {
         "name": "Python",
         "color": "#3572A5"
       },
       "languages": [
         {
-          "name": "Raspberry Pi",
-          "iconifyClass": "logos:raspberry-pi"
-        },
-        {
           "name": "Python",
           "iconifyClass": "logos:python"
         },
         {
-          "name": "InfluxDB",
-          "iconifyClass": "simple-icons:influxdb"
+          "name": "AI / LLM",
+          "iconifyClass": "logos:openai-icon"
         }
       ],
-      "imageUrl": "/project_images/raspberrypi-weather-ml.png"
+      "imageUrl": "/project_images/Shomvob.png"
     },
     {
-      "id": "esp32-cam",
-      "name": "ESP32-CAM Telegram Motion Alert",
-      "category": "IoT",
-      "categoryBadge": "HARDWARE SURVEILLANCE",
-      "year": "2025",
-      "createdAt": "2025-11-20T00:00:00Z",
-      "url": "https://github.com/Masud744/esp32-cam-telegram-motion-alert",
-      "liveUrl": "https://github.com/Masud744/esp32-cam-telegram-motion-alert",
-      "description": "Low-cost IoT security node using ESP32-CAM and PIR motion sensor to capture and dispatch intruder photos to Telegram within 2 seconds, alongside local browser HTTP video streaming.",
+      "id": "department-routine",
+      "name": "Department Routine Engine",
+      "category": "Web",
+      "categoryBadge": "PWA & CANVAS",
+      "year": "2026",
+      "createdAt": "2026-08-15T00:00:00Z",
+      "url": "https://github.com/Masud744/department-routine",
+      "liveUrl": "https://department-routine.vercel.app",
+      "description": "Academic routine engine & real-time room vacancy allocator for Dept. of IRE, UFTB. Features offline-first PWA architecture, conflict-free schedule parsing, and dynamic celestial campus environment canvas.",
       "primaryLanguage": {
-        "name": "C",
-        "color": "#555555"
+        "name": "TypeScript",
+        "color": "#3178c6"
       },
       "languages": [
         {
-          "name": "C",
-          "iconifyClass": "logos:c"
+          "name": "TypeScript",
+          "iconifyClass": "logos:typescript-icon"
         },
         {
-          "name": "ESP32",
-          "iconifyClass": "simple-icons:espressif"
+          "name": "React",
+          "iconifyClass": "logos:react"
         },
         {
-          "name": "Telegram",
-          "iconifyClass": "logos:telegram"
+          "name": "Tailwind",
+          "iconifyClass": "logos:tailwindcss-icon"
         }
       ],
-      "imageUrl": "/project_images/esp32-cam-telegram-motion-alert.png"
+      "imageUrl": "/project_images/department-routine.jpeg"
+    },
+    {
+      "id": "shomvob",
+      "name": "Shomvob AI",
+      "category": "Software",
+      "categoryBadge": "CAREER OS & AI",
+      "year": "2026",
+      "createdAt": "2026-07-25T00:00:00Z",
+      "url": "https://github.com/Masud744/Shomvob",
+      "liveUrl": "https://shomvob.vercel.app",
+      "description": "AI-powered career operating system for tech engineers, featuring intelligent resume parsing, automated job matching pipelines, and interactive technical interview roadmaps.",
+      "primaryLanguage": {
+        "name": "TypeScript",
+        "color": "#3178c6"
+      },
+      "languages": [
+        {
+          "name": "TypeScript",
+          "iconifyClass": "logos:typescript-icon"
+        },
+        {
+          "name": "Next.js",
+          "iconifyClass": "logos:nextjs-icon"
+        },
+        {
+          "name": "Tailwind",
+          "iconifyClass": "logos:tailwindcss-icon"
+        }
+      ],
+      "imageUrl": "/project_images/Shomvob.png"
     },
     {
       "id": "pi-esp32-mqtt",
@@ -587,6 +463,36 @@
       "imageUrl": null
     },
     {
+      "id": "pi-weather-ml",
+      "name": "Raspberry Pi Weather ML",
+      "category": "ML",
+      "categoryBadge": "TIME-SERIES ML",
+      "year": "2026",
+      "createdAt": "2026-01-25T00:00:00Z",
+      "url": "https://github.com/Masud744/raspberrypi-weather-ml",
+      "liveUrl": "https://raspberrypi-weather-dashboard.netlify.app/",
+      "description": "Edge-to-cloud IoT weather monitoring and forecasting platform combining edge sensor ingestion on Raspberry Pi with InfluxDB Cloud streaming and ~85% accurate ML regression lookahead.",
+      "primaryLanguage": {
+        "name": "Python",
+        "color": "#3572A5"
+      },
+      "languages": [
+        {
+          "name": "Raspberry Pi",
+          "iconifyClass": "logos:raspberry-pi"
+        },
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
+        },
+        {
+          "name": "InfluxDB",
+          "iconifyClass": "simple-icons:influxdb"
+        }
+      ],
+      "imageUrl": "/project_images/raspberrypi-weather-ml.png"
+    },
+    {
       "id": "facemask-ar",
       "name": "FaceMask AR Filter",
       "category": "ML",
@@ -617,34 +523,34 @@
       "imageUrl": "/project_images/facemask-ar-filter.png"
     },
     {
-      "id": "internradar",
-      "name": "InternRadar",
-      "category": "Software",
-      "categoryBadge": "OPPORTUNITY AGGREGATOR",
-      "year": "2026",
-      "createdAt": "2026-05-15T00:00:00Z",
-      "url": "https://github.com/Masud744/InternRader",
-      "liveUrl": "https://internrader.netlify.app/",
-      "description": "Global internship aggregation and monitoring platform with scheduled GitHub Actions scrapers, Supabase PostgreSQL persistence, and searchable web analytics dashboard.",
+      "id": "home-automation-fw",
+      "name": "IoT Home Energy Ecosystem",
+      "category": "IoT",
+      "categoryBadge": "SMART HOME IOT",
+      "year": "2025",
+      "createdAt": "2025-09-01T00:00:00Z",
+      "url": "https://github.com/Masud744/IoT-Based-Home-Automation-and-Energy-Monitoring-System",
+      "liveUrl": "https://smart-home-masud.netlify.app",
+      "description": "Multi-node ESP32 smart home ecosystem for multi-room appliance switching, ambient environmental sensing, and energy tracking with Firebase Realtime Database telemetry.",
       "primaryLanguage": {
-        "name": "JavaScript",
-        "color": "#f1e05a"
+        "name": "C++",
+        "color": "#f34b7d"
       },
       "languages": [
         {
-          "name": "Python",
-          "iconifyClass": "logos:python"
+          "name": "C++",
+          "iconifyClass": "logos:c-plusplus"
         },
         {
-          "name": "FastAPI",
-          "iconifyClass": "logos:fastapi"
+          "name": "ESP32",
+          "iconifyClass": "simple-icons:espressif"
         },
         {
-          "name": "Supabase",
-          "iconifyClass": "logos:supabase-icon"
+          "name": "Firebase",
+          "iconifyClass": "logos:firebase"
         }
       ],
-      "imageUrl": "/project_images/InternRader.png"
+      "imageUrl": "/project_images/IoT-Based-Home-Automation-and-Energy-Monitoring-System.jpg"
     },
     {
       "id": "fire-alarm",
@@ -699,6 +605,36 @@
       "imageUrl": null
     },
     {
+      "id": "esp32-cam",
+      "name": "ESP32-CAM Telegram Motion Alert",
+      "category": "IoT",
+      "categoryBadge": "HARDWARE SURVEILLANCE",
+      "year": "2025",
+      "createdAt": "2025-11-20T00:00:00Z",
+      "url": "https://github.com/Masud744/esp32-cam-telegram-motion-alert",
+      "liveUrl": "https://github.com/Masud744/esp32-cam-telegram-motion-alert",
+      "description": "Low-cost IoT security node using ESP32-CAM and PIR motion sensor to capture and dispatch intruder photos to Telegram within 2 seconds, alongside local browser HTTP video streaming.",
+      "primaryLanguage": {
+        "name": "C",
+        "color": "#555555"
+      },
+      "languages": [
+        {
+          "name": "C",
+          "iconifyClass": "logos:c"
+        },
+        {
+          "name": "ESP32",
+          "iconifyClass": "simple-icons:espressif"
+        },
+        {
+          "name": "Telegram",
+          "iconifyClass": "logos:telegram"
+        }
+      ],
+      "imageUrl": "/project_images/esp32-cam-telegram-motion-alert.png"
+    },
+    {
       "id": "dry-handwash",
       "name": "Dry Handwashing Machine",
       "category": "Robotics",
@@ -725,44 +661,78 @@
       "imageUrl": null
     },
     {
-      "id": "uno-esp-serial",
-      "name": "Arduino-ESP8266 Serial Gateway",
-      "category": "IoT",
-      "categoryBadge": "UART LOGIC TRANSLATOR",
-      "year": "2026",
-      "createdAt": "2026-01-18T00:00:00Z",
-      "url": "https://github.com/Masud744/arduino-uno-esp8266-dht22-serial",
-      "liveUrl": "https://github.com/Masud744/arduino-uno-esp8266-dht22-serial",
-      "description": "Serial communication pipeline between Arduino Uno (5V) and ESP8266 (3.3V) with calibrated resistive voltage division for safe logic shifting and DHT22 telemetry.",
+      "id": "home-automation-ui",
+      "name": "Home Automation Dashboard",
+      "category": "Web",
+      "categoryBadge": "TELEMETRY DASHBOARD",
+      "year": "2025",
+      "createdAt": "2025-09-10T00:00:00Z",
+      "url": "https://github.com/Masud744/Home-Automation-and-Energy-Monitoring-Dashboard",
+      "liveUrl": "https://smart-home-masud.netlify.app",
+      "description": "Responsive web dashboard for an ESP32-based Smart Home system with live Firebase Realtime synchronization, interactive appliance toggles, and Chart.js energy trends.",
       "primaryLanguage": {
-        "name": "C++",
-        "color": "#f34b7d"
+        "name": "CSS",
+        "color": "#563d7c"
       },
       "languages": [
         {
-          "name": "Arduino",
-          "iconifyClass": "logos:arduino"
+          "name": "JavaScript",
+          "iconifyClass": "logos:javascript"
         },
         {
-          "name": "ESP8266",
-          "iconifyClass": "simple-icons:espressif"
+          "name": "CSS3",
+          "iconifyClass": "logos:css-3"
+        },
+        {
+          "name": "Firebase",
+          "iconifyClass": "logos:firebase"
         }
       ],
-      "imageUrl": "/project_images/arduino-uno-esp8266-dht22-serial.jpg"
+      "imageUrl": "/project_images/Home-Automation-and-Energy-Monitoring-Dashboard.png"
     },
     {
-      "id": "weather-sim",
-      "name": "IoT InfluxDB Stream Simulator",
-      "category": "IoT",
-      "categoryBadge": "DATA STREAM SIMULATOR",
+      "id": "cashly",
+      "name": "Cashly",
+      "category": "Software",
+      "categoryBadge": "OFFLINE-FIRST APP",
       "year": "2026",
-      "createdAt": "2026-02-14T00:00:00Z",
-      "url": "https://github.com/Masud744/iot-realtime-weather-sensor-simulation-influxdb-open-meteo",
-      "liveUrl": "https://github.com/Masud744/iot-realtime-weather-sensor-simulation-influxdb-open-meteo",
-      "description": "Real-time IoT sensor simulator streaming synthetic ambient telemetries into InfluxDB Cloud with Open-Meteo real-world validation benchmarks.",
+      "createdAt": "2026-07-10T00:00:00Z",
+      "url": "https://github.com/Masud744/cashly",
+      "liveUrl": "https://cashly-masud.vercel.app",
+      "description": "Offline-first student expense tracker and financial planner with tuition income management, custom budgeting categories, interactive Chart.js analytics, and complete local persistence.",
       "primaryLanguage": {
-        "name": "Python",
-        "color": "#3572A5"
+        "name": "TypeScript",
+        "color": "#3178c6"
+      },
+      "languages": [
+        {
+          "name": "TypeScript",
+          "iconifyClass": "logos:typescript-icon"
+        },
+        {
+          "name": "React 19",
+          "iconifyClass": "logos:react"
+        },
+        {
+          "name": "Chart.js",
+          "iconifyClass": "simple-icons:chartdotjs"
+        }
+      ],
+      "imageUrl": "/project_images/cashly.png"
+    },
+    {
+      "id": "internradar",
+      "name": "InternRadar",
+      "category": "Software",
+      "categoryBadge": "OPPORTUNITY AGGREGATOR",
+      "year": "2026",
+      "createdAt": "2026-05-15T00:00:00Z",
+      "url": "https://github.com/Masud744/InternRader",
+      "liveUrl": "https://internrader.netlify.app/",
+      "description": "Global internship aggregation and monitoring platform with scheduled GitHub Actions scrapers, Supabase PostgreSQL persistence, and searchable web analytics dashboard.",
+      "primaryLanguage": {
+        "name": "JavaScript",
+        "color": "#f1e05a"
       },
       "languages": [
         {
@@ -770,11 +740,15 @@
           "iconifyClass": "logos:python"
         },
         {
-          "name": "InfluxDB",
-          "iconifyClass": "simple-icons:influxdb"
+          "name": "FastAPI",
+          "iconifyClass": "logos:fastapi"
+        },
+        {
+          "name": "Supabase",
+          "iconifyClass": "logos:supabase-icon"
         }
       ],
-      "imageUrl": "/project_images/iot-realtime-weather-sensor-simulation-influxdb-open-meteo.png"
+      "imageUrl": "/project_images/InternRader.png"
     },
     {
       "id": "linkedin-n8n",
@@ -1011,6 +985,58 @@
       "imageUrl": null
     },
     {
+      "id": "uno-esp-serial",
+      "name": "Arduino-ESP8266 Serial Gateway",
+      "category": "IoT",
+      "categoryBadge": "UART LOGIC TRANSLATOR",
+      "year": "2026",
+      "createdAt": "2026-01-18T00:00:00Z",
+      "url": "https://github.com/Masud744/arduino-uno-esp8266-dht22-serial",
+      "liveUrl": "https://github.com/Masud744/arduino-uno-esp8266-dht22-serial",
+      "description": "Serial communication pipeline between Arduino Uno (5V) and ESP8266 (3.3V) with calibrated resistive voltage division for safe logic shifting and DHT22 telemetry.",
+      "primaryLanguage": {
+        "name": "C++",
+        "color": "#f34b7d"
+      },
+      "languages": [
+        {
+          "name": "Arduino",
+          "iconifyClass": "logos:arduino"
+        },
+        {
+          "name": "ESP8266",
+          "iconifyClass": "simple-icons:espressif"
+        }
+      ],
+      "imageUrl": "/project_images/arduino-uno-esp8266-dht22-serial.jpg"
+    },
+    {
+      "id": "weather-sim",
+      "name": "IoT InfluxDB Stream Simulator",
+      "category": "IoT",
+      "categoryBadge": "DATA STREAM SIMULATOR",
+      "year": "2026",
+      "createdAt": "2026-02-14T00:00:00Z",
+      "url": "https://github.com/Masud744/iot-realtime-weather-sensor-simulation-influxdb-open-meteo",
+      "liveUrl": "https://github.com/Masud744/iot-realtime-weather-sensor-simulation-influxdb-open-meteo",
+      "description": "Real-time IoT sensor simulator streaming synthetic ambient telemetries into InfluxDB Cloud with Open-Meteo real-world validation benchmarks.",
+      "primaryLanguage": {
+        "name": "Python",
+        "color": "#3572A5"
+      },
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos:python"
+        },
+        {
+          "name": "InfluxDB",
+          "iconifyClass": "simple-icons:influxdb"
+        }
+      ],
+      "imageUrl": "/project_images/iot-realtime-weather-sensor-simulation-influxdb-open-meteo.png"
+    },
+    {
       "id": "firebase-led",
       "name": "Firebase ESP32 Cloud Actuator",
       "category": "IoT",
@@ -1139,32 +1165,6 @@
         }
       ],
       "imageUrl": null
-    },
-    {
-      "id": "copilot-ai",
-      "name": "EngineerCopilot AI",
-      "category": "Software",
-      "categoryBadge": "DEVELOPER COPILOT",
-      "year": "2026",
-      "createdAt": "2026-06-01T00:00:00Z",
-      "url": "https://github.com/Masud744/EngineerCopilot-AI",
-      "liveUrl": "https://github.com/Masud744/EngineerCopilot-AI",
-      "description": "AI assistant engineered to automate microcontroller pinout mapping, datasheet register parsing, and boilerplate FreeRTOS firmware scaffolding.",
-      "primaryLanguage": {
-        "name": "Python",
-        "color": "#3572A5"
-      },
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos:python"
-        },
-        {
-          "name": "AI / LLM",
-          "iconifyClass": "logos:openai-icon"
-        }
-      ],
-      "imageUrl": "/project_images/Shomvob.png"
     },
     {
       "id": "aiml-lab",
