@@ -676,12 +676,38 @@ export const activitiesSection = {
   ],
 };
 
-// Testimonials Section Data (Strictly empty per instruction - no fake data)
+// Testimonials Section Data
 export const testimonialsSection = {
-  title: "Testimonials",
-  subtitle: "Recommendations & Professional Endorsements",
-  description:
-    "Official endorsements and mentor recommendations will be updated upon completion of active research initiatives and industry fellowship programs.",
-  testimonials: [], // Kept strictly empty to prevent fake information
+  title: "What People Say",
+  testimonials: [
+    {
+      badge: "ACADEMIC SUPERVISOR",
+      quote:
+        "Masud has consistently shown a strong grasp of embedded hardware and firmware design throughout his capstone project. He works independently, takes technical feedback seriously, and approaches system integration with great discipline. It has been a pleasure supervising his academic work.",
+      name: "Farzana Akter",
+      role: "Assistant Professor, Dept. of IoT & Robotics Engineering, UFTB",
+    },
+    {
+      badge: "BATCH ADVISOR",
+      quote:
+        "As his batch advisor in the IRE department, I have closely observed Masud’s academic progress and technical curiosity. He is sincere in his coursework, excels in hands-on lab sessions, and frequently takes the initiative to explore beyond the syllabus. He is a dedicated student with a very promising future in embedded systems.",
+      name: "Mahir Mahbub",
+      role: "Lecturer, Dept. of IoT & Robotics Engineering, UFTB",
+    },
+    {
+      badge: "LEADERSHIP PEER",
+      quote:
+        "Masud is one of the most dependable members of our executive committee. When we organized RoboFusion 1.0, he took full responsibility for the Robo Soccer segment and managed the arena setup and team coordination smoothly. You can always count on him to deliver under tight schedules.",
+      name: "Mursalin Misat",
+      role: "President, UFTB Robotics Club",
+    },
+    {
+      badge: "PROJECT COLLABORATOR",
+      quote:
+        "Having collaborated with Masud on multiple IoT and robotics projects, I really appreciate his focus on writing clean, modular C++ code. Whenever we ran into tricky hardware bugs or sensor communication issues in the lab, he was always the one to patiently trace the signals and fix the root cause.",
+      name: "Shihab Sarkar",
+      role: "Undergraduate Researcher, Dept. of IoT & Robotics Engineering, UFTB",
+    },
+  ],
 };
 
