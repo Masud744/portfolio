@@ -116,14 +116,34 @@ export const skills = {
           style: { color: "#E7352C" },
         },
         {
+          skillName: "STM32",
+          fontAwesomeClassname: "simple-icons:stmicroelectronics",
+          style: { color: "#03234B" },
+        },
+        {
           skillName: "FreeRTOS",
           fontAwesomeClassname: "fas fa-cogs",
           style: { color: "#32CD32" },
         },
         {
+          skillName: "PlatformIO",
+          fontAwesomeClassname: "simple-icons:platformio",
+          style: { color: "#F68212" },
+        },
+        {
+          skillName: "ESP-IDF",
+          fontAwesomeClassname: "fas fa-terminal",
+          style: { color: "#E7352C" },
+        },
+        {
           skillName: "Arduino",
           fontAwesomeClassname: "fas fa-infinity",
           style: { color: "#00979D" },
+        },
+        {
+          skillName: "Raspberry Pi",
+          fontAwesomeClassname: "fab fa-raspberry-pi",
+          style: { color: "#C51A4A" },
         },
         {
           skillName: "LoRa SX1278",
@@ -173,6 +193,11 @@ export const skills = {
           style: { color: "#00C49F" },
         },
         {
+          skillName: "ONNX Runtime",
+          fontAwesomeClassname: "simple-icons:onnx",
+          style: { color: "#005CED" },
+        },
+        {
           skillName: "FastAPI",
           fontAwesomeClassname: "fas fa-bolt",
           style: { color: "#009688" },
@@ -193,6 +218,16 @@ export const skills = {
           skillName: "Docker",
           fontAwesomeClassname: "fab fa-docker",
           style: { color: "#2496ED" },
+        },
+        {
+          skillName: "MQTT",
+          fontAwesomeClassname: "simple-icons:mqtt",
+          style: { color: "#660066" },
+        },
+        {
+          skillName: "WebSockets",
+          fontAwesomeClassname: "fas fa-exchange-alt",
+          style: { color: "#010101" },
         },
         {
           skillName: "PostgreSQL",
@@ -582,24 +617,6 @@ export const aboutSection = {
         "Time-series sensor data logging and monitoring dashboards with InfluxDB and React.",
       ],
       tags: ["LoRa SX1278", "MQTT", "FastAPI", "InfluxDB", "WebSockets"],
-    },
-  ],
-  toolchain: [
-    {
-      category: "Microcontrollers & Silicon",
-      tools: ["ESP32", "ESP8266", "STM32", "Raspberry Pi", "Arduino"],
-    },
-    {
-      category: "Firmware & Embedded RTOS",
-      tools: ["C", "C++", "FreeRTOS", "PlatformIO", "ESP-IDF", "Arduino CLI"],
-    },
-    {
-      category: "Edge AI & Vision",
-      tools: ["Python", "OpenCV", "YOLOv8", "MediaPipe", "ONNX Runtime", "PyTorch"],
-    },
-    {
-      category: "Protocols & Cloud Telemetry",
-      tools: ["LoRa SX1278", "MQTT", "FastAPI", "Docker", "InfluxDB", "WebSockets"],
     },
   ],
 };

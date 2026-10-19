@@ -34,16 +34,16 @@ export default function About(props) {
           </h3>
         </div>
 
-        {/* Narrative / Academic Profile Card (Screenshot 4 fix) */}
-        <div className="about-profile-card">
+        {/* Narrative Statement (clean ash/slate text, open and airy) */}
+        <div className="about-narrative-container">
           {aboutSection.paragraphs.map((p, idx) => (
-            <p key={idx} className="about-paragraph-text" style={{ color: theme.text }}>
+            <p key={idx} className="about-narrative-text" style={{ color: theme.secondaryText }}>
               {p}
             </p>
           ))}
         </div>
 
-        {/* Core Engineering Pillars (Screenshot 3 fix) */}
+        {/* Core Engineering Pillars */}
         <div className="about-section-container">
           <div className="about-section-title-wrap">
             <h2 className="about-section-title" style={{ color: theme.text }}>
@@ -79,30 +79,6 @@ export default function About(props) {
                   {pillar.tags.map((tag, tIdx) => (
                     <span key={tIdx} className="pillar-tag-chip">
                       {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Technical Toolchain */}
-        <div className="about-section-container">
-          <div className="about-section-title-wrap">
-            <h2 className="about-section-title" style={{ color: theme.text }}>
-              Technical Toolchain
-            </h2>
-          </div>
-
-          <div className="about-toolchain-grid">
-            {aboutSection.toolchain.map((tc, idx) => (
-              <div key={idx} className="about-toolchain-card">
-                <h4 className="toolchain-cat-title">{tc.category}</h4>
-                <div className="toolchain-tools-wrap">
-                  {tc.tools.map((tool, tIdx) => (
-                    <span key={tIdx} className="toolchain-chip">
-                      {tool}
                     </span>
                   ))}
                 </div>
