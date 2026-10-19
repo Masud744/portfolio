@@ -6,9 +6,13 @@
 }
 .greet-main {
   width: 90%;
-  padding: 20px 10px;
+  padding: 10px 10px 20px 10px;
   margin: 0px auto;
-  margin-top: 2rem;
+  min-height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .gretting-main {
@@ -23,7 +27,7 @@
 
 .greeting-main > * {
   flex: 1;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .button-greeting-div {
   display: flex;
@@ -31,25 +35,25 @@
 }
 
 .greeting-text {
-  margin-top: 80px;
-  font-size: 70px;
-  line-height: 1.1;
+  margin-top: 20px;
+  font-size: 58px;
+  line-height: 1.15;
   font-family: "Google Sans Bold";
 }
 
 .greeting-nickname {
-  font-size: 28px;
+  font-size: 26px;
   line-height: 1.3;
-  margin: 10px 0 16px 0;
+  margin: 8px 0 16px 0;
   font-family: "Google Sans Bold Italic";
-  min-height: 1.4em;
+  min-height: 1.3em;
   color: #2563eb;
 }
 
 .greeting-text-p {
-  font-size: 30px;
-  line-height: 1.4;
-  margin-right: 40px;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-right: 35px;
   font-family: "Google Sans Medium";
 }
 
@@ -61,13 +65,25 @@
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
-    font-size: 50px;
+    font-size: 48px;
+    margin-top: 15px;
+  }
+  .greeting-nickname {
+    font-size: 24px;
+    margin: 6px 0 12px 0;
   }
   .greeting-text-p {
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 1.55;
+    margin-right: 20px;
   }
 }
 @media (max-width: 768px) {
+  .greet-main {
+    min-height: auto;
+    margin-top: 1.5rem;
+    padding: 10px 5px;
+  }
   .button-greeting-div {
     justify-content: space-around;
   }

@@ -22,8 +22,10 @@ export const greeting = {
   title: "Shahriar Alom Masud",
   logo_name: "Shahriar Alom Masud",
   nickname: "Embedded & Edge AI",
-  subTitle:
-    "Developing low-latency firmware, on-device Edge AI vision, and scalable IoT-to-cloud telemetry pipelines. Passionate about building energy-efficient embedded systems that bridge physical hardware with cloud intelligence.",
+  subTitle: [
+    "I’m an embedded software engineer focused on microcontroller firmware, real-time systems, and hardware-software integration. I work primarily with C and C++, building modular firmware, developing reliable sensor interfaces, and implementing FreeRTOS-based task architectures and secure OTA updates.",
+    "I also work on edge AI and computer vision, with a focus on deploying machine learning models directly on embedded hardware. I optimize on-device inference for low latency and minimal memory overhead, while building reliable telemetry pipelines that connect physical devices with cloud systems.",
+  ],
   taglines: [
     "Embedded Systems Engineer",
     "Edge AI Researcher",

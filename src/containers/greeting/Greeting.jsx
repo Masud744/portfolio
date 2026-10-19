@@ -40,12 +40,28 @@ export default function Greeting(props) {
                   )
                 </h2>
               )}
-              <p
-                className="greeting-text-p subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                {greeting.subTitle}
-              </p>
+              {Array.isArray(greeting.subTitle) ? (
+                greeting.subTitle.map((para, index) => (
+                  <p
+                    key={index}
+                    className="greeting-text-p subTitle"
+                    style={{
+                      color: theme.secondaryText,
+                      marginBottom:
+                        index === greeting.subTitle.length - 1 ? "18px" : "12px",
+                    }}
+                  >
+                    {para}
+                  </p>
+                ))
+              ) : (
+                <p
+                  className="greeting-text-p subTitle"
+                  style={{ color: theme.secondaryText }}
+                >
+                  {greeting.subTitle}
+                </p>
+              )}
               <SocialMedia theme={theme} />
               <div className="portfolio-repo-btn-div" style={{ display: "flex", gap: "15px", flexWrap: "wrap", alignItems: "center" }}>
                 <Button
