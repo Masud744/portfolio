@@ -568,7 +568,11 @@ export const activitiesSection = {
       role: "Robo Soccer Segment Leader",
       organization: "WALTON Presents RoboFusion 1.0 — UFTB Robotics Club",
       duration: "Aug 2026",
-      location: "UFTB, Gazipur",
+      location: "Kaliakoir Hi-Tech Park, Gazipur",
+      image: "robofusion_segment_organizer.jpg",
+      image_bg: "#051326",
+      image_fit: "contain",
+      banner: "robofusion_banner.jpg",
       description:
         "Led and coordinated the Robo Soccer segment, overseeing 20 participating inter-university teams, arena technical setups, wireless frequency allocations, and tournament execution.",
     },
@@ -577,6 +581,9 @@ export const activitiesSection = {
       organization: "UFTB Robotics Club",
       duration: "Oct 2025 — Present",
       location: "UFTB, Gazipur",
+      image: "uftb_robotics_club.jpg",
+      image_bg: "#071626",
+      image_fit: "contain",
       description:
         "Organized hands-on technical workshops on microcontroller interfacing, C/C++ firmware debugging, and sensor-to-cloud telemetry for 60+ junior engineering students.",
     },
@@ -585,6 +592,9 @@ export const activitiesSection = {
       organization: "Rangpur Divisional Students' Welfare Association, UFTB",
       duration: "Sep 2026 — Present",
       location: "UFTB, Bangladesh",
+      image: "rangpur_welfare_association.png",
+      image_bg: "#f8fafc",
+      image_fit: "contain",
       description:
         "Facilitate student networking, academic guidance, and welfare initiatives among engineering undergraduates from Rangpur division.",
     },
@@ -593,6 +603,9 @@ export const activitiesSection = {
       organization: "Badhon — University of Frontier Technology Unit",
       duration: "Feb 2026 — Present",
       location: "UFTB Unit",
+      image: "badhon_uftb.png",
+      image_bg: "#ffffff",
+      image_fit: "contain",
       description:
         "Managed financial records, budget allocations, and logistic planning for voluntary campus blood donation drives.",
     },
