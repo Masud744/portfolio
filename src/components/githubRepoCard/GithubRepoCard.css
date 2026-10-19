@@ -9,6 +9,9 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
   content-visibility: auto;
   contain-intrinsic-size: 0 430px;
 }
@@ -106,12 +109,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .project-action-links {
   display: flex;
   gap: 8px;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .project-action-btn {
@@ -154,6 +163,8 @@
   display: flex;
   gap: 5px;
   align-items: center;
+  flex-wrap: wrap;
+  min-width: 0;
 }
 
 .project-tech-pill {

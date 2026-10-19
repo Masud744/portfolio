@@ -1,11 +1,13 @@
 .browser-frame-container {
   width: 100%;
+  max-width: 100%;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid #e2e8f0;
   background: #ffffff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
 }
 
 .browser-frame-header {
@@ -15,12 +17,16 @@
   align-items: center;
   gap: 8px;
   border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .browser-frame-dots {
   display: flex;
   gap: 5px;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .browser-dot {
@@ -28,6 +34,7 @@
   height: 9px;
   border-radius: 50%;
   display: inline-block;
+  flex-shrink: 0;
 }
 
 .dot-red {
@@ -44,14 +51,16 @@
 
 .browser-frame-address-bar {
   flex-grow: 1;
-  margin: 0 8px;
+  min-width: 0;
+  margin: 0 4px 0 8px;
   background: #ffffff;
   border-radius: 4px;
-  padding: 3px 10px;
+  padding: 3px 8px;
   border: 1px solid #e2e8f0;
   display: flex;
   align-items: center;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .browser-url-text {
@@ -62,6 +71,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
+  width: 100%;
+  min-width: 0;
 }
 
 .browser-frame-body {
