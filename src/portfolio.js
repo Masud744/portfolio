@@ -537,24 +537,91 @@ export const contactPageData = {
   },
 };
 
-// About Section Data (from Master CV)
+// About Section Data (from Master CV & Philosophy Blueprint)
 export const aboutSection = {
   title: "About",
-  subtitle: "Embedded Systems & Edge AI Engineer",
-  description:
-    "I am an Embedded Systems and Edge AI Engineer driven by the mission to build intelligent, low-power systems that operate reliably at the hardware-software boundary. Currently pursuing my B.Sc. in IoT & Robotics Engineering at University of Frontier Technology, Bangladesh (UFTB), I specialize in architecting end-to-end solutions — from bare-metal firmware to cloud-connected telemetry dashboards.",
-  paragraphs: [
-    "I am an Embedded Systems and Edge AI Engineer driven by the mission to build intelligent, low-power systems that operate reliably at the hardware-software boundary. Currently pursuing my B.Sc. in IoT & Robotics Engineering at University of Frontier Technology, Bangladesh (UFTB), I specialize in architecting end-to-end solutions — from bare-metal firmware to cloud-connected telemetry dashboards.",
-    "As the official author of SmartProv (v2.1.3) on the Arduino Library Manager, I have engineered production-grade asynchronous captive provisioning for ESP32/ESP8266 MCUs. My technical focus bridges FreeRTOS deterministic task scheduling, dual-core microcontroller architectures, and real-time computer vision inference pipelines running at 30–60 FPS.",
-    "Whether I am engineering encrypted OTA firmware updates with SHA-256 validation or deploying TreeSHAP explainability for clinical AI models, my goal is to create dependable, field-ready technology that combines low-power hardware telemetry with the analytical depth of applied AI.",
+  subtitle: "Engineering at the Boundary of Silicon & Intelligence",
+  quote:
+    "A prototype works on your workbench; true engineering survives unpredictable power cycles, noisy communication buses, and harsh edge environments.",
+  intro:
+    "I am an Embedded Systems and Edge AI Engineer dedicated to architecting resilient cyber-physical systems where silicon, deterministic firmware, and machine intelligence converge without black-box abstractions. Currently pursuing my B.Sc. in IoT & Robotics Engineering at University of Frontier Technology, Bangladesh (UFTB), I specialize in delivering end-to-end solutions — from low-level sensor interfacing and deterministic RTOS multitasking to high-speed edge vision inference and cloud telemetry dashboards.",
+  pillars: [
+    {
+      id: "01",
+      icon: "cpu",
+      title: "Deterministic Firmware & Bare-Metal Silicon",
+      focus: "Reliability, Timing & Memory Efficiency",
+      points: [
+        "Bare-metal C/C++ firmware & FreeRTOS deterministic task scheduling with priority preemption on dual-core microcontrollers (ESP32/STM32).",
+        "Fail-safe remote OTA firmware architectures featuring dual-partition flash rollback and CRC32/SHA-256 integrity verification.",
+        "Hardware bus protocols (UART, SPI, I2C, 1-Wire), hardware timer interrupts (ISR), and non-volatile memory management (NVS/EEPROM).",
+      ],
+      tags: ["C/C++", "FreeRTOS", "ESP32", "STM32", "OTA Rollback", "NVS Flash"],
+    },
+    {
+      id: "02",
+      icon: "eye",
+      title: "Applied Edge AI & Computer Vision",
+      focus: "Low-Latency On-Device Inference & Explainability",
+      points: [
+        "High-throughput edge vision pipelines executing at 30–60 FPS using YOLOv8, MediaPipe (468 3D facial landmarks), and optimized OpenCV.",
+        "On-device TinyML & model quantization (INT8/FP16) reducing cloud dependency, bandwidth overhead, and inference latency.",
+        "Explainable AI (XAI) utilizing Grad-CAM visual saliency heatmaps and TreeSHAP attribution for verified clinical and agricultural decisions.",
+      ],
+      tags: ["Python", "YOLOv8", "MediaPipe", "TinyML", "ONNX Runtime", "Grad-CAM"],
+    },
+    {
+      id: "03",
+      icon: "wifi",
+      title: "Resilient Telemetry & Distributed Infrastructure",
+      focus: "Long-Range Connectivity & Operational Telemetry",
+      points: [
+        "Long-range sub-gigahertz wireless telemetry using LoRa SX1278 transceivers and low-overhead MQTT broker infrastructure.",
+        "Asynchronous backend microservices and streaming pipelines using FastAPI, WebSockets, and InfluxDB time-series storage.",
+        "Operational telemetry web dashboards providing live sensor feeds, actuator control relays, and automated threshold alerts.",
+      ],
+      tags: ["LoRa SX1278", "MQTT", "FastAPI", "InfluxDB", "Docker", "WebSockets"],
+    },
   ],
-  coreExpertise: [
-    "Bare-metal C/C++ Firmware",
-    "FreeRTOS Deterministic Multitasking",
-    "Edge AI & TinyML Inference",
-    "Computer Vision (YOLOv8, MediaPipe, OpenCV)",
-    "Wireless Telemetry (LoRa SX1278, MQTT)",
-    "IoT Cloud Dashboards & CI/CD",
+  principles: [
+    {
+      title: "Fail-Safe by Design",
+      icon: "shield",
+      desc: "Graceful recovery from brownouts, power spikes, and dropped buses via hardware watchdogs (WDT) and automated partition fallback.",
+    },
+    {
+      title: "Zero-Overhead Discipline",
+      icon: "zap",
+      desc: "Every byte of RAM and microsecond of CPU time counts. Strict memory hygiene and deterministic timing on constrained microcontrollers.",
+    },
+    {
+      title: "Transparency Over Black-Boxes",
+      icon: "search",
+      desc: "Edge intelligence should augment human intuition with interpretable features, explainable heatmaps, and empirical validation.",
+    },
+    {
+      title: "End-to-End System Ownership",
+      icon: "layers",
+      desc: "Deep technical fluency across the entire pipeline — from board-level schematics and logic analyzers to cloud REST APIs and live UIs.",
+    },
+  ],
+  toolchain: [
+    {
+      category: "Microcontrollers & Silicon",
+      tools: ["ESP32", "ESP8266", "STM32", "Raspberry Pi", "Arduino"],
+    },
+    {
+      category: "Firmware & Embedded RTOS",
+      tools: ["C", "C++", "FreeRTOS", "PlatformIO", "ESP-IDF", "Arduino CLI"],
+    },
+    {
+      category: "Edge AI & Vision",
+      tools: ["Python", "OpenCV", "YOLOv8", "MediaPipe", "ONNX Runtime", "PyTorch"],
+    },
+    {
+      category: "Protocols & Cloud Telemetry",
+      tools: ["LoRa SX1278", "MQTT", "FastAPI", "Docker", "InfluxDB", "WebSockets"],
+    },
   ],
   metrics: [
     { value: "v2.1.3", label: "Arduino Library Registry" },
