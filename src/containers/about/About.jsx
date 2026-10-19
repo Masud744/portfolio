@@ -6,10 +6,6 @@ import {
   FiCpu,
   FiEye,
   FiWifi,
-  FiShield,
-  FiZap,
-  FiSearch,
-  FiLayers,
   FiArrowRight,
   FiFileText,
   FiMail,
@@ -25,16 +21,9 @@ export default function About(props) {
     wifi: <FiWifi className="pillar-header-icon" />,
   };
 
-  const principleIcons = {
-    shield: <FiShield className="principle-icon" />,
-    zap: <FiZap className="principle-icon" />,
-    search: <FiSearch className="principle-icon" />,
-    layers: <FiLayers className="principle-icon" />,
-  };
-
   return (
     <div className="about-main" id="about">
-      <Fade bottom duration={1200} distance="30px">
+      <Fade bottom duration={1000} distance="25px">
         {/* Header Block */}
         <div className="about-header-block">
           <h1 className="about-heading" style={{ color: theme.text }}>
@@ -45,27 +34,21 @@ export default function About(props) {
           </h3>
         </div>
 
-        {/* Statement of Purpose Card */}
-        <div className="about-statement-card">
-          <div className="about-quote-box">
-            <span className="about-quote-mark">“</span>
-            <p className="about-quote-text">{aboutSection.quote}</p>
-          </div>
-          <div className="about-divider" />
-          <p className="about-intro-text" style={{ color: theme.text }}>
-            {aboutSection.intro}
-          </p>
+        {/* Narrative / Academic Profile Card (Screenshot 4 fix) */}
+        <div className="about-profile-card">
+          {aboutSection.paragraphs.map((p, idx) => (
+            <p key={idx} className="about-paragraph-text" style={{ color: theme.text }}>
+              {p}
+            </p>
+          ))}
         </div>
 
-        {/* Three Engineering Pillars */}
+        {/* Core Engineering Pillars (Screenshot 3 fix) */}
         <div className="about-section-container">
           <div className="about-section-title-wrap">
             <h2 className="about-section-title" style={{ color: theme.text }}>
               Core Engineering Pillars
             </h2>
-            <p className="about-section-desc">
-              Specialized hardware-software craftsmanship across the complete embedded intelligence lifecycle.
-            </p>
           </div>
 
           <div className="about-pillars-grid">
@@ -104,45 +87,12 @@ export default function About(props) {
           </div>
         </div>
 
-        {/* Four Guiding Engineering Principles */}
-        <div className="about-section-container">
-          <div className="about-section-title-wrap">
-            <h2 className="about-section-title" style={{ color: theme.text }}>
-              Guiding Engineering Principles
-            </h2>
-            <p className="about-section-desc">
-              Architectural rules and engineering rigor applied to every production firmware build and AI pipeline.
-            </p>
-          </div>
-
-          <div className="about-principles-grid">
-            {aboutSection.principles.map((pr, idx) => (
-              <div key={idx} className="about-principle-card">
-                <div className="principle-header-row">
-                  <div className="principle-icon-box">
-                    {principleIcons[pr.icon] || <FiShield className="principle-icon" />}
-                  </div>
-                  <h4 className="principle-title" style={{ color: theme.text }}>
-                    {pr.title}
-                  </h4>
-                </div>
-                <p className="principle-desc" style={{ color: theme.text }}>
-                  {pr.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Technical Toolchain Matrix */}
+        {/* Technical Toolchain */}
         <div className="about-section-container">
           <div className="about-section-title-wrap">
             <h2 className="about-section-title" style={{ color: theme.text }}>
               Technical Toolchain
             </h2>
-            <p className="about-section-desc">
-              Direct fluency across microcontrollers, deterministic RTOS, computer vision runtimes, and distributed protocols.
-            </p>
           </div>
 
           <div className="about-toolchain-grid">
@@ -159,16 +109,6 @@ export default function About(props) {
               </div>
             ))}
           </div>
-        </div>
-
-        {/* Metrics Bar */}
-        <div className="about-metrics-container">
-          {aboutSection.metrics.map((m, idx) => (
-            <div key={idx} className="about-metric-card">
-              <div className="about-metric-value">{m.value}</div>
-              <div className="about-metric-label">{m.label}</div>
-            </div>
-          ))}
         </div>
 
         {/* Call-to-Action Buttons */}

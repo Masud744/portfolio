@@ -537,72 +537,51 @@ export const contactPageData = {
   },
 };
 
-// About Section Data (from Master CV & Philosophy Blueprint)
+// About Section Data (Academic & Engineering Profile)
 export const aboutSection = {
-  title: "About",
-  subtitle: "Engineering at the Boundary of Silicon & Intelligence",
-  quote:
-    "A prototype works on your workbench; true engineering survives unpredictable power cycles, noisy communication buses, and harsh edge environments.",
-  intro:
-    "I am an Embedded Systems and Edge AI Engineer dedicated to architecting resilient cyber-physical systems where silicon, deterministic firmware, and machine intelligence converge without black-box abstractions. Currently pursuing my B.Sc. in IoT & Robotics Engineering at University of Frontier Technology, Bangladesh (UFTB), I specialize in delivering end-to-end solutions — from low-level sensor interfacing and deterministic RTOS multitasking to high-speed edge vision inference and cloud telemetry dashboards.",
+  title: "About Me",
+  subtitle: "Undergraduate Researcher & Embedded Systems Engineer",
+  paragraphs: [
+    "I am an undergraduate engineering student pursuing a B.Sc. in Internet of Things & Robotics Engineering at University of Frontier Technology, Bangladesh (UFTB). My technical focus is centered on embedded systems, C/C++ firmware development, FreeRTOS multitasking, and applied edge computer vision.",
+    "As the author of SmartProv (v2.1.3), an open-source Wi-Fi provisioning library indexed in the official Arduino Library Manager, I work on developing reliable embedded solutions—ranging from low-level sensor interfacing and fail-safe firmware updates to on-device machine learning inference and wireless telemetry over LoRa and MQTT.",
+  ],
   pillars: [
     {
       id: "01",
       icon: "cpu",
-      title: "Deterministic Firmware & Bare-Metal Silicon",
-      focus: "Reliability, Timing & Memory Efficiency",
+      title: "Embedded Firmware & RTOS",
+      focus: "Microcontroller Architecture & Low-Level Control",
       points: [
-        "Bare-metal C/C++ firmware & FreeRTOS deterministic task scheduling with priority preemption on dual-core microcontrollers (ESP32/STM32).",
-        "Fail-safe remote OTA firmware architectures featuring dual-partition flash rollback and CRC32/SHA-256 integrity verification.",
-        "Hardware bus protocols (UART, SPI, I2C, 1-Wire), hardware timer interrupts (ISR), and non-volatile memory management (NVS/EEPROM).",
+        "C/C++ firmware development on ESP32, ESP8266, and STM32 platforms.",
+        "Real-time task scheduling, synchronization, and ISR handling with FreeRTOS.",
+        "Dual-partition OTA firmware updates with CRC32 verification and flash rollback.",
+        "Bus interfacing over UART, SPI, I2C, and non-volatile memory management (NVS/EEPROM).",
       ],
-      tags: ["C/C++", "FreeRTOS", "ESP32", "STM32", "OTA Rollback", "NVS Flash"],
+      tags: ["C/C++", "FreeRTOS", "ESP32", "STM32", "OTA Updates", "NVS Flash"],
     },
     {
       id: "02",
       icon: "eye",
-      title: "Applied Edge AI & Computer Vision",
-      focus: "Low-Latency On-Device Inference & Explainability",
+      title: "Edge AI & Computer Vision",
+      focus: "On-Device Inference & Model Interpretation",
       points: [
-        "High-throughput edge vision pipelines executing at 30–60 FPS using YOLOv8, MediaPipe (468 3D facial landmarks), and optimized OpenCV.",
-        "On-device TinyML & model quantization (INT8/FP16) reducing cloud dependency, bandwidth overhead, and inference latency.",
-        "Explainable AI (XAI) utilizing Grad-CAM visual saliency heatmaps and TreeSHAP attribution for verified clinical and agricultural decisions.",
+        "Real-time object detection and facial landmark tracking using YOLOv8, MediaPipe, and OpenCV.",
+        "Quantized model deployment (TinyML, ONNX Runtime) optimized for edge hardware.",
+        "Model interpretability and feature attribution using Grad-CAM heatmaps and TreeSHAP.",
       ],
-      tags: ["Python", "YOLOv8", "MediaPipe", "TinyML", "ONNX Runtime", "Grad-CAM"],
+      tags: ["Python", "OpenCV", "YOLOv8", "MediaPipe", "TinyML", "ONNX"],
     },
     {
       id: "03",
       icon: "wifi",
-      title: "Resilient Telemetry & Distributed Infrastructure",
-      focus: "Long-Range Connectivity & Operational Telemetry",
+      title: "Wireless Telemetry & IoT",
+      focus: "Sensor Networks & Cloud Telemetry",
       points: [
-        "Long-range sub-gigahertz wireless telemetry using LoRa SX1278 transceivers and low-overhead MQTT broker infrastructure.",
-        "Asynchronous backend microservices and streaming pipelines using FastAPI, WebSockets, and InfluxDB time-series storage.",
-        "Operational telemetry web dashboards providing live sensor feeds, actuator control relays, and automated threshold alerts.",
+        "Long-range sensor telemetry using LoRa (SX1278) and lightweight MQTT messaging.",
+        "Backend API services and real-time streaming using FastAPI and WebSockets.",
+        "Time-series sensor data logging and monitoring dashboards with InfluxDB and React.",
       ],
-      tags: ["LoRa SX1278", "MQTT", "FastAPI", "InfluxDB", "Docker", "WebSockets"],
-    },
-  ],
-  principles: [
-    {
-      title: "Fail-Safe by Design",
-      icon: "shield",
-      desc: "Graceful recovery from brownouts, power spikes, and dropped buses via hardware watchdogs (WDT) and automated partition fallback.",
-    },
-    {
-      title: "Zero-Overhead Discipline",
-      icon: "zap",
-      desc: "Every byte of RAM and microsecond of CPU time counts. Strict memory hygiene and deterministic timing on constrained microcontrollers.",
-    },
-    {
-      title: "Transparency Over Black-Boxes",
-      icon: "search",
-      desc: "Edge intelligence should augment human intuition with interpretable features, explainable heatmaps, and empirical validation.",
-    },
-    {
-      title: "End-to-End System Ownership",
-      icon: "layers",
-      desc: "Deep technical fluency across the entire pipeline — from board-level schematics and logic analyzers to cloud REST APIs and live UIs.",
+      tags: ["LoRa SX1278", "MQTT", "FastAPI", "InfluxDB", "WebSockets"],
     },
   ],
   toolchain: [
@@ -622,12 +601,6 @@ export const aboutSection = {
       category: "Protocols & Cloud Telemetry",
       tools: ["LoRa SX1278", "MQTT", "FastAPI", "Docker", "InfluxDB", "WebSockets"],
     },
-  ],
-  metrics: [
-    { value: "v2.1.3", label: "Arduino Library Registry" },
-    { value: "30-60", label: "FPS Edge AI Inference" },
-    { value: "20+", label: "Flagship CV Projects" },
-    { value: "5.00", label: "Academic GPA (HSC/SSC)" },
   ],
 };
 

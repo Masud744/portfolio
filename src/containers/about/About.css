@@ -1,26 +1,26 @@
 .about-main {
   width: 90%;
-  max-width: 1280px;
+  max-width: 1240px;
   padding: 10px;
-  margin: 2.5rem auto 5rem auto;
+  margin: 2.5rem auto 4.5rem auto;
 }
 
 .about-header-block {
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .about-heading {
-  font-size: 54px;
+  font-size: 52px;
   font-weight: 800;
   color: #001C55;
-  margin: 0 0 10px 0;
+  margin: 0 0 8px 0;
   font-family: "Google Sans Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   letter-spacing: -0.02em;
 }
 
 .about-subheading-tag {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 600;
   color: #2563eb;
   margin: 0;
@@ -28,151 +28,117 @@
   letter-spacing: -0.01em;
 }
 
-/* Statement of Purpose Card */
-.about-statement-card {
+/* Profile Card (Screenshot 4 fix: clean academic spacing & tone) */
+.about-profile-card {
   background: #ffffff;
   border: 1px solid rgba(0, 28, 85, 0.12);
-  border-radius: 18px;
-  padding: 36px 40px;
-  box-shadow: 0 4px 20px rgba(0, 28, 85, 0.04);
-  margin-bottom: 50px;
+  border-radius: 16px;
+  padding: 32px 36px;
+  box-shadow: 0 4px 16px rgba(0, 28, 85, 0.04);
+  margin-bottom: 45px;
   transition: all 0.25s ease;
 }
 
-.about-statement-card:hover {
-  box-shadow: 0 8px 28px rgba(0, 28, 85, 0.07);
-  border-color: rgba(37, 99, 235, 0.3);
+.about-profile-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 28, 85, 0.07);
+  border-color: rgba(37, 99, 235, 0.25);
 }
 
-.about-quote-box {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  margin-bottom: 24px;
-}
-
-.about-quote-mark {
-  font-size: 54px;
-  line-height: 0.8;
-  color: #2563eb;
-  font-family: Georgia, serif;
-  opacity: 0.7;
-}
-
-.about-quote-text {
-  font-size: 1.25rem;
-  font-weight: 600;
-  line-height: 1.6;
+.about-paragraph-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
   color: #001C55;
-  margin: 0;
-  font-style: italic;
+  opacity: 0.92;
+  margin: 0 0 16px 0;
+  text-align: left;
 }
 
-.about-divider {
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, rgba(37, 99, 235, 0.25), rgba(0, 28, 85, 0.08), transparent);
-  margin: 20px 0 24px 0;
-}
-
-.about-intro-text {
-  font-size: 1.08rem;
-  line-height: 1.85;
-  color: #001C55;
-  opacity: 0.9;
-  margin: 0;
-  text-align: justify;
+.about-paragraph-text:last-child {
+  margin-bottom: 0;
 }
 
 /* Section Containers */
 .about-section-container {
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 }
 
 .about-section-title-wrap {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   text-align: left;
 }
 
 .about-section-title {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 700;
   color: #001C55;
-  margin: 0 0 6px 0;
-  font-family: "Google Sans Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
-
-.about-section-desc {
-  font-size: 15px;
-  font-weight: 500;
-  color: #001C55;
-  opacity: 0.75;
   margin: 0;
+  font-family: "Google Sans Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  letter-spacing: -0.01em;
 }
 
-/* Three Engineering Pillars Grid */
+/* Three Engineering Pillars Grid (Screenshot 3 fix) */
 .about-pillars-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+  gap: 22px;
 }
 
 .about-pillar-card {
   background: #ffffff;
   border: 1px solid rgba(0, 28, 85, 0.12);
   border-radius: 16px;
-  padding: 28px 24px;
+  padding: 26px 22px;
   box-shadow: 0 4px 16px rgba(0, 28, 85, 0.04);
   display: flex;
   flex-direction: column;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
   position: relative;
 }
 
 .about-pillar-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
   border-color: #2563eb;
-  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.12);
+  box-shadow: 0 10px 26px rgba(37, 99, 235, 0.1);
 }
 
 .pillar-card-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .pillar-icon-box {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.14), rgba(0, 28, 85, 0.05));
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(0, 28, 85, 0.04));
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(37, 99, 235, 0.2);
+  border: 1px solid rgba(37, 99, 235, 0.18);
 }
 
 .pillar-header-icon {
-  font-size: 24px;
+  font-size: 22px;
   color: #2563eb;
 }
 
 .pillar-number-badge {
-  font-size: 11.5px;
+  font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.08em;
-  padding: 4px 10px;
-  border-radius: 20px;
+  padding: 3px 9px;
+  border-radius: 16px;
   background: rgba(0, 28, 85, 0.06);
   color: #001C55;
 }
 
 .pillar-title {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 700;
   color: #001C55;
-  margin: 0 0 10px 0;
+  margin: 0 0 8px 0;
   line-height: 1.35;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
@@ -180,37 +146,37 @@
 .pillar-focus-badge {
   display: inline-block;
   align-self: flex-start;
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 700;
   color: #2563eb;
-  background: rgba(37, 99, 235, 0.08);
-  border: 1px solid rgba(37, 99, 235, 0.2);
-  padding: 4px 10px;
+  background: rgba(37, 99, 235, 0.07);
+  border: 1px solid rgba(37, 99, 235, 0.18);
+  padding: 3px 9px;
   border-radius: 6px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .pillar-points-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 22px 0;
+  margin: 0 0 20px 0;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
   flex-grow: 1;
 }
 
 .pillar-point-item {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 8px;
   font-size: 13.5px;
-  line-height: 1.6;
+  line-height: 1.55;
   text-align: left;
 }
 
 .pillar-point-check {
-  font-size: 16px;
+  font-size: 15px;
   color: #10B981;
   flex-shrink: 0;
   margin-top: 3px;
@@ -220,7 +186,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  padding-top: 14px;
+  padding-top: 12px;
   border-top: 1px solid rgba(0, 28, 85, 0.08);
 }
 
@@ -234,65 +200,6 @@
   border: 1px solid rgba(0, 28, 85, 0.12);
 }
 
-/* Four Guiding Principles Grid */
-.about-principles-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.about-principle-card {
-  background: #ffffff;
-  border: 1px solid rgba(0, 28, 85, 0.12);
-  border-radius: 14px;
-  padding: 22px 24px;
-  box-shadow: 0 4px 14px rgba(0, 28, 85, 0.03);
-  transition: all 0.25s ease;
-}
-
-.about-principle-card:hover {
-  border-color: #2563eb;
-  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.08);
-}
-
-.principle-header-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 10px;
-}
-
-.principle-icon-box {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  background: rgba(37, 99, 235, 0.08);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.principle-icon {
-  font-size: 18px;
-  color: #2563eb;
-}
-
-.principle-title {
-  font-size: 16.5px;
-  font-weight: 700;
-  color: #001C55;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
-
-.principle-desc {
-  font-size: 14px;
-  line-height: 1.65;
-  color: #001C55;
-  opacity: 0.85;
-  margin: 0;
-}
-
 /* Technical Toolchain Matrix */
 .about-toolchain-grid {
   display: grid;
@@ -304,21 +211,21 @@
   background: #ffffff;
   border: 1px solid rgba(0, 28, 85, 0.12);
   border-radius: 14px;
-  padding: 20px 18px;
+  padding: 18px 16px;
   box-shadow: 0 4px 14px rgba(0, 28, 85, 0.03);
   display: flex;
   flex-direction: column;
 }
 
 .toolchain-cat-title {
-  font-size: 14px;
+  font-size: 13.5px;
   font-weight: 700;
   color: #2563eb;
-  margin: 0 0 14px 0;
+  margin: 0 0 12px 0;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border-bottom: 1px solid rgba(37, 99, 235, 0.15);
-  padding-bottom: 8px;
+  padding-bottom: 6px;
 }
 
 .toolchain-tools-wrap {
@@ -344,48 +251,6 @@
   border-color: #2563eb;
 }
 
-/* Metrics Row */
-.about-metrics-container {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 18px;
-  margin-bottom: 45px;
-}
-
-.about-metric-card {
-  background: #ffffff;
-  border: 1px solid rgba(0, 28, 85, 0.12);
-  border-radius: 14px;
-  padding: 20px 16px;
-  text-align: center;
-  box-shadow: 0 4px 14px rgba(0, 28, 85, 0.03);
-  transition: all 0.25s ease;
-}
-
-.about-metric-card:hover {
-  transform: translateY(-3px);
-  border-color: #2563eb;
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.1);
-}
-
-.about-metric-value {
-  font-size: 32px;
-  font-weight: 800;
-  color: #2563eb;
-  font-family: "JetBrains Mono", monospace;
-  margin-bottom: 4px;
-  line-height: 1.1;
-}
-
-.about-metric-label {
-  font-size: 11.5px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #001C55;
-  opacity: 0.75;
-}
-
 /* Call to Action Row */
 .about-cta-container {
   display: flex;
@@ -393,16 +258,16 @@
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .about-cta-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 24px;
+  padding: 11px 22px;
   border-radius: 10px;
-  font-size: 14.5px;
+  font-size: 14px;
   font-weight: 700;
   text-decoration: none;
   transition: all 0.25s ease;
@@ -412,14 +277,14 @@
   background: #2563eb;
   color: #ffffff;
   border: 1px solid #2563eb;
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
 }
 
 .about-cta-btn.btn-primary:hover {
   background: #1d4ed8;
   border-color: #1d4ed8;
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
 }
 
 .about-cta-btn.btn-secondary {
@@ -459,33 +324,27 @@
 
 @media (max-width: 768px) {
   .about-heading {
-    font-size: 38px;
+    font-size: 36px;
   }
   .about-subheading-tag {
     font-size: 16px;
   }
-  .about-statement-card {
-    padding: 24px 20px;
+  .about-profile-card {
+    padding: 22px 18px;
   }
-  .about-quote-box {
-    gap: 10px;
-  }
-  .about-quote-mark {
-    font-size: 40px;
-  }
-  .about-quote-text {
-    font-size: 1.1rem;
-  }
-  .about-principles-grid {
-    grid-template-columns: 1fr;
+  .about-paragraph-text {
+    font-size: 0.98rem;
+    line-height: 1.7;
   }
   .about-toolchain-grid {
     grid-template-columns: 1fr;
   }
-  .about-metrics-container {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .about-cta-container {
+    flex-direction: column;
+    width: 100%;
   }
-  .about-intro-text {
-    text-align: left;
+  .about-cta-btn {
+    width: 100%;
+    justify-content: center;
   }
 }
