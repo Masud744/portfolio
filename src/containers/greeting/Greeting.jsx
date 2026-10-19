@@ -48,7 +48,7 @@ export default function Greeting(props) {
                     style={{
                       color: theme.secondaryText,
                       marginBottom:
-                        index === greeting.subTitle.length - 1 ? "18px" : "12px",
+                        index === greeting.subTitle.length - 1 ? "22px" : "12px",
                     }}
                   >
                     {para}
@@ -57,13 +57,13 @@ export default function Greeting(props) {
               ) : (
                 <p
                   className="greeting-text-p subTitle"
-                  style={{ color: theme.secondaryText }}
+                  style={{ color: theme.secondaryText, marginBottom: "22px" }}
                 >
                   {greeting.subTitle}
                 </p>
               )}
               <SocialMedia theme={theme} />
-              <div className="portfolio-repo-btn-div" style={{ display: "flex", gap: "15px", flexWrap: "wrap", alignItems: "center" }}>
+              <div className="portfolio-repo-btn-div">
                 <Button
                   text="⭐ Star Me On Github"
                   newTab={true}
